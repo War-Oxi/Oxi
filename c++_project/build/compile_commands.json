@@ -1,0 +1,7 @@
+[
+{
+  "directory": "D:/ALL File/Tae Ji/University/VSCode/c++_project/build",
+  "command": "C:\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe    -g   -std=gnu++11 -o CMakeFiles\\c++_project.dir\\Calculator.cpp.obj -c \"D:\\ALL File\\Tae Ji\\University\\VSCode\\c++_project\\Calculator.cpp\"",
+  "file": "D:/ALL File/Tae Ji/University/VSCode/c++_project/Calculator.cpp"
+}
+]

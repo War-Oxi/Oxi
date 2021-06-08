@@ -1,0 +1,9 @@
+{
+    "python.testing.pytestArgs": [
+        "Python Code"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": true,
+    "python.testing.pytestEnabled": true,
+    "python.pythonPath": "C:\\Users\\Oxi\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
+}

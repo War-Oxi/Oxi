@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libCMakeLists.txt.a  CMakeFiles/CMakeLists.txt.dir/CMakeLists.txt.cpp.obj
+C:\mingw64\bin\ranlib.exe libCMakeLists.txt.a

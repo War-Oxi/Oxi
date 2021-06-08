@@ -1,0 +1,3 @@
+[submodule "OxiFile"]
+	path = OxiFile
+	url = https://github.com/War-Oxi/OxiFile.git

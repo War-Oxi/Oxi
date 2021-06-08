@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libRacing.a  CMakeFiles/Racing.dir/Racing.cpp.obj
+C:\mingw64\bin\ranlib.exe libRacing.a
