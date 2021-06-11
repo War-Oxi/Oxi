@@ -77,10 +77,6 @@ double get_distance(point p1, point p2)
     return distance;
 }
 
-
-
-
-
 typedef struct {
     int degree;
     float coef[MAX_DEGREE];
