@@ -1,12 +1,25 @@
 #include <iostream>
+#include "tchar.h"
 using namespace std;
 
-int main(void)
+struct RetValue
 {
-    int a = 123;
-    int *p = &a;
-    cout<<"*p = "<<*p<<endl;
-    *p = 789;
-    cout<<"a  = "<<a<<endl;
-    cout<<"*p = "<<*p<<endl;
+int retValue1;
+int retValue2;
+};
+RetValue PlusMinus(int a, int b)
+{
+RetValue ret;
+ret.retValue1=a+b;
+ret.retValue2=a-b;
+return ret;
+}
+int _tmain(int argc, _TCHAR* argv[])
+{
+RetValue result;
+result=PlusMinus(3,5);
+
+cout<<result.retValue1<<"\n";
+cout<<result.retValue2<<"\n";
+return 0;
 }
