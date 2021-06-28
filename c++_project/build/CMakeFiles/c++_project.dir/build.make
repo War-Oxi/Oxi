@@ -56,32 +56,47 @@ include CMakeFiles/c++_project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/c++_project.dir/flags.make
 
-CMakeFiles/c++_project.dir/Calculator.cpp.obj: CMakeFiles/c++_project.dir/flags.make
-CMakeFiles/c++_project.dir/Calculator.cpp.obj: ../Calculator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c++_project.dir/Calculator.cpp.obj"
-	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && C:\mingw64\bin\x86_64-w64-mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\c++_project.dir\Calculator.cpp.obj -c "D:\ALL File\Tae Ji\University\VSCode\c++_project\Calculator.cpp"
+CMakeFiles/c++_project.dir/Sp2Func.cpp.obj: CMakeFiles/c++_project.dir/flags.make
+CMakeFiles/c++_project.dir/Sp2Func.cpp.obj: ../Sp2Func.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c++_project.dir/Sp2Func.cpp.obj"
+	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && C:\mingw64\bin\x86_64-w64-mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\c++_project.dir\Sp2Func.cpp.obj -c "D:\ALL File\Tae Ji\University\VSCode\c++_project\Sp2Func.cpp"
 
-CMakeFiles/c++_project.dir/Calculator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/c++_project.dir/Calculator.cpp.i"
-	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && C:\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ALL File\Tae Ji\University\VSCode\c++_project\Calculator.cpp" > CMakeFiles\c++_project.dir\Calculator.cpp.i
+CMakeFiles/c++_project.dir/Sp2Func.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/c++_project.dir/Sp2Func.cpp.i"
+	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && C:\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ALL File\Tae Ji\University\VSCode\c++_project\Sp2Func.cpp" > CMakeFiles\c++_project.dir\Sp2Func.cpp.i
 
-CMakeFiles/c++_project.dir/Calculator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/c++_project.dir/Calculator.cpp.s"
-	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && C:\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ALL File\Tae Ji\University\VSCode\c++_project\Calculator.cpp" -o CMakeFiles\c++_project.dir\Calculator.cpp.s
+CMakeFiles/c++_project.dir/Sp2Func.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/c++_project.dir/Sp2Func.cpp.s"
+	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && C:\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ALL File\Tae Ji\University\VSCode\c++_project\Sp2Func.cpp" -o CMakeFiles\c++_project.dir\Sp2Func.cpp.s
+
+CMakeFiles/c++_project.dir/Sp2Main.cpp.obj: CMakeFiles/c++_project.dir/flags.make
+CMakeFiles/c++_project.dir/Sp2Main.cpp.obj: ../Sp2Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/c++_project.dir/Sp2Main.cpp.obj"
+	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && C:\mingw64\bin\x86_64-w64-mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\c++_project.dir\Sp2Main.cpp.obj -c "D:\ALL File\Tae Ji\University\VSCode\c++_project\Sp2Main.cpp"
+
+CMakeFiles/c++_project.dir/Sp2Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/c++_project.dir/Sp2Main.cpp.i"
+	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && C:\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ALL File\Tae Ji\University\VSCode\c++_project\Sp2Main.cpp" > CMakeFiles\c++_project.dir\Sp2Main.cpp.i
+
+CMakeFiles/c++_project.dir/Sp2Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/c++_project.dir/Sp2Main.cpp.s"
+	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && C:\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ALL File\Tae Ji\University\VSCode\c++_project\Sp2Main.cpp" -o CMakeFiles\c++_project.dir\Sp2Main.cpp.s
 
 # Object files for target c++_project
 c_______project_OBJECTS = \
-"CMakeFiles/c++_project.dir/Calculator.cpp.obj"
+"CMakeFiles/c++_project.dir/Sp2Func.cpp.obj" \
+"CMakeFiles/c++_project.dir/Sp2Main.cpp.obj"
 
 # External object files for target c++_project
 c_______project_EXTERNAL_OBJECTS =
 
-c++_project.exe: CMakeFiles/c++_project.dir/Calculator.cpp.obj
+c++_project.exe: CMakeFiles/c++_project.dir/Sp2Func.cpp.obj
+c++_project.exe: CMakeFiles/c++_project.dir/Sp2Main.cpp.obj
 c++_project.exe: CMakeFiles/c++_project.dir/build.make
 c++_project.exe: CMakeFiles/c++_project.dir/linklibs.rsp
 c++_project.exe: CMakeFiles/c++_project.dir/objects1.rsp
 c++_project.exe: CMakeFiles/c++_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable c++_project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable c++_project.exe"
 	cd /d "D:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\c++_project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

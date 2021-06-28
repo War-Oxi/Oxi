@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/ALL File/Tae Ji/University/VSCode/c++_project/Calculator.cpp" "D:/ALL File/Tae Ji/University/VSCode/c++_project/build/CMakeFiles/c++_project.dir/Calculator.cpp.obj"
+  "D:/ALL File/Tae Ji/University/VSCode/c++_project/Sp2Func.cpp" "D:/ALL File/Tae Ji/University/VSCode/c++_project/build/CMakeFiles/c++_project.dir/Sp2Func.cpp.obj"
+  "D:/ALL File/Tae Ji/University/VSCode/c++_project/Sp2Main.cpp" "D:/ALL File/Tae Ji/University/VSCode/c++_project/build/CMakeFiles/c++_project.dir/Sp2Main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

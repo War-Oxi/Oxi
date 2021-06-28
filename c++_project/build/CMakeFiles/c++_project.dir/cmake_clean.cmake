@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/c++_project.dir/Calculator.cpp.obj"
+  "CMakeFiles/c++_project.dir/Sp2Func.cpp.obj"
+  "CMakeFiles/c++_project.dir/Sp2Main.cpp.obj"
   "c++_project.pdb"
   "c++_project.exe"
   "c++_project.exe.manifest"

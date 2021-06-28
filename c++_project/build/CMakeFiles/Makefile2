@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = "D:\ALL File\Tae Ji\University\VSCode\c++_project\build"
 CMakeFiles/c++_project.dir/all:
 	$(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/depend
 	$(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" --progress-num=1,2 "Built target c++_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" --progress-num=1,2,3 "Built target c++_project"
 .PHONY : CMakeFiles/c++_project.dir/all
 
 # Include target in all.
@@ -80,7 +80,7 @@ all: CMakeFiles/c++_project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/c++_project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/c++_project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\ALL File\Tae Ji\University\VSCode\c++_project\build\CMakeFiles" 0
 .PHONY : CMakeFiles/c++_project.dir/rule

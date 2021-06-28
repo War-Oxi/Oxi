@@ -144,32 +144,59 @@ c++_project/fast:
 	$(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/build
 .PHONY : c++_project/fast
 
-Calculator.obj: Calculator.cpp.obj
+Sp2Func.obj: Sp2Func.cpp.obj
 
-.PHONY : Calculator.obj
+.PHONY : Sp2Func.obj
 
 # target to build an object file
-Calculator.cpp.obj:
-	cd /d "d:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/Calculator.cpp.obj
-.PHONY : Calculator.cpp.obj
+Sp2Func.cpp.obj:
+	cd /d "d:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/Sp2Func.cpp.obj
+.PHONY : Sp2Func.cpp.obj
 
-Calculator.i: Calculator.cpp.i
+Sp2Func.i: Sp2Func.cpp.i
 
-.PHONY : Calculator.i
+.PHONY : Sp2Func.i
 
 # target to preprocess a source file
-Calculator.cpp.i:
-	cd /d "d:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/Calculator.cpp.i
-.PHONY : Calculator.cpp.i
+Sp2Func.cpp.i:
+	cd /d "d:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/Sp2Func.cpp.i
+.PHONY : Sp2Func.cpp.i
 
-Calculator.s: Calculator.cpp.s
+Sp2Func.s: Sp2Func.cpp.s
 
-.PHONY : Calculator.s
+.PHONY : Sp2Func.s
 
 # target to generate assembly for a file
-Calculator.cpp.s:
-	cd /d "d:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/Calculator.cpp.s
-.PHONY : Calculator.cpp.s
+Sp2Func.cpp.s:
+	cd /d "d:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/Sp2Func.cpp.s
+.PHONY : Sp2Func.cpp.s
+
+Sp2Main.obj: Sp2Main.cpp.obj
+
+.PHONY : Sp2Main.obj
+
+# target to build an object file
+Sp2Main.cpp.obj:
+	cd /d "d:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/Sp2Main.cpp.obj
+.PHONY : Sp2Main.cpp.obj
+
+Sp2Main.i: Sp2Main.cpp.i
+
+.PHONY : Sp2Main.i
+
+# target to preprocess a source file
+Sp2Main.cpp.i:
+	cd /d "d:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/Sp2Main.cpp.i
+.PHONY : Sp2Main.cpp.i
+
+Sp2Main.s: Sp2Main.cpp.s
+
+.PHONY : Sp2Main.s
+
+# target to generate assembly for a file
+Sp2Main.cpp.s:
+	cd /d "d:\ALL File\Tae Ji\University\VSCode\c++_project\build" && $(MAKE) -f CMakeFiles\c++_project.dir\build.make CMakeFiles/c++_project.dir/Sp2Main.cpp.s
+.PHONY : Sp2Main.cpp.s
 
 # Help Target
 help:
@@ -182,9 +209,12 @@ help:
 	@echo ... package_source
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Calculator.obj
-	@echo ... Calculator.i
-	@echo ... Calculator.s
+	@echo ... Sp2Func.obj
+	@echo ... Sp2Func.i
+	@echo ... Sp2Func.s
+	@echo ... Sp2Main.obj
+	@echo ... Sp2Main.i
+	@echo ... Sp2Main.s
 .PHONY : help
 
 
