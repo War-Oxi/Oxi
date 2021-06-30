@@ -1,37 +1,10 @@
-#include <iostream>
-#include <cstring>
-#define MAX_SIZE 50
+#include <stdio.h>
 
-using std::cout;
-using std::endl;
-
-class Printer
+int main()
 {
-private:
-    char str[MAX_SIZE];
-public:
-    void SetString(char *s);
-    void ShowString();
-};
+    int quiz[5] = {1, 2, 3, 4, 5};
 
-void Printer::SetString(char *s)
-{
-    strcpy(str, s);
-}
+    printf("%d" ,*(quiz + 2));
 
-void Printer::ShowString()
-{
-    cout<<str<<endl;
-}
-
-int main(void)
-{
-    Printer pnt;
-    pnt.SetString("Hello world!");
-    pnt.ShowString();
-
-    pnt.SetString("I Love C++");
-    pnt.ShowString();
-    
     return 0;
 }
