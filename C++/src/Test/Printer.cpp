@@ -1,10 +1,15 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-int main()
+int main(void)
 {
-    int quiz[5] = {1, 2, 3, 4, 5};
+    int A, B;
+    cin>>A>>B;
 
-    printf("%d" ,*(quiz + 2));
+    cout<<A*(B%10)<<endl;
+    cout<<A*((B/10)%10)<<endl;
+    cout<<A*(B/100)<<endl;
+    cout<<A*B<<endl;
 
     return 0;
 }
