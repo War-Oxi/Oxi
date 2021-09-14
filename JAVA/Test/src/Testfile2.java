@@ -1,13 +1,12 @@
-public class Testfile2 {
-    public static void main(String args[]){
-        int i = 2 ;
-        double j = 3 ;
+import java.util.Scanner;
 
-        System.out.println("합계는 = " + (i + j));
-        System.out.println("차이는 = " + (i - j));
-        System.out.println("곱은 = " + (i * j));
-        System.out.println("나눈 값은 = " + (i / j));
+public class Testfile2 {
+    public static void main(String[] args){
         
-        System.out.print(2*3+1);
+    	Scanner Minus_Program = new Scanner(System.in);
+        
+    	int Num1 = Minus_Program.nextInt();
+        int Num2 = Minus_Program.nextInt();
+        System.out.println(Num1 + "-" + Num2 + "의 결과는 " +(Num1-Num2) + "입니다");
     }
 }
