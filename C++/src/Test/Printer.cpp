@@ -3,13 +3,22 @@ using namespace std;
 
 int main(void)
 {
-    int A, B;
-    cin>>A>>B;
+    int N;
+    cin>>N;
+    
 
-    cout<<A*(B%10)<<endl;
-    cout<<A*((B/10)%10)<<endl;
-    cout<<A*(B/100)<<endl;
-    cout<<A*B<<endl;
+    for (int i = 1; i <= N; i++){
+        for (int j = 0; j < N- i; j++)
+            cout<<' ';
+        for (int j = 0; j < i; j++)
+            cout<<'*';
+        cout<<'\n';
+    }
+
 
     return 0;
 }
+
+
+//!정수 N개로 이루어진 수열 A와 정수 X가 주어진다.
+//!이때, A에서 X보다 작은 수를 모두 출력하는 프로그램을 작성하시오.
