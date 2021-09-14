@@ -1,15 +1,10 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main(void)
 {
-    int A, B;
-    cin>>A>>B;
-
-    cout<<A*(B%10)<<endl;
-    cout<<A*((B/10)%10)<<endl;
-    cout<<A*(B/100)<<endl;
-    cout<<A*B<<endl;
+    double Num_A=5;
+    scanf("%.1lf", &Num_A);
+    printf("%lf", Num_A);
 
     return 0;
 }
