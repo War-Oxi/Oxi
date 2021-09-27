@@ -8,18 +8,16 @@ public class Testfile{
 	public static void main(String[] args) {
 		Scanner Personal_Data = new Scanner(System.in);
 		
-		System.out.println("º»ÀÎÀÇ ±¹Àû°ú ÀÌ¸§, ³ªÀÌ, Å°¸¦ ½ºÆäÀÌ½º¹Ù·Î ±¸ºĞÇÏ¿© ÀÔ·ÂÇÏ¼¼¿ä.");
-		
+		System.out.println("ë³¸ì¸ì˜ êµ­ì ê³¼ ì´ë¦„, ë‚˜ì´, í‚¤ë¥¼ ìŠ¤í˜ì´ìŠ¤ë°”ë¡œ êµ¬ë¶„í•˜ì—¬ ì…ë ¥í•˜ì„¸ìš”.");
 		String Nation = Personal_Data.next();
-		String Name = Personal_Data.next();
+ 		String Name = Personal_Data.next();
 		int Age = Personal_Data.nextInt();
 		double Height = Personal_Data.nextDouble();
 
-		System.out.println("³ªÀÇ ±¹ÀûÀº " + Nation + "ÀÌ¸ç ÀÌ¸§Àº " + Name + "ÀÔ´Ï´Ù");
-		System.out.print("³ªÀÌ´Â " + Age + "»ìÀÌ¸ç ");
-		System.out.print("Å°´Â " + Height + " ÀÔ´Ï´Ù");
+		System.out.println("ë‚˜ì˜ êµ­ì ì€ " + Nation + "ì´ë©° ì´ë¦„ì€ " + Name + "ì…ë‹ˆë‹¤");
+		System.out.print("ë‚˜ì´ëŠ” " + Age + "ì‚´ì´ë©° ");
+		System.out.print("í‚¤ëŠ” " + Height + " ì…ë‹ˆë‹¤");
 		Personal_Data.close();
 
 	}
 }
-	
