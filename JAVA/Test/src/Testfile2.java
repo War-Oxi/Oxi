@@ -1,12 +1,16 @@
+import java.lang.annotation.Native;
 import java.util.Scanner;
 
 public class Testfile2 {
     public static void main(String[] args){
-        
-    	Scanner Minus_Program = new Scanner(System.in);
-        
-    	int Num1 = Minus_Program.nextInt();
-        int Num2 = Minus_Program.nextInt();
-        System.out.println(Num1 + "-" + Num2 + "의 결과는 " +(Num1-Num2) + "입니다");
+        Scanner Money = new Scanner(System.in);
+        System.out.println("금액을 입력하세요 : ");
+        int money = Money.nextInt();
+        System.out.println("일만원권 : " + money / 10000);
+        System.out.println("천원권 : " + money % 10000 / 1000);
+        System.out.println("오백원주화 : " + money % 1000 / 500);
+        System.out.println("백원주화 : " + money % 500 / 100);
+        System.out.println("십원주화 : " + money % 100 / 10);
+        System.out.println("일원주화 : " + money % 10 / 1);
     }
 }
