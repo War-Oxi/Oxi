@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
-public class Main{
+public class Main{ 
     public static void main(String args[]){
-        Scanner Plus = new Scanner(System.in);
-        System.out.print("input your grade : ");
-        int grade = Plus.nextInt();
-        if (grade >= 90){
-            System.out.println("your grade is \'A\'");
+        int count = 3;
+        int hap = 0;
+        switch(count++){
+            case 3 : hap = hap +count;
+            case 4 : hap = hap +count;
+            case 5 : hap = hap +count;
+            case 6 : hap = hap + count;
         }
-        else{
-            System.out.println("You are loser");
-        }
+        System.out.println(hap);
     }
 }

@@ -1,13 +1,16 @@
-public class Testfile2 {
-    public static void main(String args[]){
-        int i = 2 ;
-        double j = 3 ;
+import java.lang.annotation.Native;
+import java.util.Scanner;
 
-        System.out.println("합계는 = " + (i + j));
-        System.out.println("차이는 = " + (i - j));
-        System.out.println("곱은 = " + (i * j));
-        System.out.println("나눈 값은 = " + (i / j));
-        
-        System.out.print(2*3+1);
+public class Testfile2 {
+    public static void main(String[] args){
+        Scanner Money = new Scanner(System.in);
+        System.out.println("금액을 입력하세요 : ");
+        int money = Money.nextInt();
+        System.out.println("일만원권 : " + money / 10000);
+        System.out.println("천원권 : " + money % 10000 / 1000);
+        System.out.println("오백원주화 : " + money % 1000 / 500);
+        System.out.println("백원주화 : " + money % 500 / 100);
+        System.out.println("십원주화 : " + money % 100 / 10);
+        System.out.println("일원주화 : " + money % 10 / 1);
     }
 }
