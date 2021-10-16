@@ -15,5 +15,8 @@ public class JavaRevew1 {
             sum = sum + i;
         }
         System.out.println("1부터 10까지의 합은 " + hap + " 입니다");
+
+        int result = ((sum>40) ? 200 : 0);
+        System.out.println(result);
     }
 }
