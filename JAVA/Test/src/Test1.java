@@ -1,5 +1,4 @@
 //!1~100사이에서 임이의 수의 배수의 합을 구하는 프로그램
-package chap02;
 import java.util.Scanner;
 
 public class Test1 {

@@ -1,7 +1,7 @@
 package chap02;
 import java.util.Scanner;
 
-public class JavaRevew1 {
+public class JAVATEST_10_19 {
     public static void main(String args[]){
     	Scanner Num = new Scanner(System.in);
         System.out.println("1~100까지 임의의 수 입력");

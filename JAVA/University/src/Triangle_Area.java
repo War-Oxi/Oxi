@@ -6,12 +6,12 @@ public class Triangle_Area {
         
     	Scanner Triangle_info = new Scanner(System.in);
         
-    	System.out.print("Á÷°¢ »ï°¢ÇüÀÇ ³ôÀÌ¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+    	System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½ : ");
         double height = Triangle_info.nextDouble();
-        System.out.print("Á÷°¢ »ï°¢ÇüÀÇ ³Êºñ¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");        
+        System.out.print("ï¿½ï¿½ï¿½ï¿½ ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½Êºï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½ : ");        
         double width = Triangle_info.nextDouble();
         
-        System.out.print("ÀÌ Á÷°¢ »ï°¢ÇüÀÇ ¸éÀûÀº " + height*width/2 + " ÀÔ´Ï´Ù.");
+        System.out.print("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + height*width/2 + " ï¿½Ô´Ï´ï¿½.");
         Triangle_info.close();
         
     }
