@@ -3,20 +3,36 @@ import java.util.Scanner;
 
 public class JavaRevew1 {
     public static void main(String args[]){
-        int hap=0, count=1;
-        while (count <= 10){
-            hap = hap + count;
-            count = count + 1;
-        }
-        System.out.println("1부터 10까지의 합은 " + hap + " 입니다");
+    	Scanner Num = new Scanner(System.in);
+        System.out.println("1~100까지 임의의 수 입력");
+        int num = Num.nextInt();
+        int sum = 0;
 
-        int i, sum=0;
-        for (i = 1; i <= 10; i++){
-            sum = sum + i;
+        for(int i=num; i<=100; i+=num){
+            sum += i;
         }
-        System.out.println("1부터 10까지의 합은 " + hap + " 입니다");
+        System.out.println("1~100사이의 " + num + "의 배수의 합은 = "+ sum);
+        sum = 0;
+        for(int i=num; i<=100; i*=num){
+            sum += i;
+        }
+        System.out.println("1~100사이의 " + num + "의 거듭제곱의 합은 = " + sum);
 
-        int result = ((sum>40) ? 200 : 0);
-        System.out.println(result);
+        int sum1=0, i=1;
+        while(i<100){
+            if (i%6 != 0){
+                i++;
+                continue;
+            }
+            sum1 += i;
+            i++;
+        }
+        System.out.println("1부터 100까지 6의 배수의 합은? " + sum1);
+
+        int sum2 =0; i=1;
+        for(i=6; i<100; i+=6){
+            sum2 += i;
+        }
+        System.out.println("1부터 100까지 6의 배수의 합은? " + sum1);
     }
 }
