@@ -12,5 +12,6 @@ public class Testfile2 {
         System.out.println("백원주화 : " + money % 500 / 100);
         System.out.println("십원주화 : " + money % 100 / 10);
         System.out.println("일원주화 : " + money % 10 / 1);
+        System.out.println("끝났습니다");
     }
 }
