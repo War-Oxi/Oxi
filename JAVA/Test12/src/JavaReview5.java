@@ -1,7 +1,6 @@
-package chap02;
 import java.util.Scanner;
 
-public class JavaReview3 {
+public class JavaReview5 {
     public static void main(String args[]){
         Scanner Input = new Scanner(System.in);
         System.out.print("1~99까지의 정수를 입력하세요 : ");

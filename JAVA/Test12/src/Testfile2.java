@@ -1,7 +1,6 @@
-package chap02;
 import java.util.Scanner;
 
-public class Testfile{
+public class Testfile2{
 	public static void main(String[] args) {
         int sum1 = 0;
         int sum2 = 0;

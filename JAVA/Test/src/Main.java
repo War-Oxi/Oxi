@@ -2,14 +2,17 @@ import java.util.Scanner;
 
 public class Main{ 
     public static void main(String args[]){
-        int count = 3;
-        int hap = 0;
-        switch(count++){
-            case 3 : hap = hap +count;
-            case 4 : hap = hap +count;
-            case 5 : hap = hap +count;
-            case 6 : hap = hap + count;
+        
+        for(int i=1; i<=9; i=i+3){
+            for(int j=1; j<=9; j++){
+                for(int k=1; k<i+3; k++ ){
+                    System.out.print(k + " * " + j + " = " + k*j + "\t");
+                }
+                System.out.println();
+            }
+            System.out.println("----------------------------------------");
         }
-        System.out.println(hap);
+        
+       
     }
 }

@@ -3,10 +3,9 @@
 	sum = ((sum>100) ? (sum=200) : (sum=0));
  */
 
-package chap02;
 import java.util.Scanner;
 
-public class JavaReview2 {
+public class JavaReview4 {
     public static void main(String args[]){
         Scanner Input = new Scanner(System.in);
         System.out.print("2자리수 정수 입력(10~99) : ");
