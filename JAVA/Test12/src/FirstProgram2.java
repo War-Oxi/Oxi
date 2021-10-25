@@ -1,21 +1,16 @@
 import java.util.Scanner;
 
 public class FirstProgram2 {
-	
+	static String o = "";
 	public static void main(String[] args) {
-		int sum =0;
-		for(int i = 10; sum <=100; i += 3){
-			sum += i;
+		block1: for(int i=1;i<10;i++){
+			System.out.print( i + " ");
+			block2: for(int j=i; j< 10;j++){
+				if(i*j>50)continue block1;
+			}
+			System.out.println();
 		}
-		System.out.println(sum);
-
-		int i=10;
-		sum = 0;
-
-		while (sum<100){
-			sum += i;
-			i += 3;
-		}
-		System.out.println(sum);
+		System.out.println();
+		block3:System.out.println("블럭3 수행");
 	}
 }
