@@ -4,26 +4,19 @@ import java.util.ArrayList;
 
 public class Main{
     public static void main(String args[]){
-        Scanner stdin = new Scanner(System.in);
-    	List<Integer> list_num = new ArrayList<>();
-        System.out.print("정수들을 입력 > ");
-        
-        int i=5;
-        while(true){
-            i = stdin.nextInt();
-            if (i<0)
-                break;
-            list_num.add(i);
+        String list[] = {"seoul","daejeon","daegu","kwangju","inchon","jeju","busan"};
+        System.out.println("원래의 배열");
+        for (String S : list)
+            System.out.print(S+", ");
+        System.out.println();
+        for(int i=0; i<list.length / 2; i++){
+            String temp = list[i];
+            list[i] = list[list.length - i -1];
+            list[list.length -i -1] = temp;
         }
-        
-        System.out.print("검색할 배수 입력 > ");
-        int mul = stdin.nextInt();
-        iteration:{
-            for(int j : list_num){
-                if(j % mul ==0)
-                System.out.print(j+" ");
-            }
-        }
+        System.out.println("역순으로 배열한 후");
+        for (String S : list)
+            System.out.print(S+", ");
     }
 }
 
