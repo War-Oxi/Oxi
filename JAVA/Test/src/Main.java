@@ -4,24 +4,56 @@ import java.util.ArrayList;
 
 public class Main{
     public static void main(String args[]){
-        String list[] = {"seoul","daejeon","daegu","kwangju","inchon","jeju","busan"};
-        System.out.println("원래의 배열");
-        for (String S : list)
-            System.out.print(S+", ");
-        System.out.println();
-        for(int i=0; i<list.length / 2; i++){
-            String temp = list[i];
-            list[i] = list[list.length - i -1];
-            list[list.length -i -1] = temp;
+        Scanner Oxi = new Scanner(System.in);
+        int array_list[] = new int[9];
+        for(int i=0; i<array_list.length; i++){
+            array_list[i] = Oxi.nextInt();
         }
-        System.out.println("역순으로 배열한 후");
-        for (String S : list)
-            System.out.print(S+", ");
+        int max = array_list[0];
+        int count = 1;
+        for(int j: array_list){
+            if(j>=max)
+                max = j;
+        }
+        for(int j: array_list){
+            if(j==max)
+                break;
+            count++;
+        }
+        System.out.println(max);
+        System.out.println(count);
     }
 }
 
-
 /*
-첫째 줄에 정수의 개수 N (1 ≤ N ≤ 1,000,000)이 주어진다. 
-둘째 줄에는 N개의 정수를 공백으로 구분해서 주어진다. 모든 정수는 -1,000,000보다 크거나 같고, 1,000,000보다 작거나 같은 정수이다.
+9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오.
+
+예를 들어, 서로 다른 9개의 자연수
+
+3, 29, 38, 12, 57, 74, 40, 85, 61
+
+이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
 */
+
+/*       
+Scanner stdin = new Scanner(System.in);
+List<Integer> list_num = new ArrayList<>();
+System.out.print("정수들을 입력 > ");
+
+int i=5;
+while(true){
+    i = stdin.nextInt();
+    if (i<0)
+        break;
+    list_num.add(i);
+}
+
+System.out.print("검색할 배수 입력 > ");
+int mul = stdin.nextInt();
+iteration:{
+    for(int j : list_num){
+        if(j % mul ==0)
+        System.out.print(j+" ");
+    }
+}
+        */
