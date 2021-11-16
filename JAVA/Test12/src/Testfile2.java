@@ -14,6 +14,7 @@ public class Testfile2{
         System.out.println("1~100사이의 " + a +"의 배수의 합 : " + sum1);
         System.out.println("1~100사이의 " + a +"의 거듭제곱의 합 : " + sum2);
         
+        stdin.close();
         int sum3=0, i=1;  //3번 문제
         while (i<100) {
             if (i%6 != 0) {

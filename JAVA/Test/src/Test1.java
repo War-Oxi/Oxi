@@ -19,5 +19,6 @@ public class Test1{
         }
         
         System.out.println(min+" "+max);
+        stdin.close();
     }
 }

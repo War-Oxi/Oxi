@@ -21,5 +21,6 @@ public class JavaReview4 {
         else{
             System.out.println("잘못된 범위의 값인 num1을 입력하셨습니다.");
         }
+        Input.close();
     }
 }

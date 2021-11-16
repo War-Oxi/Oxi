@@ -1,59 +1,29 @@
 import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
 
 public class Main{
     public static void main(String args[]){
-        Scanner Oxi = new Scanner(System.in);
-        int array_list[] = new int[9];
-        for(int i=0; i<array_list.length; i++){
-            array_list[i] = Oxi.nextInt();
+        Scanner stdin = new Scanner(System.in);
+        int subject_num = stdin.nextInt();
+        double max_score=0;
+        double sum=0;
+        double score[] = new double[subject_num];
+        for(int i=0; i<score.length; i++){
+            score[i] = stdin.nextInt();
+            if(score[i]>max_score)
+                max_score = score[i];
         }
-        int max = array_list[0];
-        int count = 1;
-        for(int j: array_list){
-            if(j>=max)
-                max = j;
+        for(int j=0; j<score.length; j++){
+            score[j] = score[j]/max_score*100;
+            sum = sum + score[j];
         }
-        for(int j: array_list){
-            if(j==max)
-                break;
-            count++;
-        }
-        System.out.println(max);
-        System.out.println(count);
+        System.out.println(sum/subject_num);
     }
 }
 
 /*
-9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오.
+준이는 기말고사를 망쳤다. 세준이는 점수를 조작해서 집에 가져가기로 했다. 일단 세준이는 자기 점수 중에 최댓값을 골랐다. 이 값을 M이라고 한다. 그리고 나서 모든 점수를 점수/M*100으로 고쳤다.
 
-예를 들어, 서로 다른 9개의 자연수
+예를 들어, 세준이의 최고점이 70이고, 수학점수가 50이었으면 수학점수는 50/70*100이 되어 71.43점이 된다.
 
-3, 29, 38, 12, 57, 74, 40, 85, 61
-
-이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
+세준이의 성적을 위의 방법대로 새로 계산했을 때, 새로운 평균을 구하는 프로그램을 작성하시오.
 */
-
-/*       
-Scanner stdin = new Scanner(System.in);
-List<Integer> list_num = new ArrayList<>();
-System.out.print("정수들을 입력 > ");
-
-int i=5;
-while(true){
-    i = stdin.nextInt();
-    if (i<0)
-        break;
-    list_num.add(i);
-}
-
-System.out.print("검색할 배수 입력 > ");
-int mul = stdin.nextInt();
-iteration:{
-    for(int j : list_num){
-        if(j % mul ==0)
-        System.out.print(j+" ");
-    }
-}
-        */

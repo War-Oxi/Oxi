@@ -16,5 +16,6 @@ public class JavaReview5 {
         else{
             System.out.println("잘못된 값 입력했다.");
         }
+        Input.close();
     }
 }
