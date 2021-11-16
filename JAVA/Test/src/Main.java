@@ -4,29 +4,28 @@ public class Main{
     public static void main(String args[]){
         Scanner stdin = new Scanner(System.in);
 
-        String arr[] = new String[stdin.nextInt()];
-        
-        for(int i=0; i<arr.length; i++){
-            arr[i] = stdin.next();
-        }
+        int repeat_number = stdin.nextInt();
 
-        stdin.close();
+        for(int i=0; i<repeat_number; i++){
+            Double score[] = new Double[stdin.nextInt()];
+            Double sum = 0.0;
+            Double count=0.0;
 
-        for(int i=0; i<arr.length; i++){
-            int count = 0;
-            int sum = 0;
+            for(int j=0; j<score.length; j++){
+                score[j] = stdin.nextDouble();
+                sum += score[j];
+            }
+            
+            Double avg;
+            avg = sum/score.length;
 
-            for(int j=0; j<arr[i].length(); j++){
-                if(arr[i].charAt(j) == 'O'){
+            for(int k=0; k<score.length; k++){
+                if(score[k] > avg){
                     count++;
                 }
-                else{
-                    count = 0;
-                }
-                sum += count;
             }
-            System.out.println(sum);
-        }
+            System.out.printf("%.3f%%\n",(count/score.length)*100);
+        }    
     }
 }
 
