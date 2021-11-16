@@ -39,5 +39,6 @@ public class number{
             }
         }
         System.out.println("모든 테스트가 끝이 났습니다.");
+        stdln.close();
     }
 }

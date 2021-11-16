@@ -24,5 +24,6 @@ public class ArrayList_1{
                 System.out.print(j+" ");
             }
         }
+        stdin.close();
     }
 }

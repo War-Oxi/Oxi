@@ -3,27 +3,37 @@ import java.util.Scanner;
 public class Main{
     public static void main(String args[]){
         Scanner stdin = new Scanner(System.in);
-        int subject_num = stdin.nextInt();
-        double max_score=0;
-        double sum=0;
-        double score[] = new double[subject_num];
-        for(int i=0; i<score.length; i++){
-            score[i] = stdin.nextInt();
-            if(score[i]>max_score)
-                max_score = score[i];
+
+        String arr[] = new String[stdin.nextInt()];
+        
+        for(int i=0; i<arr.length; i++){
+            arr[i] = stdin.next();
         }
-        for(int j=0; j<score.length; j++){
-            score[j] = score[j]/max_score*100;
-            sum = sum + score[j];
+
+        stdin.close();
+
+        for(int i=0; i<arr.length; i++){
+            int count = 0;
+            int sum = 0;
+
+            for(int j=0; j<arr[i].length(); j++){
+                if(arr[i].charAt(j) == 'O'){
+                    count++;
+                }
+                else{
+                    count = 0;
+                }
+                sum += count;
+            }
+            System.out.println(sum);
         }
-        System.out.println(sum/subject_num);
     }
 }
 
-/*
-준이는 기말고사를 망쳤다. 세준이는 점수를 조작해서 집에 가져가기로 했다. 일단 세준이는 자기 점수 중에 최댓값을 골랐다. 이 값을 M이라고 한다. 그리고 나서 모든 점수를 점수/M*100으로 고쳤다.
+/**
+ ** "대학생 새내기들의 90%는 자신이 반에서 평균은 넘는다고 생각한다. 당신은 그들에게 슬픈 진실을 알려줘야 한다.
 
-예를 들어, 세준이의 최고점이 70이고, 수학점수가 50이었으면 수학점수는 50/70*100이 되어 71.43점이 된다.
-
-세준이의 성적을 위의 방법대로 새로 계산했을 때, 새로운 평균을 구하는 프로그램을 작성하시오.
+ *! 첫째 줄에는 테스트 케이스의 개수 C가 주어진다. 
+ 
+ *! 둘째 줄부터 각 테스트 케이스마다 학생의 수 N(1 ≤ N ≤ 1000, N은 정수)이 첫 수로 주어지고, 이어서 N명의 점수가 주어진다. 점수는 0보다 크거나 같고, 100보다 작거나 같은 정수이다.
 */
