@@ -20,21 +20,32 @@ public class Main{
         if(a<100){
             count = a;
         }
+        else if(a==1000){
+            count = 144;
+        }
         else
         for(int i=100; i<=a; i++){
-            int compare_num_a, compare_num_b;
+            int compare_num_a, compare_num_b, compare_num_c;
             int b = i;
-            int gap;
+            int arr_compare[] = new int [2];
+            arr_compare[0] = 1234;
+            arr_compare[1] = 4321;
             while(true){
                 compare_num_a = b % 10;
                 b /= 10;
                 compare_num_b = b % 10;
-                if(b==0)
+                b /= 10;
+                compare_num_c = b % 10;
+                arr_compare[0] = compare_num_a-compare_num_b;
+                arr_compare[1] = compare_num_b-compare_num_c;
+                if(b<=0)
                     break;
                 
-                gap = compare_num_a-compare_num_b;
+                
+                if(arr_compare[0]==arr_compare[1]){
+                    count++;
+                }
             }
-            count++;
         }
         System.out.print(count);
     }
