@@ -18,7 +18,7 @@ class Ct{
 
 public class Test1{
     public static void main(String args[]){
-        Ct cto = new Ct();
+        Ct cto = new Ct(3, 7);
         cto = new Ct(4);
         cto = new Ct(4, 4.15);
         cto = new Ct(6.0);
