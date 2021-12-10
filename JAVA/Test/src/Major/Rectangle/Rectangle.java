@@ -55,7 +55,6 @@ public class Rectangle {
     }          
     
     public static Rectangle getIntersection(Rectangle r1, Rectangle r2) {
-        
         return r1.getIntersection(r2);
     }
     //         inter = Rectangle.getIntersection(r1, r2);   이 되도록 메소드를 구현하시오.
