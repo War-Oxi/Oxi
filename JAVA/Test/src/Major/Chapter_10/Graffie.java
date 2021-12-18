@@ -1,10 +1,8 @@
 package Major.Chapter_10;
 
 public class Graffie extends Animal {
-    String name;
     public Graffie(int h, int d, String name)   {
-        super(h,d);
-        this.name  = name;
+        super(h,d,name);
     }
 
    @Override 

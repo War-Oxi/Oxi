@@ -17,13 +17,14 @@ public class Test {
 public class Test{
     public static void main(String args[]){
         Scanner Input = new Scanner(System.in);
-        Animal Enemy_tiger = new Tiger(100, 15, "Tiger(Computer)");
+        Animal Enemy = new Tiger(100, 15, "Tiger(Computer)");
         System.out.print("생성할 객체 입력 : (1.Shark 2.Tiger 3.Graffie)");
         int animal_choice = Input.nextInt();
         System.out.println("생성할 객체의 체력,데미지,이름 입력 (공백으로 구분)");
         int hp = Input.nextInt(), damage=Input.nextInt();
-        String name = Input.next(); 
+        String name = Input.next();
         Animal Me;
+        Animal Winner;
         if(animal_choice == 1){
             Me = new Shark(hp, damage, name);
         }
@@ -47,29 +48,31 @@ public class Test{
             System.out.println("c 입력 : 컴퓨터가 객체 공격 u 입력 : 내가 컴퓨터를 공격 ");
             choice = Input.next().charAt(0);
             if(choice == 'c'){
-                Enemy_tiger.attack(Me);
+                Enemy.attack(Me);
             }
             else if(choice == 'u'){
-                Me.attack(Enemy_tiger);
+                Me.attack(Enemy);
             }
             else{
                 System.out.println("잘못된 값 입력");
                 continue;
             }
             Me.show();
-            Enemy_tiger.show();
+            Enemy.show();
 
-            if(Me.hp <= 0 || Enemy_tiger.hp<=0){
+            if(Me.hp <= 0 || Enemy.hp<=0){
                 if(Me.hp <= 0){
                     Me.hp = 0;
+                    Winner=Enemy; 
                 }
                 else{
-                    Enemy_tiger.hp = 0;
+                    Enemy.hp = 0;
+                    Winner=Me;
                 }
                 System.out.println("결투가 끝났습니다.");
+                System.out.println("==========================================\n승자 : " + Winner.name);
                 Me.show();
-                Enemy_tiger.show();
-                System.out.print("프로그램을 종료합니다.");
+                Enemy.show();
                 return;
             }
         }
