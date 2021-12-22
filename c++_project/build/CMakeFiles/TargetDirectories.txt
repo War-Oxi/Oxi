@@ -1,5 +1,0 @@
-D:/ALL File/Tae Ji/University/VSCode/c++_project/build/CMakeFiles/c++_project.dir
-D:/ALL File/Tae Ji/University/VSCode/c++_project/build/CMakeFiles/package.dir
-D:/ALL File/Tae Ji/University/VSCode/c++_project/build/CMakeFiles/package_source.dir
-D:/ALL File/Tae Ji/University/VSCode/c++_project/build/CMakeFiles/edit_cache.dir
-D:/ALL File/Tae Ji/University/VSCode/c++_project/build/CMakeFiles/rebuild_cache.dir
