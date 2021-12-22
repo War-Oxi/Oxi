@@ -38,11 +38,7 @@ public class Test{
             System.out.println("잘못된 값 입력");
             return;
         }
-        /*
-        2. while문과 if문 사용 (HP가 0이 될 때 까지)
-        1. 공격할때마다 두 객체의 체력 출력
-        3. HP가 0이 되면 승리한 개체를 출력하고 프로그램 종료
-        */
+
         char choice;
         while(true){
             System.out.println("c 입력 : 컴퓨터가 객체 공격 u 입력 : 내가 컴퓨터를 공격 ");
