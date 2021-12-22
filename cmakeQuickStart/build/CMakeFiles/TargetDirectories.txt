@@ -1,5 +1,0 @@
-D:/ALL File/Tae Ji/University/VSCode/cmakeQuickStart/build/CMakeFiles/rebuild_cache.dir
-D:/ALL File/Tae Ji/University/VSCode/cmakeQuickStart/build/CMakeFiles/cmakeQuickStart.dir
-D:/ALL File/Tae Ji/University/VSCode/cmakeQuickStart/build/CMakeFiles/package.dir
-D:/ALL File/Tae Ji/University/VSCode/cmakeQuickStart/build/CMakeFiles/package_source.dir
-D:/ALL File/Tae Ji/University/VSCode/cmakeQuickStart/build/CMakeFiles/edit_cache.dir

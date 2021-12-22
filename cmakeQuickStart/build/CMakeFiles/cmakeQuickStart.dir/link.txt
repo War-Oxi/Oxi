@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmakeQuickStart.dir/objects.a
-C:\mingw64\bin\ar.exe cr CMakeFiles\cmakeQuickStart.dir/objects.a @CMakeFiles\cmakeQuickStart.dir\objects1.rsp
-C:\mingw64\bin\x86_64-w64-mingw32-g++.exe -g   -Wl,--whole-archive CMakeFiles\cmakeQuickStart.dir/objects.a -Wl,--no-whole-archive  -o cmakeQuickStart.exe -Wl,--out-implib,libcmakeQuickStart.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmakeQuickStart.dir\linklibs.rsp
