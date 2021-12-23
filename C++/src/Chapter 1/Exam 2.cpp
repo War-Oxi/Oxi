@@ -19,7 +19,7 @@ void swap(char *A, char *B)
 void swap(double *Num1, double *Num2)
 {
     double Temp;
-    Temp = *Num1;
+    Temp = *Num1; 
     *Num1 = *Num2;
     *Num2 = Temp;
 }
