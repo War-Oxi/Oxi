@@ -1,6 +1,5 @@
 {
-    "files.exclude": {
-        "**/*.dSYM": true,
-        "**/*.exe": true
+    "files.associations": {
+        "ostream": "cpp"
     }
 }
