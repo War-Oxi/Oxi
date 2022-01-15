@@ -1,33 +1,61 @@
 #include <iostream>
 using namespace std;
 
-typedef struct __Point{
-    int xpos;
-    int ypos;
-} Point;
+#define ID_LEN 20
+#define MAX_SPD 200
+#define FUEL_STEP 2
+#define ACC_STEP 10
+#define BRK_STEP 10
 
-Point& PntAdder(const Point &p1, const Point &p2){
-    Point *pt = new Point;
-    pt->xpos = p1.xpos + p2.xpos;
-    pt->ypos = p1.ypos + p2.ypos;
-    return *pt;
+struct Car
+{
+	char gamerID[ID_LEN];	// 소유자ID
+	int fuelGauge;		// 연료량
+	int curSpeed;		// 현재속도
+};
+
+void ShowCarState(const Car &car)
+{
+    cout<<"소유자ID: "<<car.gamerID<<endl;
+    cout<<"연료량: "<<car.fuelGauge<<"%"<<endl;
+    cout<<"현재속도: "<<car.curSpeed<<"km/s"<<endl<<endl;
+}
+
+void Accel(Car &car)
+{
+    if(car.fuelGauge<=0)
+        return;
+    else
+        car.fuelGauge-=FUEL_STEP;
+
+    if(car.curSpeed+ACC_STEP>=MAX_SPD)
+    {
+        car.curSpeed=MAX_SPD;
+        return;
+    }
+
+    car.curSpeed+=ACC_STEP;
+}
+void Break(Car &car)
+{
+    if(car.curSpeed<BRK_STEP)
+    {
+        car.curSpeed=0;
+        return;
+    }
+
+    car.curSpeed-=BRK_STEP;
 }
 
 int main(void){
-    Point *p1 = new Point;
-    Point *p2 = new Point;
-    p1->xpos = 2;
-    p1->ypos = 4;
-
-    p2->xpos = 12;
-    p2->ypos = 14;
-
-    Point *p3 = &PntAdder(*p1, *p2);
-    cout<<p3->xpos<<','<<p3->ypos;
+    Car run99={"run99", 100, 0};
     
-    delete p1;
-    delete p2;
-    delete p3;
+    ShowCarState(run99);
+    Accel(run99);
+    Accel(run99);
+    ShowCarState(run99);
+    Break(run99);
+    ShowCarState(run99);
 
     return 0;
 }
