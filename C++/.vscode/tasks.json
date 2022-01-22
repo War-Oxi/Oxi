@@ -26,6 +26,7 @@
             "command": "clang++",
             "args": [
                 "-g",
+                //"${fileDirname}/**.cpp", //다중 파일 실행시
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
