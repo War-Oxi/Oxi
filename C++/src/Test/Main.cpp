@@ -1,77 +1,62 @@
 #include <iostream>
-#include <cstring>
 using namespace std;
 
-namespace CAR_CONST
-{
-	enum
-	{
-		ID_LEN		=20,
-		MAX_SPD		=200,
-		FUEL_STEP	=2,
-		ACC_STEP	=10,
-		BRK_STEP	=10
-	};
-}
-
-class Car
-{
+class Calculator{
 private:
-	char gamerID[CAR_CONST::ID_LEN];	
-	int fuelGauge;		
-	int curSpeed;		
-public:
-	void InitMembers(char * ID, int fuel);
-	void ShowCarState();
-	void Accel();
-	void Break();
+	int numOfAdd;
+	int numOfMin;
+	int numOfMul;
+	int numOfDiv;
+public :
+	void Init();
+	double Add(double num1, double num2);
+	double Min(double num1, double num2);
+	double Mul(double num1, double num2);
+	double Div(double num1, double num2);
+	void ShowOpCount();
 };
 
-void Car::InitMembers(char * ID, int fuel)
-{
-	strcpy(gamerID, ID);
-	fuelGauge=fuel;
-	curSpeed=0;
-};
-void Car::ShowCarState()
-{
-	cout<<"ID아이디: "<<gamerID<<endl;
-	cout<<"Fuel Gauge: "<<fuelGauge<<"%"<<endl;
-	cout<<"Cur Speed: "<<curSpeed<<"km/s"<<endl<<endl;
-}
-void Car::Accel()
-{
-	if(fuelGauge<=0)
-		return;
-	else
-		fuelGauge-=CAR_CONST::FUEL_STEP;
-
-	if((curSpeed+CAR_CONST::ACC_STEP)>=CAR_CONST::MAX_SPD)
-	{
-		curSpeed=CAR_CONST::MAX_SPD;
-		return;
-	}
-	curSpeed+=CAR_CONST::ACC_STEP;
-}
-void Car::Break()
-{
-	if(curSpeed<CAR_CONST::BRK_STEP)
-	{
-		curSpeed=0;
-		return;
-	}
-	curSpeed-=CAR_CONST::BRK_STEP;
+void Calculator::Init(){
+	numOfAdd=0;
+	numOfMin=0;
+	numOfMul=0;
+	numOfDiv=0;
 }
 
-int main(void)
-{
-	Car run99;
-	run99.InitMembers("run99", 100);
-	run99.Accel();
-	run99.Accel();
-	run99.Accel();
-	run99.ShowCarState();
-	run99.Break();
-	run99.ShowCarState();
+double Calculator::Add(double num1, double num2){
+	numOfAdd++;
+	return num1 + num2;
+}
+
+double Calculator::Min(double num1, double num2){
+	numOfMin++;
+	return num1 - num2;
+}
+
+double Calculator::Mul(double num1, double num2){
+	numOfMul++;
+	return num1 * num2;
+}
+
+double Calculator::Div(double num1, double num2){
+	numOfDiv++;
+	return num1 / num2;
+}
+
+void Calculator::ShowOpCount(){
+	cout<<"덧셈 : "<<numOfAdd<<endl;
+	cout<<"뺄셈 : "<<numOfMin<<endl;
+	cout<<"곱셈 : "<<numOfMul<<endl;
+	cout<<"나눗셈 : "<<numOfDiv<<endl;
+}
+
+int main(void){
+	Calculator cal;
+	cal.Init();
+	cout<<"3.2 + 2.4 = "<<cal.Add(3.2, 2.4)<<endl;
+	cout<<"3.5 / 1.7 = "<<cal.Div(3.5, 1.7)<<endl;
+	cout<<"2.2 - 1.5 = "<<cal.Min(2.2, 1.5)<<endl;
+	cout<<"4.9 / 1.2 = "<<cal.Div(4.9, 1.2)<<endl;
+	cal.ShowOpCount();
 	return 0;
 }
