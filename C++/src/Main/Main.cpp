@@ -2,6 +2,7 @@
 using namespace std;
 
 class FruitSeller{
+
 private:
 	int APPLE_PRICE;
 	int numOfApples;
@@ -19,6 +20,7 @@ public:
 		myMoney += money;
 		return num;
 	}
+
 	void ShowSalesResult(){
 		cout<<"남은 사과 : "<<numOfApples<<endl;
 		cout<<"판매 수익 : "<<myMoney<<endl;
@@ -54,5 +56,6 @@ int main(void){
 	seller.ShowSalesResult();
 	cout<<"과일 구매자의 현황"<<endl;
 	buyer.ShowBuyResult();
+
 	return 0;
 }
