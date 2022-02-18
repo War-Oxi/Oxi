@@ -1,3 +1,3 @@
-/Users/kimtaeji/git/Oxi/C++/src/Test/Main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/kimtaeji/git/Oxi/C++/src/Test/Main/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/kimtaeji/git/Oxi/C++/src/Test/Main/cmake-build-debug/CMakeFiles/Main.dir
+D:/AllFile/TaeJi/University/VSCode/C++/src/Main/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/AllFile/TaeJi/University/VSCode/C++/src/Main/cmake-build-debug/CMakeFiles/Main.dir
+D:/AllFile/TaeJi/University/VSCode/C++/src/Main/cmake-build-debug/CMakeFiles/rebuild_cache.dir

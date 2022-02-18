@@ -20,7 +20,6 @@ public:
 		myMoney += money;
 		return num;
 	}
-
 	void ShowSalesResult(){
 		cout<<"남은 사과 : "<<numOfApples<<endl;
 		cout<<"판매 수익 : "<<myMoney<<endl;
