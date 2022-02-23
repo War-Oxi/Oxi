@@ -1,60 +1,33 @@
 #include <iostream>
+#include "cstring"
 using namespace std;
 
-class FruitSeller{
+int main(){
+    char *name1 = "i am happy";
+    char *name2 = ". kukuruppingppong";
+    char name3[50];
 
-private:
-	int APPLE_PRICE;
-	int numOfApples;
-	int myMoney;
+    cout<<name1<<endl<<"문자열의 길이는? "<<strlen(name1)<<endl;
 
-public:
-	void InitMembers(int price, int num, int money){
-		APPLE_PRICE = price;
-		numOfApples = num;
-		myMoney = money;
-	}
-	int SaleApples(int money){
-		int num=money/APPLE_PRICE;
-		numOfApples-=num;
-		myMoney += money;
-		return num;
-	}
-	void ShowSalesResult(){
-		cout<<"남은 사과 : "<<numOfApples<<endl;
-		cout<<"판매 수익 : "<<myMoney<<endl;
-	}
-};
+    strcat(name3, name1);
+    cout<<name3<<endl;
+    strcpy(name3,name2);
+    cout<<name3<<endl;
 
-class FruitBuyer{
-	int myMoney;
-	int numOfApples;
-public:
-	void InitMembers(int money){
-		myMoney=money;
-		numOfApples=0;
-	}
-	void BuyApples(FruitSeller &seller, int money){
-		numOfApples+=seller.SaleApples(money);
-		myMoney-=money;
-	}
-	void ShowBuyResult(){
-		cout<<"현재 잔액: "<<myMoney<<endl;
-		cout<<"사과 개수: "<<numOfApples<<endl<<endl;
-	}
-};
+    if (strcmp(name1, name2)==0){
+        cout<<"문자열이 같다."<<endl;
+    }
+    else{
+        cout<<"문자열이 다르다."<<endl;
+    }
 
-int main(void){
-	FruitSeller seller;
-	seller.InitMembers(1000, 20, 0);
-	FruitBuyer buyer;
-	buyer.InitMembers(5000);
-	buyer.BuyApples(seller, 2000);
+    char name5[50];
+    const char *name4;
+    name4 = "123123456";
+    name5[1] = 1;
 
-	cout<<"과일 판매자의 현황"<<endl;
-	seller.ShowSalesResult();
-	cout<<"과일 구매자의 현황"<<endl;
-	buyer.ShowBuyResult();
+    cout<<name4<<name5<<endl;
 
-	return 0;
+
+    return 0;
 }

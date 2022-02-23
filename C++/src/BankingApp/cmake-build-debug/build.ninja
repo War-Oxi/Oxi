@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/kimtaeji/git/Oxi/C++/src/Test/BankingApp/cmake-build-debug/
+cmake_ninja_workdir = /Users/kimtaeji/Oxi/C++/src/BankingApp/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/kimtaeji/git/Oxi/C++/src/Test/BankingApp/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kimtaeji/git/Oxi/C++/src/Test/BankingApp -B/Users/kimtaeji/git/Oxi/C++/src/Test/BankingApp/cmake-build-debug
+  COMMAND = cd /Users/kimtaeji/Oxi/C++/src/BankingApp/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kimtaeji/Oxi/C++/src/BankingApp -B/Users/kimtaeji/Oxi/C++/src/BankingApp/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/kimtaeji/git/Oxi/C++/src/Test/BankingApp/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/kimtaeji/Oxi/C++/src/BankingApp/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -72,7 +72,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_BankingApp: phony || CMakeFiles/BankingApp.dir
 
-build CMakeFiles/BankingApp.dir/BankingApp.cpp.o: CXX_COMPILER__BankingApp_Debug /Users/kimtaeji/git/Oxi/C++/src/Test/BankingApp/BankingApp.cpp || cmake_object_order_depends_target_BankingApp
+build CMakeFiles/BankingApp.dir/BankingApp.cpp.o: CXX_COMPILER__BankingApp_Debug /Users/kimtaeji/Oxi/C++/src/BankingApp/BankingApp.cpp || cmake_object_order_depends_target_BankingApp
   DEP_FILE = CMakeFiles/BankingApp.dir/BankingApp.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/BankingApp.dir
@@ -106,7 +106,7 @@ build BankingApp: CXX_EXECUTABLE_LINKER__BankingApp_Debug CMakeFiles/BankingApp.
 # =============================================================================
 
 #############################################
-# Folder: /Users/kimtaeji/git/Oxi/C++/src/Test/BankingApp/cmake-build-debug
+# Folder: /Users/kimtaeji/Oxi/C++/src/BankingApp/cmake-build-debug
 
 build all: phony BankingApp
 
