@@ -1,33 +1,77 @@
 #include <iostream>
-#include "cstring"
+#include <cstring>
 using namespace std;
 
-int main(){
-    char *name1 = "i am happy";
-    char *name2 = ". kukuruppingppong";
-    char name3[50];
+namespace CAR_CONST
+{
+    enum
+    {
+        ID_LEN		=20,
+        MAX_SPD		=200,
+        FUEL_STEP	=2,
+        ACC_STEP	=10,
+        BRK_STEP	=10
+    };
+}
 
-    cout<<name1<<endl<<"문자열의 길이는? "<<strlen(name1)<<endl;
+class Car
+{
+private:
+    char gamerID[CAR_CONST::ID_LEN];
+    int fuelGauge;
+    int curSpeed;
+public:
+    void InitMembers(char * ID, int fuel);
+    void ShowCarState();
+    void Accel();
+    void Break();
+};
+void Car::InitMembers(char * ID, int fuel)
+{
+    strcpy(gamerID, ID);
+    fuelGauge=fuel;
+    curSpeed=0;
+};
+void Car::ShowCarState()
+{
+    cout<<"소유자ID: "<<gamerID<<endl;
+    cout<<"연료량: "<<fuelGauge<<"%"<<endl;
+    cout<<"현재속도: "<<curSpeed<<"km/s"<<endl<<endl;
+}
+void Car::Accel()
+{
+    if(fuelGauge<=0)
+        return;
+    else
+        fuelGauge-=CAR_CONST::FUEL_STEP;
 
-    strcat(name3, name1);
-    cout<<name3<<endl;
-    strcpy(name3,name2);
-    cout<<name3<<endl;
-
-    if (strcmp(name1, name2)==0){
-        cout<<"문자열이 같다."<<endl;
+    if((curSpeed+CAR_CONST::ACC_STEP)>=CAR_CONST::MAX_SPD)
+    {
+        curSpeed=CAR_CONST::MAX_SPD;
+        return;
     }
-    else{
-        cout<<"문자열이 다르다."<<endl;
+    curSpeed+=CAR_CONST::ACC_STEP;
+}
+void Car::Break()
+{
+    if(curSpeed<CAR_CONST::BRK_STEP)
+    {
+        curSpeed=0;
+        return;
     }
+    curSpeed-=CAR_CONST::BRK_STEP;
+}
 
-    char name5[50];
-    const char *name4;
-    name4 = "123123456";
-    name5[1] = 1;
-
-    cout<<name4<<name5<<endl;
-
+int main()
+{
+    Car run99;
+    run99.InitMembers("run99", 100);
+    run99.Accel();
+    run99.Accel();
+    run99.Accel();
+    run99.ShowCarState();
+    run99.Break();
+    run99.ShowCarState();
 
     return 0;
 }
