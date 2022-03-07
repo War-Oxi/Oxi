@@ -4,4 +4,4 @@ project(Main)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Main
-        Main.cpp)
+        Main.cpp MainSource.cpp Main_Header.h)
