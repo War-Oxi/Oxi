@@ -2,35 +2,42 @@
 // Created by Oxi on 2022-03-05 005.
 //
 
+#include <iostream>
 #include "Main_Header.h"
+using namespace std;
 
-void FruitSeller::InitMembers(int price, int num, int money){
-    apple_Price = price;
-    numOfApples = num;
-    myMoney = money;
-}
-int FruitSeller::SaleApples(int money) {
-    int num = money/apple_Price;
-    numOfApples -= num;
-    myMoney += money;
-    myMoney -= money%apple_Price;
-    return num;
-}
-void FruitSeller::ShowSalesResult() const {
-    cout<<"The remaining apples: "<<numOfApples<<endl;
-    cout<<"Profit from sales: "<<myMoney<<endl<<endl;
+bool Point::InitMembers(int xpos, int ypos) {
+    if(xpos<0 || ypos<0){
+        cout<<"Out of range value"<<endl;
+        return false;
+    }
+
+    x=xpos;
+    y=ypos;
+    return true;
 }
 
-void FruitBuyer::InitMembers(int money) {
-    myMoney = money;
-    numOfApples = 0;
+int Point::GetX() const {
+    return x;
 }
-void FruitBuyer::BuyApples(FruitSeller &seller, int money) {
-    int num = seller.SaleApples(money);
-    numOfApples += num;
-    myMoney -= num * seller.apple_Price;
+
+int Point::GetY() const {
+    return y;
 }
-void FruitBuyer::ShowBuyResult() const {
-    cout<<"The number of apples: "<<numOfApples<<endl;
-    cout<<"Current balance: "<<myMoney<<endl<<endl;
+
+bool Point::SetX(int xpos) {
+    if(0>xpos || xpos>100){
+        cout<<"Out of range value"<<endl;
+        return false;
+    }
+    x=xpos;
+    return true;
+}
+bool Point::SetY(int ypos) {
+    if(0>ypos || ypos>100){
+        cout<<"Out of range value"<<endl;
+        return false;
+    }
+    y=ypos;
+    return true;
 }

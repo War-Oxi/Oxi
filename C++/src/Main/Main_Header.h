@@ -5,31 +5,18 @@
 #ifndef MAIN_MAIN_HEADER_H
 #define MAIN_MAIN_HEADER_H
 
-using namespace std;
-#include <iostream>
 
-class FruitSeller{
+class Point{
 private:
-    int numOfApples;
-    int myMoney;
-
+    int x;
+    int y;
 public:
-    void InitMembers(int price, int num, int money);
-    int SaleApples(int money);
-    void ShowSalesResult() const;
-
-    int apple_Price;
+    bool InitMembers(int xpos, int ypos);
+    int GetX() const;
+    int GetY() const;
+    bool SetX(int xpos);
+    bool SetY(int ypos);
 };
 
-class FruitBuyer{
-private:
-    int myMoney;
-    int numOfApples;
-
-public:
-    void InitMembers(int money);
-    void BuyApples(FruitSeller &seller, int money);
-    void ShowBuyResult() const;
-};
 
 #endif //MAIN_MAIN_HEADER_H
