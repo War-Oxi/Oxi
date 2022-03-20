@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <module type="PYTHON_MODULE" version="4">
+=======
+<module type="CPP_MODULE" version="4">
+>>>>>>> e4d09996f4c61490d0b6a439c2464f5cfd729afe
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
