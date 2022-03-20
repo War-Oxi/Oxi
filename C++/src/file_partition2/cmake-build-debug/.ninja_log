@@ -1,0 +1,5 @@
+# ninja log v5
+0	295	6668876890206865	CMakeFiles/file_partition2.dir/Car.cpp.obj	59e2eacd201b2d6c
+3	52	6668876887764815	CMakeFiles/file_partition2.dir/RacingMain.cpp.obj	63f0fe3f05d78afb
+297	383	6668876891037568	file_partition2.exe	f678037ced14022b
+16	252	6680054068909179	build.ninja	40c4153f1df5383c
