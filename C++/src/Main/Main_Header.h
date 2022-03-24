@@ -11,7 +11,11 @@ private:
     int x;
     int y;
 public:
-    bool InitMembers(int xpos, int ypos);
+    //bool InitMembers(int xpos, int ypos);
+    Point(int xpos, int ypos):x(xpos), y(ypos){};
+
+    Point();
+
     int GetX() const;
     int GetY() const;
     bool SetX(int xpos);

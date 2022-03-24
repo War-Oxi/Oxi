@@ -4,7 +4,7 @@
 #include <iostream>
 #include "Main_Header2.h"
 using namespace std;
-
+/*
 bool Rectangle::InitMembers(const Point &ul, const Point &lr)
 {
     if(ul.GetX()>lr.GetX() || ul.GetY()>lr.GetY())
@@ -17,6 +17,9 @@ bool Rectangle::InitMembers(const Point &ul, const Point &lr)
     lowRight=lr;
     return true;
 }
+ */
+
+
 
 void Rectangle::ShowRecInfo() const
 {

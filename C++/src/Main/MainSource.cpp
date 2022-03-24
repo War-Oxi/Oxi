@@ -5,7 +5,7 @@
 #include <iostream>
 #include "Main_Header.h"
 using namespace std;
-
+/*
 bool Point::InitMembers(int xpos, int ypos) {
     if(xpos<0 || ypos<0){
         cout<<"Out of range value"<<endl;
@@ -16,6 +16,8 @@ bool Point::InitMembers(int xpos, int ypos) {
     y=ypos;
     return true;
 }
+ */
+
 
 int Point::GetX() const {
     return x;
@@ -41,3 +43,5 @@ bool Point::SetY(int ypos) {
     y=ypos;
     return true;
 }
+
+Point::Point() {}

@@ -1,36 +1,33 @@
 #include "iostream"
+#include "cstring"
 using namespace std;
 
-class SimpleClass{
+class Person{
 private:
-    int num1;
-    int num2;
+    char * name;
+    int age;
 public:
-    SimpleClass(){
-        num1=0;
-        num2=0;
+    Person(char * myname, int myage){
+        int len = strlen(myname)+1;
+        name = new char[len];
+        strcpy(name, myname);
+        age=myage;
     }
-    SimpleClass(int n){
-        num1=n;
-        num2=0;
+    void ShowPersonInfo() const{
+        cout<<"name: "<<name<<endl;
+        cout<<"age: "<<age<<endl;
     }
-    SimpleClass(int n1, int n2){
-        num1=n1;
-        num2=n2;
-    }
-    void ShowData() const{
-        cout<<num1<<' '<<num2<<endl;
+    ~Person(){
+        delete []name;
+        cout<<"called destructor!"<<endl;
     }
 };
 
 int main(){
-    SimpleClass sc1;
-    sc1.ShowData();
+    Person man1("Lee dong woo", 29);
+    Person man2("Jang dong gun", 41);
+    man1.ShowPersonInfo();
+    man2.ShowPersonInfo();
 
-    SimpleClass sc2(100);
-    sc2.ShowData();
-
-    SimpleClass sc3(100, 200);
-    sc3.ShowData();
     return 0;
 }

@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/kimtaeji/Oxi/C++/src/Main/cmake-build-debug/
+cmake_ninja_workdir = /Users/kimtaeji/Code/C++/src/Main/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/kimtaeji/Oxi/C++/src/Main/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kimtaeji/Oxi/C++/src/Main -B/Users/kimtaeji/Oxi/C++/src/Main/cmake-build-debug
+  COMMAND = cd /Users/kimtaeji/Code/C++/src/Main/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kimtaeji/Code/C++/src/Main -B/Users/kimtaeji/Code/C++/src/Main/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/kimtaeji/Oxi/C++/src/Main/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/kimtaeji/Code/C++/src/Main/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -72,8 +72,24 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_Main: phony || CMakeFiles/Main.dir
 
-build CMakeFiles/Main.dir/Main.cpp.o: CXX_COMPILER__Main_Debug /Users/kimtaeji/Oxi/C++/src/Main/Main.cpp || cmake_object_order_depends_target_Main
+build CMakeFiles/Main.dir/Main.cpp.o: CXX_COMPILER__Main_Debug /Users/kimtaeji/Code/C++/src/Main/Main.cpp || cmake_object_order_depends_target_Main
   DEP_FILE = CMakeFiles/Main.dir/Main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Main.dir
+  OBJECT_FILE_DIR = CMakeFiles/Main.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Main.dir/
+  TARGET_PDB = Main.pdb
+
+build CMakeFiles/Main.dir/MainSource.cpp.o: CXX_COMPILER__Main_Debug /Users/kimtaeji/Code/C++/src/Main/MainSource.cpp || cmake_object_order_depends_target_Main
+  DEP_FILE = CMakeFiles/Main.dir/MainSource.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Main.dir
+  OBJECT_FILE_DIR = CMakeFiles/Main.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Main.dir/
+  TARGET_PDB = Main.pdb
+
+build CMakeFiles/Main.dir/MainSourece2.cpp.o: CXX_COMPILER__Main_Debug /Users/kimtaeji/Code/C++/src/Main/MainSourece2.cpp || cmake_object_order_depends_target_Main
+  DEP_FILE = CMakeFiles/Main.dir/MainSourece2.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/Main.dir
   OBJECT_FILE_DIR = CMakeFiles/Main.dir
@@ -88,7 +104,7 @@ build CMakeFiles/Main.dir/Main.cpp.o: CXX_COMPILER__Main_Debug /Users/kimtaeji/O
 #############################################
 # Link the executable Main
 
-build Main: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles/Main.dir/Main.cpp.o
+build Main: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles/Main.dir/Main.cpp.o CMakeFiles/Main.dir/MainSource.cpp.o CMakeFiles/Main.dir/MainSourece2.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk
   OBJECT_DIR = CMakeFiles/Main.dir
   POST_BUILD = :
@@ -106,7 +122,7 @@ build Main: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles/Main.dir/Main.cpp.o
 # =============================================================================
 
 #############################################
-# Folder: /Users/kimtaeji/Oxi/C++/src/Main/cmake-build-debug
+# Folder: /Users/kimtaeji/Code/C++/src/Main/cmake-build-debug
 
 build all: phony Main
 

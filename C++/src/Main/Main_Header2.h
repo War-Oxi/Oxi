@@ -14,7 +14,8 @@ private:
     Point lowRight;
 
 public:
-    bool InitMembers(const Point &ul, const Point &lr);
+    //bool InitMembers(const Point &ul, const Point &lr);
+    Rectangle(const Point &ul, const Point &lr):upLeft(ul), lowRight(lr){};
     void ShowRecInfo() const;
 };
 

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/kimtaeji/Oxi/C++/src/Main/cmake-build-debug"
+			"value" : "/Users/kimtaeji/Code/C++/src/Main/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/kimtaeji/Oxi/C++/src/Main"
+			"value" : "/Users/kimtaeji/Code/C++/src/Main"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1087,7 +1087,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/kimtaeji/Oxi/C++/src/Main/cmake-build-debug"
+			"value" : "/Users/kimtaeji/Code/C++/src/Main/cmake-build-debug"
 		},
 		{
 			"name" : "Main_IS_TOP_LEVEL",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/kimtaeji/Oxi/C++/src/Main"
+			"value" : "/Users/kimtaeji/Code/C++/src/Main"
 		}
 	],
 	"kind" : "cache",

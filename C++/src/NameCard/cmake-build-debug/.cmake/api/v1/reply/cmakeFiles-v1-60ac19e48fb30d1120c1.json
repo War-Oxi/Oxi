@@ -1123,8 +1123,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/kimtaeji/Oxi/C++/src/Main/cmake-build-debug",
-		"source" : "/Users/kimtaeji/Oxi/C++/src/Main"
+		"build" : "/Users/kimtaeji/Code/C++/src/NameCard/cmake-build-debug",
+		"source" : "/Users/kimtaeji/Code/C++/src/NameCard"
 	},
 	"version" : 
 	{
