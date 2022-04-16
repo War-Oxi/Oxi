@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79757dff-cac0-4f4a-8832-eff7cdb116ae" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/../University/ftemp_ctemp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BMI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autoSales.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic_data_structures.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cafe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/draw_0401.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ftemp_ctemp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inputOp1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/op1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Main/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Main/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Main/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Main/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +32,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
-  </component>
-  <component name="RunManager" selected="Python.basic_data_structures">
-    <configuration name="BMI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.List">
+    <configuration name="List" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="University_real" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -68,7 +55,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BMI.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/List.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.List" />
         <item itemvalue="Python.basic_data_structures" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.autoSales" />
         <item itemvalue="Python.cafe" />
-        <item itemvalue="Python.BMI" />
       </list>
     </recent_temporary>
   </component>
@@ -209,6 +196,10 @@
       <workItem from="1648779502054" duration="1344000" />
       <workItem from="1649376616372" duration="68000" />
       <workItem from="1649376700084" duration="2703000" />
+      <workItem from="1649981437359" duration="1076000" />
+      <workItem from="1649983005481" duration="768000" />
+      <workItem from="1649984726320" duration="2249000" />
+      <workItem from="1650006406704" duration="599000" />
     </task>
     <servers />
   </component>
@@ -227,10 +218,11 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/University_real$List.coverage" NAME="List 커버리지 결과" MODIFIED="1649989817494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/University_real$BMI.coverage" NAME="BMI 커버리지 결과" MODIFIED="1648779791686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/University_real$autoSales.coverage" NAME="autoSales 커버리지 결과" MODIFIED="1649377394462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/University_real$basic_data_structures.coverage" NAME="basic_data_structures 커버리지 결과" MODIFIED="1649381316909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/University_real$cafe.coverage" NAME="cafe 커버리지 결과" MODIFIED="1648780099881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/University_real$basic_data_structures.coverage" NAME="basic_data_structures 커버리지 결과" MODIFIED="1649982573571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/University_real$test.coverage" NAME="test 커버리지 결과" MODIFIED="1649377655949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/University_real$autoSales.coverage" NAME="autoSales 커버리지 결과" MODIFIED="1649377394462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
