@@ -1,17 +1,14 @@
-# 샘플 Python 스크립트입니다.
+import turtle
 
-# ⌃R을(를) 눌러 실행하거나 내 코드로 바꿉니다.
-# 클래스, 파일, 도구 창, 액션 및 설정을 어디서나 검색하려면 ⇧ 두 번을(를) 누릅니다.
+# 별 그리기
+# for i in range(5):
+#     turtle.forward(150)
+#     turtle.left(216)
 
 
-def print_hi(name):
-    # 스크립트를 디버그하려면 하단 코드 줄의 중단점을 사용합니다.
-    print(f'Hi, {name}')  # 중단점을 전환하려면 ⌘F8을(를) 누릅니다.
+# n=int(input("몇 각형 그릴텨?"))
+#
+# for i in range(n):
+#     turtle.forward(100)
+#     turtle.left(720//n)
 
-# 스크립트를 실행하려면 여백의 녹색 버튼을 누릅니다.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-    a = 1 + 2j
-    print(a.real)
-
-# https://www.jetbrains.com/help/pycharm/에서 PyCharm 도움말 참조
