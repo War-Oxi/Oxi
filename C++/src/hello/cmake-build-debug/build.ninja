@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/AllFile/TaeJi/University/VSCode/C++/src/hello/cmake-build-debug/
+cmake_ninja_workdir = D$:/AllFile/TaeJi/University/Code/C++/src/hello/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target hello
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = D$:/AllFile/TaeJi/University/VSCode/C++/src/hello/cmake-bu
 
 build cmake_object_order_depends_target_hello: phony || CMakeFiles/hello.dir
 
-build CMakeFiles/hello.dir/hello.cpp.obj: CXX_COMPILER__hello_Debug D$:/AllFile/TaeJi/University/VSCode/C++/src/hello/hello.cpp || cmake_object_order_depends_target_hello
+build CMakeFiles/hello.dir/hello.cpp.obj: CXX_COMPILER__hello_Debug D$:/AllFile/TaeJi/University/Code/C++/src/hello/hello.cpp || cmake_object_order_depends_target_hello
   DEP_FILE = CMakeFiles\hello.dir\hello.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\hello.dir
@@ -81,7 +81,7 @@ build hello.exe: CXX_EXECUTABLE_LINKER__hello_Debug CMakeFiles/hello.dir/hello.c
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\AllFile\TaeJi\University\VSCode\C++\src\hello\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\AllFile\TaeJi\University\Code\C++\src\hello\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +92,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\AllFile\TaeJi\University\VSCode\C++\src\hello\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\AllFile\TaeJi\University\VSCode\C++\src\hello -BD:\AllFile\TaeJi\University\VSCode\C++\src\hello\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D D:\AllFile\TaeJi\University\Code\C++\src\hello\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\AllFile\TaeJi\University\Code\C++\src\hello -BD:\AllFile\TaeJi\University\Code\C++\src\hello\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,7 +110,7 @@ build hello: phony hello.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/AllFile/TaeJi/University/VSCode/C++/src/hello/cmake-build-debug
+# Folder: D:/AllFile/TaeJi/University/Code/C++/src/hello/cmake-build-debug
 
 build all: phony hello.exe
 

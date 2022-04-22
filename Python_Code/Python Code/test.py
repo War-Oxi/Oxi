@@ -1,2 +1,3 @@
-print('I' + " am tired")
-print("taeji" * 5)
+a = {'name' = 'hong'}
+
+print(a)
