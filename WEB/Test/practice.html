@@ -1,35 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User-defined Tag</title>
-</head>
-
 <body>
-    <university>
-        <h1>중원대학교</h1>
-        <major><h2>컴퓨터공학과</h2>
-            <student>
-                <student_number><p>1학년</p></student_number>
-                <student_number><p>2학년</p></student_number>
-                <student_number><p>3학년</p></student_number>
-                <student_number><p>4학년</p></student_number>
-            </student>
-            <professor>
-                <Operation_System><p>백승훈</p></Operation_System>
-                <Searching_infomation><p>정행섭</p></Searching_infomation>
-                <DataBase_Design><p>조민호</p></DataBase_Design>
-                <Web_Programming><p>김남일</p></Web_Programming>
-            </professor>
-            <Me><strong><h2><center>나 : 김태지 ㅋㅋ</center></h2></strong></Me>
-        </major>
-    </university>
+    <section>
+        <article>
+            <table border="1" style="width: 70%; height: 50%;"  summary="시멘틱 테이블 관련 요소">
+                <caption>시멘틱 태그 뭘봐 ㅅㅂ련아;</caption>
+                <thead>
+                    <tr>
+                        <td colspan="4">가나다라 모음</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>가</td>
+                        <td>나</td>
+                        <td>다</td>
+                        <td rowspan="4">라</td>
+                    </tr>
+                    <tr>
+                        <td>마</td>
+                        <td rowspan="3" colspan="2">바</td>
+                    </tr>
+                    <tr>
+                        <td>사</td>
+                    </tr>
+                    <tr>
+                        <td>아</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">자</td>
+                        <td colspan="2">카</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">카</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" align="center" >너봐</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <h3>이미지 표현이다 이눔아</h3>
+            <a href="http://www.w3.org" target="_blank">
+                <fugure>
+                    <figcaption style="">figcaprion태그로 표현</figcaption>
+                    <img src="./coding.jpg" alt="이미지 없는디??" title="이미지 이름은 나도몰라" style="width: 50%;">
+                </fugure>
+            </a>
+        </article>
+    </section>
 </body>
-
-</html>
-
-
-<!-- 1. 사용자 태그 요소를 사용하여 중원대학교 컴퓨터공학과를 소개하는 웹페이지를 제작하세요.  -->
