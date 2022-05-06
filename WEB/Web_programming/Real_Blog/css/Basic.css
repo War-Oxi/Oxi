@@ -1,0 +1,181 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+
+}
+
+html {
+  background-image: url("../image/submain2.jpg");
+}
+
+section.main {
+  /* display: inline-block; */
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 1);
+  width: 400px;
+  font-weight: 800px;
+  font-size: 18px;
+}
+
+section>div>ul>li {
+  font-family: 'KoPubWorldDotum';
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+:link {
+  color: #eee;
+  font-family: 'KoPubWorldDotum';
+  font-size: 17px;
+}
+
+ul.nav>li>a {
+  font-size: 23px;
+  color: #eee;
+}
+
+div .center {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 150px;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+  opacity: 1;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav {
+  /* background-color: rgba( 255, 255, 255, 0.6 ); */
+  background-color: rgba(18, 33, 26, 1);
+}
+
+ul.nav>li {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  padding: 15px 10px 0px 10px;
+  /* margin: 15px 10px 0px 10px; */
+  /* background-color: #eee; */
+  background-color: rgba(18, 33, 26, 1);
+  text-align: center;
+  position: relative;
+}
+
+ul.nav>li:hover {
+  /*! 메뉴바에 포인터를 갖다 대었을 때 색깔이 변하도록 */
+  background: #fff;
+
+  /* background-color: rgba( 255, 255, 255, 0.1 ); */
+  background-color: rgba(25, 46, 35, 1);
+}
+
+ul.nav>li ul.sub {
+  /*! 포인터를 위치시키지 않으면 하위메뉴가 보이지 않도록 */
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+ul.nav>li:hover ul.sub {
+  /*! 메뉴바에 포인터를 위치시키면 하위메뉴가 보이도록  */
+  display: block;
+
+  /* background-color: rgba( 255, 255, 255, 0.6 ); */
+  background-color: rgba(25, 46, 35, 1);
+}
+
+ul.nav>li ul.sub>li {
+  display: inline-block;
+  width: 180px;
+  padding: 5px 10px;
+  background-color: #eee;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+ul.nav>li ul.sub>li:hover {
+  /* background:#fff; */
+  background: #777;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.center>h2 {
+  background-color: rgba(25, 46, 35, 1);
+  color: white;
+  margin: 0;
+  padding-top: 10px;
+  height: 40px;
+  text-align: center;
+
+}
+
+div.center>ul>li {
+  color: rgba(25, 46, 35, 1);
+  margin: 10px 20px 10px 20px;
+  font-weight: 400;
+}
+
+#border {
+  border: 2;
+  border-style: solid;
+  border-color: #750;
+}
+
+#marginZero {
+  margin: 0;
+}
+
+#banner {
+  background-color: #777;
+  background-color: rgba(25, 46, 35, 1);
+  width: 100%;
+  height: 150px;
+}
+
+.container {
+  text-align: center;
+}
+
+.boxWrap {
+  display: flex;
+}
+
+#marginTop {
+  margin-top: 5px;
+}
+
+#wrapper {
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0px;
+  text-align: right;
+  color: white;
+  background-color: rgba(25, 46, 35, 0.8);
+  font-family: 'KoPubWorldDotum';
+  font-size: 16px;
+  font-weight: 1000;
+}
