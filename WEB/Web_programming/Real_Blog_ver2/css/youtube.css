@@ -1,0 +1,16 @@
+/** 그리드 사용  */
+#grid{
+  display: grid; /** 블럭을 그리드 형식으로 선언 */
+  grid-template-columns: 1fr 1fr 1fr; /** 그리그 열을 3칸의 동일한 크기로 나눔*/
+}
+/** span박스간 여백  */
+span{
+  padding: 0px 5px;
+}
+/** section 영역이 header영역과 겹치지 않도록 속성 값 초기화  */
+section{
+  position: absolute;
+  top: 180px;
+  left: 6%;
+}
+
