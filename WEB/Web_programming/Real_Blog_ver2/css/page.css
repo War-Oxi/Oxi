@@ -1,7 +1,7 @@
 /** 그리드를 한번 사용해 보았습니다. */
 #grid{
   display: grid;  /** 블럭을 그리드 형식으로 선언 */
-  grid-template-columns: 1fr 1fr 1fr 1fr; /** 그리드의 열을 4칸의 동일한 크기로 나눔 */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /** 그리드 하나의 행을 4칸의 동일한 크기로 나눔 */
   border: 3px solid rgb(219, 144, 156); /** 그리드 영역의 구분을 위해 선언 */
   font-size: 20px; /**그리드 영역 내의 글자 크기를 20px로 초기화*/
 }

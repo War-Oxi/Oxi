@@ -13,7 +13,7 @@ body, html {
 
 /** 화면의 배경화면 삽입 */
 html {
-  background-image: url("../image/submain2.jpg");
+  background-image: url("../image/Mainimage.jpg");
 }
 /** a태그의 폰트 사이즈 초기화 및 밑줄 없애기 */
 a {
