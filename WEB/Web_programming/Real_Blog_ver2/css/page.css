@@ -15,7 +15,7 @@ section{
 /** span 태그의 가로,세로 폭과 padding, border, 배경색 정의  */
 /** border는 각각의 개체를 구분하기 위해 배경색과 다른 색으로 초기화  */
 section > div > span{
-  width: 300px;
+  width: 250px;
   height: 30px;
   padding: 10px;
   border: 5px solid pink;
