@@ -25,9 +25,26 @@ t2.pendown()
 t1.speed(1)
 t2.speed(1)
 
-for i in range(20):
-    d1 = random.randint(1, 50)
-    d2 = random.randint(1, 50)
-    t1.forward(d1)
-    t2.forward(d2)
+distance1=0
+distance2=0
+for i in range(100):
+    rand1 = random.randint(1, 2)
+    if rand1 == 1:
+        d1 = random.randint(1, 40)
+        t1.forward(d1)
+        distance1 += d1
+        print("토끼 이동거리 : ", distance1)
+    else:
+        d2 = random.randint(1, 40)
+        t2.forward(d2)
+        distance2 += d2
+        print("거북이의 이동거리 : ", distance2)
+    if distance1 >= 600:
+        print("토끼가 승리 했습니다")
+        break
+    elif distance2 >= 600:
+        print("거북이가 승리 했습니다")
+        break
+    else:
+        continue
 time.sleep(3)
