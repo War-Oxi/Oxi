@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20ef9845-a306-4b01-b4de-d55a5e02bb11" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEB/Web_programming/Oxi's_Blog/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEB/Web_programming/Oxi's_Blog/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEB/Web_programming/Oxi's_Blog/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../WEB/Web_programming/Oxi's_Blog/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEB/Web_programming/testcode/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WEB/Web_programming/testcode/tementic_tag.html" beforeDir="false" />
-    </list>
+    <list default="true" id="20ef9845-a306-4b01-b4de-d55a5e02bb11" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../University_real" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -72,6 +66,7 @@
       <updated>1651238151618</updated>
       <workItem from="1651238154443" duration="1248000" />
       <workItem from="1651753991184" duration="460000" />
+      <workItem from="1652634193516" duration="58000" />
     </task>
     <servers />
   </component>
