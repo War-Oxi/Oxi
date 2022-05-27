@@ -28,3 +28,9 @@ print("======================================")
 print(data)
 data2 = data.replace(100, 0) #값에 해당하는 데이터의 값 변경 100 -> 0
 print(data2)
+
+##행과 열 바꾸기 행 -> 열, 열 -> 행
+data_T = data.T #T = transpose의 약자
+data_t = data.transpose()
+
+print(data_t)

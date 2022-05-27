@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79757dff-cac0-4f4a-8832-eff7cdb116ae" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/DataScience/dataDelete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataScience/datablank.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataScience/datatrans.py" afterDir="false" />
+    <list default="true" id="79757dff-cac0-4f4a-8832-eff7cdb116ae" name="변경" comment="MAC">
+      <change afterPath="$PROJECT_DIR$/DataScience/123123.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataScience/dataInsert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataScience/dataapply.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataScience/datadescribe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataScience/datahead.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataScience/dataSelect.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataScience/dataSelect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataScience/datatrans.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataScience/datatrans.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -57,7 +60,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.datatrans">
-    <configuration name="dataDelete" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dataInsert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="University_real" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -70,7 +73,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataScience/dataDelete.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataScience/dataInsert.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -79,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataFileOpen1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dataapply" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="University_real" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,7 +95,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataScience/dataFileOpen1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataScience/dataapply.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataFileOpen2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="datadescribe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="University_real" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,7 +117,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataScience/dataFileOpen2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataScience/datadescribe.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dataSelect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="datahead" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="University_real" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -136,7 +139,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataScience/dataSelect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataScience/datahead.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,10 +195,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.datatrans" />
-        <item itemvalue="Python.dataDelete" />
-        <item itemvalue="Python.dataSelect" />
-        <item itemvalue="Python.dataFileOpen2" />
-        <item itemvalue="Python.dataFileOpen1" />
+        <item itemvalue="Python.datadescribe" />
+        <item itemvalue="Python.datahead" />
+        <item itemvalue="Python.dataInsert" />
+        <item itemvalue="Python.dataapply" />
       </list>
     </recent_temporary>
   </component>
@@ -223,8 +226,23 @@
       <workItem from="1653005705018" duration="2202000" />
       <workItem from="1653009019477" duration="5840000" />
       <workItem from="1653611588514" duration="491000" />
-      <workItem from="1653612083298" duration="5347000" />
+      <workItem from="1653612083298" duration="7987000" />
     </task>
+    <task id="LOCAL-00001" summary="MAC">
+      <created>1653618073849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653618073849</updated>
+    </task>
+    <task id="LOCAL-00002" summary="MAC">
+      <created>1653618105714</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653618105714</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,10 +259,16 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MAC" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAC" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/University_real$datatrans.coverage" NAME="datatrans 커버리지 결과" MODIFIED="1653617946119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
+    <SUITE FILE_PATH="coverage/University_real$datatrans.coverage" NAME="datatrans 커버리지 결과" MODIFIED="1653620098701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
     <SUITE FILE_PATH="coverage/University_real$data2.coverage" NAME="data2 커버리지 결과" MODIFIED="1653007784865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
     <SUITE FILE_PATH="coverage/University_real$BMI.coverage" NAME="BMI 커버리지 결과" MODIFIED="1648779791686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/University_real$dataapply.coverage" NAME="dataapply 커버리지 결과" MODIFIED="1653619010710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
+    <SUITE FILE_PATH="coverage/University_real$dataInsert.coverage" NAME="dataInsert 커버리지 결과" MODIFIED="1653619664769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
     <SUITE FILE_PATH="coverage/University_real$cafe.coverage" NAME="cafe 커버리지 결과" MODIFIED="1648780099881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/University_real$RACE2.coverage" NAME="RACE2 커버리지 결과" MODIFIED="1653006590992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/University_real$dataFileOpen1.coverage" NAME="dataFileOpen1 커버리지 결과" MODIFIED="1653011848966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
@@ -255,9 +279,11 @@
     <SUITE FILE_PATH="coverage/University_real$dataDelete.coverage" NAME="dataDelete 커버리지 결과" MODIFIED="1653617943079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
     <SUITE FILE_PATH="coverage/University_real$dataFrame1.coverage" NAME="dataFrame1 커버리지 결과" MODIFIED="1653009517018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
     <SUITE FILE_PATH="coverage/University_real$List.coverage" NAME="List 커버리지 결과" MODIFIED="1649989817494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/University_real$datadescribe.coverage" NAME="datadescribe 커버리지 결과" MODIFIED="1653619800394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
     <SUITE FILE_PATH="coverage/University_real$RACE1.coverage" NAME="RACE1 커버리지 결과" MODIFIED="1652408282294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/University_real$dataSelect.coverage" NAME="dataSelect 커버리지 결과" MODIFIED="1653613480131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
     <SUITE FILE_PATH="coverage/University_real$dataFileOpen2.coverage" NAME="dataFileOpen2 커버리지 결과" MODIFIED="1653013274259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
     <SUITE FILE_PATH="coverage/University_real$autoSales.coverage" NAME="autoSales 커버리지 결과" MODIFIED="1649377394462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/University_real$datahead.coverage" NAME="datahead 커버리지 결과" MODIFIED="1653619669814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataScience" />
   </component>
 </project>
