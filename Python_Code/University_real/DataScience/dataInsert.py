@@ -8,5 +8,5 @@ data.insert(2, col_name, col_value)
 print(data)
 
 append_data = pd.Series([100,200], ['국어', '컴퓨터'])
-data1 = data.append(append_data, ignore_index=1)
+data1 = data.append(append_data, ignore_index=True)
 print(data1)

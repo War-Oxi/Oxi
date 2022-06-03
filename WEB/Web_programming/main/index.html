@@ -1,39 +1,39 @@
 <head>
     <script src="../jquery-3.6.0"></script>
-    <script> 
+    <script>
+        var n=0;
         $(document).ready(function() {
-            $("#panel").click(function() {
-                $("#panel").slideUp("fast");
+            $("div.out").mouseenter(function() {
+                $("p:first", this).text("마우스 포인트 들어옴");
+                $("p:last", this).text(++n);
             });
-            $("#slide").click(function() {
-                $("#panel").slideDown(5000); 
+		        $("div.out").mouseleave(function() {
+                $("p:first", this).text("마우스 포인트 나감");
+                $("p:last", this).text("최종 횟수 : " + n);
             });
-            $("#flip").click(function() {
-                $("#panel").slideToggle("slow");
+		        $("div.out").mousedown(function() {
+                $("p:first", this).hide();
+                $("p:last", this).text("메시지 사라짐");
             });
-            $("#stop").click(function() {
-                $("#panel").stop(); 
+		        $("div.out").mouseup(function() {
+                $("p:first", this).show();
+                $("p:last", this).text("최종 횟수 : " + n);
             });
         });
     </script>
-    <style> 
-        #slide, #panel, #flip {
-            padding: 5px;
+		<style>
+        div.out {
+            width: 200px;
+            height: 100px;
+            border:1px solid #000000;
             text-align: center;
-            background-color: #e5eecc;
-            border: solid 1px #c3c3c3;
-        }
-        #panel {
-            padding: 70px;
-            display: none;
-            background-color: #ffff00; 
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
-    <div id="slide">[오늘의 공지사항]</div>
-    <div id="panel">오늘은 jQuery 프로그램을 학습합니다.<br>                    예제를 작성한 후 실행해보세요.</div>
-    <div id="flip">Toggle slide</div>
-    <p></p>
-    <button id="stop">Stop sliding</button>
+    <div class="out">
+        <p>마우스 이벤트 알아보기</p>
+        <p>0</p>
+    </div>
 </body>

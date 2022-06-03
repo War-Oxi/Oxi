@@ -16,5 +16,3 @@ def func(row):
 ##apply()함수의 쓰임 알아보기
 data['성적'] = data['수학'].apply(func)
 print(data)
-
-
