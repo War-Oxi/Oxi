@@ -1,19 +1,15 @@
-var gender="M";
-var age = 21;
-if(gender == "M"){
-  if(age>=19){
-    result = "남자 성인입니다";
+var x=y=0;
+document.write("<table border='1'>")
+for(x=1; x<=9; x++){
+  document.write("<tr>");
+  for(y=1; y<=9; y++){
+    if(x == 1){
+      document.write("<td> <b>" + y + "단" + " </b> </td>");
+    }
+    else{
+      document.write("<td>" + x + "*" + y + "=&nbsp;" + x*y + "</td>");
+    }
   }
-  else{
-    result = "남자 미성년자입니다";
-  }
+  document.write("</tr>");
 }
-else{
-  if(age>=19){
-    result = "여자 성인입니다";
-  }
-  else{
-    result = "여자 미성년자입니다";
-  }
-}
-document.write("당신은" + result + "<p/>");
+document.write("</table>")
