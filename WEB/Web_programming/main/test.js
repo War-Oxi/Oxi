@@ -1,24 +1,20 @@
-var num1=num2=0;
-//첫 번째 값 : num1 두 번째 값 : num2
-function add(num1, num2){
-  sum = 0;
-  for(num1; num1<=num2; num1++){
-    sum = sum + num1;
-    if(num1<num2){
-      document.write(num1 + "+");
-    }
-    else{
-      document.write(num1 + " &nbsp;=&nbsp; ")
-    }
-  }
-  return sum;
+function getAge() {
+  // 입력값 얻어오기
+  var birthday = document.getElementById('birthday' ).value.split("-");
+ 
+  // 날짜 오브젝트 작성
+  var d1 = new Date(birthday[0],birthday[1]-1,birthday[2]);
+  //월은 0부터 시작하므로
+  // 1970년 1월 1일부터 birthday로 지정한 시간까지의 경과 시간을 ms단위로 계산
+  var d2 = new Date();
+  // 1970년 1월 1일부터 지금까지의 시간을 ms 단위로 계산
+ 
+  // 일수, 연령 계산
+  var diff = d2.getTime() - d1.getTime();
+  var daysPast = Math.floor(diff / (1000 * 60 * 60 * 24));
+  var age = Math.floor(daysPast / 365.25);
+ 
+  //결과 표시
+ document.getElementById( "daysPast").innerHTML = daysPast;
+ document.getElementById( "age").innerHTML = age;
 }
-// add(10, 20);
-// document.write(sum);
-document.write(add(10,20));
-
-
-//두 개의 정수를 입력 받은 뒤, 첫번째 수부터 두번째 수까지 1씩 증가한 수의 합을 구하는 함수를 만들어서 출력하시오.
-//예) 첫번째 수: 10, 두 번째 수: 20  입력 시,
-
-//10+11+12+13+14+15+16+17+18+19+20 = 165 를 출력
