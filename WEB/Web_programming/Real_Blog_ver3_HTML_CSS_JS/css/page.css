@@ -1,0 +1,23 @@
+/** 그리드를 한번 사용해 보았습니다. */
+#grid{
+  display: grid;  /** 블럭을 그리드 형식으로 선언 */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /** 그리드 하나의 행을 4칸의 동일한 크기로 나눔 */
+  /* border: 3px solid rgb(219, 144, 156); 그리드 영역의 구분을 위해 선언 */
+  font-size: 20px; /**그리드 영역 내의 글자 크기를 20px로 초기화*/
+}
+/** section영역의 위치와 margin값 정의 및 초기화 */
+section{
+  position: absolute;
+  left: 18%;
+  top: 45%;
+  margin: 20px;
+}
+/** span 태그의 가로,세로 폭과 padding, border, 배경색 정의  */
+/** border는 각각의 개체를 구분하기 위해 배경색과 다른 색으로 초기화  */
+section > div > span{
+  width: 250px;
+  height: 30px;
+  padding: 10px;
+  border: 5px solid pink;
+  background-color: rgb(219, 144, 156);
+}
