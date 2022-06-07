@@ -1,31 +1,41 @@
 <head>
   <script src="../jquery-3.6.0"></script>
   <script>
-    $(document).ready(function () {
-      $("button.move").click(function () {
-        $("img").animate({
-          left: '300px',
-          height: '300px',
-          width: '350px'
-        });
+    $(document).ready(function(){
+      $("#panel").click(function(){
+        $("#panel").slideUp("fast");
       });
-      $("button.init").click(function () {
-        $("img").animate({
-          left: '0px',
-          height: '100px',
-          width: '130px'
-        });
+      $("#slide").click(function(){
+        $("#panel").slideDown(5000);
       });
-      $("body").click(function () {
-        $("body").toggle();
-      })
+      $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+      });
+      $("#stop").click(function(){
+        $("#panel").stop();
+      });
     });
   </script>
+  <style>
+    #slide, #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #e5eecc;
+      border: solid 1px #c3c3c3;
+    }
+    #panel{
+      padding: 70px;
+      display: none;
+      background-color: #ffff00;
+    }
+  </style>
 </head>
 
 <body>
-  <button class="move">확대</button>
-  <button class="init">축소</button>
-  <p>123123</p>
-  <img name="pic1" src="Mainimage.jpg" width="130" height="100" style="position:relative" />
+  <div id="slide">[오늘의 공지사항]</div>
+  <div id="panel">오늘은 jQuery 프로그램을 학습합니다 <br>
+    예제를 작성한 후 실행해보세요</div>
+  <div id="flip">Toggle slide</div>
+  <p></p>
+  <button id="stop">Stop sliding</button>
 </body>

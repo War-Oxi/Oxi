@@ -1,17 +1,6 @@
-$(document).ready(function () {
-  $("button.b1").click(function () {
-    $("img").animate({
-      width: '100px'
-    });
-  });
-  $("button.b2").click(function () {
-    $("img").animate({
-      width: '200px'
-    });
-  });
-  $("button.b3").click(function () {
-    $("img").animate({
-      width: '300px'
-    });
-  });
-});
+function add(){
+  var header=document.createElement('h3');
+  var textNode=document.createTextNode("내 이름은 홍길동입니다");
+  header.appendChild(textNode);
+  document.body.appendChild(header);
+}
