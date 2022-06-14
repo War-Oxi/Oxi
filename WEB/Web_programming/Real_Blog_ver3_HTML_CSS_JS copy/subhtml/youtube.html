@@ -13,29 +13,30 @@
   <!--* 제목 및 메타정보 정의 및 css 파일 link -->
   <link rel="stylesheet" href="../css/Basic.css">
   <link rel="stylesheet" href="../css/youtube.css">
+  <script src="../js/jquery-3.6.0"></script>
   <title>Youtube Bookmark</title>
 </head>
 
-<body>
+<body id="test">
   <!--* header 영역 시작(상단에 배너 삽입)  -->
   <header>
     <a href="../Main.html">
-      <div>
         <p id="banner">Tomorrow hopes we have learned something from yesterday</p>
       </div>
     </a>
   </header>
   <!--* section 영역 시작 grid를 사용해 레이아웃 구현 -->
   <section>
-    <div id="grid">
+    <div class="grid">
       <!--* iframe을 사용해 유투브 영상 임베드 -->
-      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/9sTjEMZ5p_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/fxdPHw8vhog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/By_qxt0SZlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/7aR7yStng0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/gGQhQ2xwB2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/aSbT4Wqzl74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span class="yt v1"><iframe class="yt1" width="130%" height="160%" src="https://www.youtube.com/embed/9sTjEMZ5p_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span class="yt v2"><iframe class="yt1" width="130%" height="160%" src="https://www.youtube.com/embed/fxdPHw8vhog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span class="yt v3"><iframe class="yt1" width="130%" height="160%" src="https://www.youtube.com/embed/By_qxt0SZlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span class="yt v4"><iframe class="yt1" width="130%" height="160%" src="https://www.youtube.com/embed/7aR7yStng0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span class="yt v5"><iframe class="yt1" width="130%" height="160%" src="https://www.youtube.com/embed/gGQhQ2xwB2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span class="yt v6"><iframe class="yt1" width="130%" height="160%" src="https://www.youtube.com/embed/aSbT4Wqzl74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
     </div>
+  <script src="../js/youtubeSelector.js"></script>
   </section>  
   <!--* footer 영역 시작 -->
   <footer class="footer">
