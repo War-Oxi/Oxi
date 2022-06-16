@@ -1,0 +1,113 @@
+<!-- 
+
+  제가 평소에 자주 사용하는 홈페이지와 TODO List를 한 페이지에 모아 놓은 웹사이트를 제작했습니다.
+  html파일에 css부분을 포함한 주석을 달면 설명이 길어지기 때문에 구현에 대한 주석은 css파일에 정리했습니다.
+
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<!--* 제목 및 메타정보 정의 및 css 파일 link -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Basic.css">
+  <script src="./js/jquery-3.6.0"></script>
+  <title>TaeJi's Blog</title>
+
+</head>
+
+<body>
+  <!--* header영역 시작 -->
+  <header>
+    <div>
+      <p id="banner">Tomorrow hopes we have learned something from yesterday</p>
+    </div>
+  </header>
+  <!--* nav영역 시작 (메뉴 구현)  -->
+  <nav>
+    <div>
+      <ul class="container">
+        <li class="menuSchool"><a href="#"><strong>학교</strong></a>
+          <ul class="menuSchool sub">
+            <!--* 링크를 클릭 하면 해당 주소에 해당하는 새 창이 열림 -->
+            <li id="marginTop"><a href="http://www.jwu.ac.kr/index.jsp" target="_blank">중원대학교</a></li>
+            <li><a href="https://haksa.jwu.ac.kr/com/index2.jsp" target="_blank">통합정보시스템</a></li>
+            <li><a href="https://ecampus.biopride.or.kr/jwu" target="_blank">JWU_LMS</a></li>
+          </ul>
+        </li>
+        <li class="menuEnglish"><a href="#"><strong>영어</strong></a>
+          <ul class="menuEnglish sub">
+            <!--* 링크를 클릭 하면 해당 주소에 해당하는 새 창이 열림 -->
+            <li id="marginTop"><a href="https://www.ybmuniv.com/class/jwbasic" target="_blank">기초영문법</a></li>
+            <li><a href="https://voca.youngdok.com/" target="_blank">영어독립단어</a></li>
+          </ul>
+        </li>
+        <li class="pageShortCut"><a href="#"><strong>포털</strong></a>
+          <ul class="pageShortCut sub">
+            <!--* 링크를 클릭 하면 해당 주소에 해당하는 새 창이 열림 -->
+            <li id="marginTop"><a href="https://www.google.com/" target="_blank">구글</a></li>
+            <li><a href="https://www.naver.com/" target="_blank">네이버</a></li>
+            <li><a href="https://www.notion.so" target="_blank">노션</a></li>
+            <li><a href="https://www.netflix.com/" target="_blank">넷플릭스</a></li>
+          </ul>
+        </li>
+        <!--* 링크를 클릭하면 현재 창이 해당하는 html파일로 이동 -->
+        <li class="youtube"><a href="./subhtml/youtube.html" target="_self"><strong>저장영상</strong></a></li>
+        <li class="page"><a href="./subhtml/page.html" target="_self"><strong>저장페이지</strong></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--* section 영역 시작 -->
+  <section>
+    <div class="section">
+      <h2> Monthly TODO List</h2>
+      <ul>
+        <li><strong>책 2권 이상 읽기</strong></li>
+        <li><strong>해커스 토익 VOCA 1회독</strong></li>
+      </ul>
+      <h2> Weekly TODO List</h2>
+      <ul>
+        <li><strong>Web Programming 과제하기</strong></li>
+        <li><strong>토익 강의 1개 듣기</strong></li>
+        <li><strong>정리하는뇌 읽기</strong></li>
+        <li><strong>footer 하단 고정 개념 알기</strong></li>
+      </ul>
+    </div>
+  </section>
+  <!--* 운동일정 유틸리티 -->
+  <section2>
+    <div class="section2">
+      <h2> Today's Workout</h2>
+      <ul>
+        <li id="todayWorkout"></li>
+      </ul>
+      <h2> Workout List</h2>
+      <ul>
+        <li id="Workout List1"></li>
+        <li id="Workout List2"></li>
+        <li id="Workout List3"></li>
+        <li id="Workout List4"></li>
+      </ul>
+    </div>
+  </section2>
+  <script src="./js/todayWorkout.js"></script>
+  <!--* D-Day유틸리티  -->
+  <section3>
+    <div class="section3">
+      <h2 id="remainingTimeTitle"></h2>
+      <p id="remainingTime"></p>
+    </div>
+  </section3> 
+  <script src="./js/remainingTime.js"></script>
+  <!--* footer 영역 시작 -->
+  <footer>
+    <span style="padding-right: 40px;">중원대학교 컴퓨터공학과 2018113009 김태지</span>
+    <span id="digClock"></span>
+    <script src="./js/digColck.js"></script>
+  </footer>
+</body>
+
+</html>

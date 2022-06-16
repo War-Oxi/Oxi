@@ -1,0 +1,47 @@
+<!-- *
+  평소에 유익할 것 같은 영상을 유투브의 나중에 볼 영상에 저장하는데 이 양이 너무 많아져서
+  우선순위가 높은 영상만 저장해 놓은 페이지를 구현했습니다.
+  또한 그리드에 대해서 공부할겸 한번 그리드를 사용해봤습니다
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--* 제목 및 메타정보 정의 및 css 파일 link -->
+  <link rel="stylesheet" href="../css/Basic.css">
+  <link rel="stylesheet" href="../css/youtube.css">
+  <title>Youtube Bookmark</title>
+</head>
+
+<body>
+  <!--* header 영역 시작(상단에 배너 삽입)  -->
+  <header>
+    <a href="../Main.html">
+      <div>
+        <p id="banner">Tomorrow hopes we have learned something from yesterday</p>
+      </div>
+    </a>
+  </header>
+  <!--* section 영역 시작 grid를 사용해 레이아웃 구현 -->
+  <section>
+    <div id="grid">
+      <!--* iframe을 사용해 유투브 영상 임베드 -->
+      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/9sTjEMZ5p_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/fxdPHw8vhog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/By_qxt0SZlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/7aR7yStng0A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/gGQhQ2xwB2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+      <span><iframe width="560" height="315" src="https://www.youtube.com/embed/aSbT4Wqzl74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+    </div>
+  </section>  
+  <!--* footer 영역 시작 -->
+  <footer class="footer">
+    <span style="padding-right: 40px;">중원대학교 컴퓨터공학과 2018113009 김태지</span>
+    <span id="digClock"></span>
+    <script src="../js/digColck.js"></script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/** KoPup글씨체 사용을 위햐 외부 css import */
+@import url('https://webfontworld.github.io/kopus/KoPubWorldDotum.css'); 
+
+/** body와 html 속의 내용의 글꼴, 색, 폰트 사이즈와 margin, padding값 초기화 */
+body, html { 
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'KoPubWorldDotum';
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+}
+
+/** 화면의 배경화면 삽입 */
+html {
+  background-image: url("../image/Mainimage.jpg");
+}
+/** a태그의 폰트 사이즈 초기화 및 밑줄 없애기 */
+a {
+  text-decoration: none;
+}
+
+/** 이미 방문했거나 방문하지 않은 웹사이트의 글자 색 통일 */
+a:visited, :link {
+  color: rgba(255, 255, 255, 1);
+}
+/*! header 영역  */
+/** 헤더 영역의 배경색, 가로 폭, 세로 폭 값 초기화  */
+header{
+  background-color: rgba(25, 46, 35, 1);
+  width: 100%;
+  height: 150px;
+}
+
+/** 배너안에 글자의 색,크기,위치,폰트값을 지정하고 마진값 0으로 초기화.*/
+#banner{
+  color: rgba(255, 255, 255, 1);
+  font-size: 50px;
+  line-height: 150px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+}
+
+
+/** 무순서 리스트의 margin, padding값 0으로 초기화 및 li태그의 앞에 기호 없애기 */
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} 
+/*! nav영역  */
+/** 메뉴 바의 배경색 지정*/
+nav {
+  background-color: rgba(18, 33, 26, 1);
+}
+
+/** 메뉴의 가로 세로 폭과 패딩 값 지정 && 메뉴가 수평으로 배열되게 함*/
+.container>li {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  padding: 10px 10px 5px;
+  position: relative;
+}
+/** 배너 메뉴의 글자 크기 지정 */
+.container>li>a {
+  font-size: 23px;
+}
+
+/** 메뉴바에 커서를 위치시켰을 때 색깔이 변하도록 */
+.container>li:hover {
+  background: #fff;
+  background-color: rgba(25, 46, 35, 1);
+}
+
+/** container클래스의 직계 자손li의 자손들 중 모든 ul.sub요소의 값 변경 */
+/** 보이지 않게 하고 하위 메뉴의 위치 조정*/
+.container>li ul.sub {
+  display: none;
+  position: absolute; /** position이 relative인 부모 메뉴의 위치에 맞게*/
+  top: 50px;
+  left: 0;
+}
+
+/** 커서를 메뉴바 위치시키면 ul.sub의 하위메뉴가 보이도록 속성 값 변경 */
+.container>li:hover ul.sub {
+  display: inline-block;
+  background-color: rgba(25, 46, 35, 1);
+}
+/** 하위 메뉴가 상위 메뉴와 겹치지 않도록 하기 위해 지정 */
+#marginTop {
+  margin-top: 5px;
+}
+
+/** container클래스의 직계 자손li의 자손들 중 모든 ul.sub요소의 직계자손 li태그의 속성 값 변경 */
+/** width와 padding 값을 통해 하위 메뉴의 가로 세로 너비를 지정 */
+/** 배경색이 투명하게 해 부모 메뉴와 구분*/
+.container>li ul.sub>li {
+  width: 180px;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/** 하위 메뉴에 커서를 위치시키면 위치시킨 배경색이 변하게 하여 구분시킴*/
+.container>li ul.sub>li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*!  section 영역  */
+/** section 영역을 절대적인 위치 기준(static속성 으로 했을 때의 기준으로) 위치시키기 */
+/** section 영역의 가로폭을 400px로 초기화*/
+/** sectoin 영역의 위치를 구분시키기 위해 border값 정의 */
+.section,.section2,.section3{
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  background-color: rgba(255, 255, 255, 1);
+  width: 500px;
+  border: 5px solid rgb(146, 195, 21);
+}
+.section2{
+  left: 10%;
+  width: 400px;
+}
+.section3{
+  top: 50%;
+  left: 44.5%;
+  width: 200px;
+  border: 5px solid #db4455;
+}
+/** sectoin클래스를 갖는 div태그의 직계자손 중 h2태그의 배경색, 글자색, 변경 */
+/** margin값을 0으로 padding값을 통해 글자가 배경의 가운데 위치하도록. */
+.section>h2,.section2>h2,.section3>h2 {
+  background-color: rgba(25, 46, 35, 1);
+  color: white;
+  margin: 0;
+  padding: 5px 0px 0px;
+}
+.section3>h2{
+  background-color: rgb(78, 13, 13);
+}
+/** section클래스 직계자손인 ul태그의 직계자손인 li태그의 글자색과 마진값, 글자크기 변경  */
+.section>ul>li,.section2>ul>li, .section3>p {
+  color: rgba(25, 46, 35, 1);
+  margin: 10px 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.section3>p{
+  text-align:center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*! footer 영역  */
+/** footer영역이 페이지의 하단에 위치하게 하고 글자가 영역의 우측에 위치하도록 함*/
+/** background-color의 색과 투명도를 사용해 footer영역의 위치를 section영역과 구분 */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0px;
+  /* text-align: right; */
+  background-color: rgba(25, 46, 35, 0.8);
+}
+#digClock{
+  text-align: right;
+  padding-left: 50%;
+}
