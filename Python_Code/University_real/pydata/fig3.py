@@ -6,7 +6,7 @@ index=['Mercury', 'Venus', 'Earth']
 
 plt.figure(num="파이 차트")
 
-plt.rcParams.update({'font.family':'malgun gothic', 'font.size':12})
+plt.rcParams.update({'font.family':'apple gothic', 'font.size':12})
 plt.title("행성 크기 비교")
 
 ax = plt.gca()
