@@ -5,7 +5,7 @@ data = pd.read_csv('sample.csv')
 
 plt.figure(num="성적 그래프")
 
-plt.rcParams.update({'font.family':'malgun gothic', 'font.size':12})
+plt.rcParams.update({'font.family':'apple gothic', 'font.size':12})
 plt.title("학번별 성적")
 
 xlabel = ("학번")
