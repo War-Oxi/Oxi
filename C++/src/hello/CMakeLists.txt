@@ -4,4 +4,4 @@ project(hello)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(hello
-        hello.cpp)
+        1308.cpp)
