@@ -1,51 +1,30 @@
 #include <iostream>
-//#include <cstring>
-
 using namespace std;
 
-int main() {
+int main()
+{
+    int i=0, j;
     string input_word;
-    string word = "abcdefghijklmnopqrstuvwxyz";
-    int j=0;
+    string string_s = "abcdefghijklmnopqrstuvwxyz";
+
     cin>>input_word;
 
-    for (int i = 0; i<word.length(); i++)
+    for(i=0; i < string_s.length(); i++)
     {
-        cout<<i;
-        for (j; j<input_word.length(); j++)
+        for(j=0; j < input_word.length(); j++)
         {
-            if(word[i] == input_word[j])
+            if(input_word[j] == string_s[i])
             {
                 cout << j << ' ';
                 break;
             }
         }
-        if(word[i] != input_word[j])
+        if(input_word[j] != string_s[i])
         {
             cout << -1 << ' ';
         }
     }
-
-
     return 0;
 }
-//int main()
-//{
-//    int i,j;
-//    string alphabet= "abcdefghijklmnopqrstuvwxyz";
-//    string s;
-//    cin >> s;
-//    for(i=0; i < 26; i++)
-//    {
-//        for(j=0; j < s.length(); j++)
-//        {
-//            if(s[j] == alphabet[i])
-//            {
-//                cout << j << ' ';
-//                break;
-//            }
-//        }
-//        if(s[j] != alphabet[i])
-//            cout << -1 << ' ';
-//    }
-//}
+
+//1 0 -1 -1 2 -1 -1 -1 -1 4 3 -1 -1 7 5 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
