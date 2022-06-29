@@ -1,0 +1,3 @@
+/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/CMakeFiles/TBC.dir
+/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
