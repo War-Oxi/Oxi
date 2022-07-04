@@ -1,0 +1,72 @@
+#pragma once
+
+#include <iostream>
+#include <cmath>
+#include <cstring>
+
+using namespace std;
+
+bool tester(const int cur[2], const int next[2], bool chess[6][6]);
+
+int main()
+{
+    bool chess[6][6];
+    bool flag(false);
+    int error(0);
+    int start[2], cur[2], next[2];
+    string coordinate;
+    cin >> coordinate;
+
+    memset(chess, true, sizeof(chess));
+
+    start[0] = coordinate[0] - 'A';
+    start[1] = coordinate[1] - '1';
+    cur[0] = start[0];
+    cur[1] = start[1];
+//    chess[start[0]][start[1]] = false;
+
+    for (int i = 0; i < 35; i++){
+        cin >> coordinate;
+
+        next[0] = coordinate[0] - 'A';
+        next[1] = coordinate[1] - '1';
+        if (tester(cur, next, chess)){
+            cur[0] = next[0];
+            cur[1] = next[1];
+            chess[cur[0]][cur[1]] = false;
+            flag = true;
+        }
+        else {
+            error++;
+        }
+    }
+    if(tester(cur, start, chess)){
+        flag = true;
+    }
+    else{
+        error++;
+    }
+
+    if(error == 0) {
+        cout << "Valid" << endl;
+    }
+    else{
+        cout << "Invalid" << endl;
+    }
+    return 0;
+}
+
+bool tester(const int cur[2], const int next[2], bool chess[6][6]){
+    int x_movement = cur[0] - next[0];
+    int y_movement = cur[1] - next[1];
+    bool flag = false;
+    if(abs(x_movement) == 1 && abs(y_movement) == 2 && chess[next[0]][next[1]]){
+        return true;
+    }
+    else if (abs(x_movement) == 2 && abs(y_movement) == 1 && chess[next[0]][next[1]]){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
