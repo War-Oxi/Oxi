@@ -1,13 +1,17 @@
 #include <iostream>
-#include <limits>
-int main() {
-    using namespace std;
 
-    char c1(65);
+using namespace std;
 
-    cout << sizeof(unsigned char) << endl;
-    cout << (int)std::numeric_limits<unsigned char>::max() << endl;
-    cout << (int)std::numeric_limits<unsigned char>::lowest() << endl;
+int main()
+{
+    int a = 1, b = 10;
+    int z;
+
+    z = (a, a++ + b++);
+
+    cout << z << endl;
+    cout << a << endl;
+    cout << b << endl;
 
     return 0;
 }
