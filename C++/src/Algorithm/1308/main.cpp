@@ -45,6 +45,7 @@ int main()
 }
 
 int YearCalculator(int start_year, int start_month, int start_day, int end_year, int end_month, int end_day) {
+
     int count(0);
 
     if (start_day > end_day) {
@@ -67,11 +68,12 @@ int YearCalculator(int start_year, int start_month, int start_day, int end_year,
             }
         }
         if ((CheckLeapYear(start_year) && start_month > 2) && (CheckLeapYear(end_year) && end_month < 2)) {
-            count -= 2;
-        } else if ((CheckLeapYear(start_year) && start_month > 2) || (CheckLeapYear(end_year) && end_month < 2)) {
+            count -= 2; // start_month > 2 end_month < 2
+        }
+        else if ((CheckLeapYear(start_year) && start_month > 2) || (CheckLeapYear(end_year) && end_month < 2)) {
             count -= 1;
         }
-        //년도, 월 차이
+        // 년도, 월 차이
         if (start_month < end_month) {
             for (; start_year < end_year; start_year++) {
                 count += 365;

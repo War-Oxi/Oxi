@@ -1,33 +1,29 @@
-#include "iostream"
-#include "cstring"
+#include <iostream>
 using namespace std;
 
-class Person{
-private:
-    char * name;
-    int age;
-public:
-    Person(char * myname, int myage){
-        int len = strlen(myname)+1;
-        name = new char[len];
-        strcpy(name, myname);
-        age=myage;
+double powpow(int num1, int num2) {
+    double result = 0;
+    if(num2 > 0){
+        result = num1;
+        for(int i=1; i<num2; i++) {
+            result *= num1;
+        }
     }
-    void ShowPersonInfo() const{
-        cout<<"name: "<<name<<endl;
-        cout<<"age: "<<age<<endl;
+    else if(num2 < 0 ){
+        result = 1.0 / num1;
+        for(int i=-1; i>num2; i--){
+            result /= num1;
+        }
     }
-    ~Person(){
-        delete []name;
-        cout<<"called destructor!"<<endl;
+    else{
+        return 1;
     }
-};
+    return result;
+}
 
-int main(){
-    Person man1("Lee dong woo", 29);
-    Person man2("Jang dong gun", 41);
-    man1.ShowPersonInfo();
-    man2.ShowPersonInfo();
+int main() {
+    cout << powpow(2, 0) << endl;
 
     return 0;
+
 }
