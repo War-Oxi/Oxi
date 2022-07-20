@@ -2,16 +2,17 @@
 
 using namespace std;
 
-int main()
-{
-    int a = 1, b = 10;
-    int z;
-
-    z = (a, a++ + b++);
-
-    cout << z << endl;
-    cout << a << endl;
-    cout << b << endl;
+int main(){
+    cout << ((true && true ) || false) << endl;
+    cout << true << endl;
+    cout << ((false && true) || true) << endl;
+    cout << true << endl;
+    cout << ((false && true) || false || true) << endl;
+    cout << true << endl;
+    cout << ((14 > 13 || 2 > 1) && (9 > 1)) << endl;
+    cout << true << endl;
+    cout << (!(2314123 > 2 || 123123 > 2387)) << endl;
+    cout << false << endl;
 
     return 0;
 }
