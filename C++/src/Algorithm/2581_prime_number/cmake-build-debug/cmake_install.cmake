@@ -1,4 +1,4 @@
-# Install script for directory: D:/AllFile/TaeJi/University/Code/C++/src/Algorithm/2581_prime_number
+# Install script for directory: C:/Code/C++/src/Algorithm/2581_prime_number
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/AllFile/TaeJi/University/Code/C++/src/Algorithm/2581_prime_number/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Code/C++/src/Algorithm/2581_prime_number/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

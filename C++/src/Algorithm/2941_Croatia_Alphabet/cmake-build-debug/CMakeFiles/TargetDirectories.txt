@@ -1,3 +1,3 @@
-D:/AllFile/TaeJi/University/Code/C++/src/Algorithm/2941_Croatia_Alphabet/cmake-build-debug/CMakeFiles/2941_Croatia_Alphabet.dir
-D:/AllFile/TaeJi/University/Code/C++/src/Algorithm/2941_Croatia_Alphabet/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/AllFile/TaeJi/University/Code/C++/src/Algorithm/2941_Croatia_Alphabet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Code/C++/src/Algorithm/2941_Croatia_Alphabet/cmake-build-debug/CMakeFiles/2941_Croatia_Alphabet.dir
+C:/Code/C++/src/Algorithm/2941_Croatia_Alphabet/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/src/Algorithm/2941_Croatia_Alphabet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
