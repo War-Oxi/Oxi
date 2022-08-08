@@ -2,10 +2,10 @@
 
 using namespace std;
 
-extern void doSomething();
+enum Color {
+    COLOR_BLACK,
+    COLOR_RED,
+    COLOR_BLUE,
+    BLUE,
+};
 
-int main() {
-    doSomething();
-
-    return 0;
-}

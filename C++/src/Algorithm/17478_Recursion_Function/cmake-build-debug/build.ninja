@@ -8,7 +8,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: TBC
+# Project: 17478
 # Configurations: Debug
 # =============================================================================
 
@@ -36,55 +36,47 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/
+cmake_ninja_workdir = /Users/kimtaeji/Code/C++/src/Algorithm/17478_Recursion_Function/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target TBC
+# Object build statements for EXECUTABLE target 17478
 
 
 #############################################
-# Order-only phony target for TBC
+# Order-only phony target for 17478
 
-build cmake_object_order_depends_target_TBC: phony || CMakeFiles/TBC.dir
+build cmake_object_order_depends_target_17478: phony || CMakeFiles/17478.dir
 
-build CMakeFiles/TBC.dir/main.cpp.o: CXX_COMPILER__TBC_Debug /Users/kimtaeji/Code/C++/src/TBC/main.cpp || cmake_object_order_depends_target_TBC
-  DEP_FILE = CMakeFiles/TBC.dir/main.cpp.o.d
+build CMakeFiles/17478.dir/main.cpp.o: CXX_COMPILER__17478_Debug /Users/kimtaeji/Code/C++/src/Algorithm/17478_Recursion_Function/main.cpp || cmake_object_order_depends_target_17478
+  DEP_FILE = CMakeFiles/17478.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  OBJECT_DIR = CMakeFiles/TBC.dir
-  OBJECT_FILE_DIR = CMakeFiles/TBC.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TBC.dir/
-  TARGET_PDB = TBC.pdb
-
-build CMakeFiles/TBC.dir/add.cpp.o: CXX_COMPILER__TBC_Debug /Users/kimtaeji/Code/C++/src/TBC/add.cpp || cmake_object_order_depends_target_TBC
-  DEP_FILE = CMakeFiles/TBC.dir/add.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  OBJECT_DIR = CMakeFiles/TBC.dir
-  OBJECT_FILE_DIR = CMakeFiles/TBC.dir
-  TARGET_COMPILE_PDB = CMakeFiles/TBC.dir/
-  TARGET_PDB = TBC.pdb
+  OBJECT_DIR = CMakeFiles/17478.dir
+  OBJECT_FILE_DIR = CMakeFiles/17478.dir
+  TARGET_COMPILE_PDB = CMakeFiles/17478.dir/
+  TARGET_PDB = 17478.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target TBC
+# Link build statements for EXECUTABLE target 17478
 
 
 #############################################
-# Link the executable TBC
+# Link the executable 17478
 
-build TBC: CXX_EXECUTABLE_LINKER__TBC_Debug CMakeFiles/TBC.dir/main.cpp.o CMakeFiles/TBC.dir/add.cpp.o
+build 17478: CXX_EXECUTABLE_LINKER__17478_Debug CMakeFiles/17478.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
-  OBJECT_DIR = CMakeFiles/TBC.dir
+  OBJECT_DIR = CMakeFiles/17478.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/TBC.dir/
-  TARGET_FILE = TBC
-  TARGET_PDB = TBC.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/17478.dir/
+  TARGET_FILE = 17478
+  TARGET_PDB = 17478.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/kimtaeji/Code/C++/src/Algorithm/17478_Recursion_Function/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -95,7 +87,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kimtaeji/Code/C++/src/TBC -B/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+  COMMAND = cd /Users/kimtaeji/Code/C++/src/Algorithm/17478_Recursion_Function/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/kimtaeji/Code/C++/src/Algorithm/17478_Recursion_Function -B/Users/kimtaeji/Code/C++/src/Algorithm/17478_Recursion_Function/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -111,9 +103,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+# Folder: /Users/kimtaeji/Code/C++/src/Algorithm/17478_Recursion_Function/cmake-build-debug
 
-build all: phony TBC
+build all: phony 17478
 
 # =============================================================================
 # Built-in targets
