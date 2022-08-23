@@ -1,7 +1,7 @@
 //1021_회전하는 큐
 #include <iostream>
 using namespace std;
-//마지막 출력에서 실패함. 이유 모름
+//예시 모두 통과, 제출 실패
 int main() {
     int queue_size(0), extract_num(0);//큐사이즈, 추출할 숫자의 개수
     cin >> queue_size >> extract_num;
@@ -42,8 +42,6 @@ int main() {
                     tmp_cur_location = 0;
                     while(queue[tmp_cur_location] == -1){
                         tmp_cur_location++;
-//                        if(queue[tmp_cur_location] != -1)
-//                            tmp_movement[0]--;
                     }
                 }
             }
@@ -57,8 +55,6 @@ int main() {
                     tmp_cur_location = queue_size-1;
                     while(queue[tmp_cur_location] == -1){
                         tmp_cur_location--;
-//                        if(queue[tmp_cur_location] != -1)
-//                            tmp_movement[1]--;
                     }
                 }
             }
@@ -71,14 +67,10 @@ int main() {
         cur_location = arr_extract_num[extract_frequency];
         if(cur_location == queue_size){
             cur_location = 0;
-//            while(queue[cur_location] == -1){
-//                cur_location++;
-//            }
         }
         while(queue[cur_location] == -1){
             cur_location++;
         }
-
         extract_frequency++;
     }
     cout << movement << endl;
