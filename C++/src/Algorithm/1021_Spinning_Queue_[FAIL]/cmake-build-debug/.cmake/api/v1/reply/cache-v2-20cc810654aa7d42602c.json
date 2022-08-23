@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue/cmake-build-debug"
+			"value" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue_[FAIL]/cmake-build-debug"
 		},
 		{
 			"name" : "1021_Spinning_Queue_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue"
+			"value" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue_[FAIL]"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Code/C++/src/Algorithm/1021_Spinning_Queue/cmake-build-debug"
+			"value" : "c:/Code/C++/src/Algorithm/1021_Spinning_Queue_[FAIL]/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue"
+			"value" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue_[FAIL]"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",

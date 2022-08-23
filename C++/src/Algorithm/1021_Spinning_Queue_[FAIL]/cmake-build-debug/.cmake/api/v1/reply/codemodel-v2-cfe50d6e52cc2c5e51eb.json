@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue/cmake-build-debug",
-		"source" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue"
+		"build" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue_[FAIL]/cmake-build-debug",
+		"source" : "C:/Code/C++/src/Algorithm/1021_Spinning_Queue_[FAIL]"
 	},
 	"version" : 
 	{

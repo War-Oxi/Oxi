@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Code\C++\src\Algorithm\1021_Spinning_Queue -BC:\Code\C++\src\Algorithm\1021_Spinning_Queue\cmake-build-debug
+  command = "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Code\C++\src\Algorithm\1021_Spinning_Queue_[FAIL] -BC:\Code\C++\src\Algorithm\1021_Spinning_Queue_[FAIL]\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

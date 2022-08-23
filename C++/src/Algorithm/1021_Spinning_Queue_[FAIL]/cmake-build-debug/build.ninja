@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Code/C++/src/Algorithm/1021_Spinning_Queue/cmake-build-debug/
+cmake_ninja_workdir = C$:/Code/C++/src/Algorithm/1021_Spinning_Queue_[FAIL]/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target 1021_Spinning_Queue
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = C$:/Code/C++/src/Algorithm/1021_Spinning_Queue/cmake-build
 
 build cmake_object_order_depends_target_1021_Spinning_Queue: phony || CMakeFiles/1021_Spinning_Queue.dir
 
-build CMakeFiles/1021_Spinning_Queue.dir/main.cpp.obj: CXX_COMPILER__1021_Spinning_Queue_Debug C$:/Code/C++/src/Algorithm/1021_Spinning_Queue/main.cpp || cmake_object_order_depends_target_1021_Spinning_Queue
+build CMakeFiles/1021_Spinning_Queue.dir/main.cpp.obj: CXX_COMPILER__1021_Spinning_Queue_Debug C$:/Code/C++/src/Algorithm/1021_Spinning_Queue_[FAIL]/main.cpp || cmake_object_order_depends_target_1021_Spinning_Queue
   DEP_FILE = CMakeFiles\1021_Spinning_Queue.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\1021_Spinning_Queue.dir
@@ -81,7 +81,7 @@ build 1021_Spinning_Queue.exe: CXX_EXECUTABLE_LINKER__1021_Spinning_Queue_Debug 
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Code\C++\src\Algorithm\1021_Spinning_Queue\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Code\C++\src\Algorithm\1021_Spinning_Queue_[FAIL]\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +92,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Code\C++\src\Algorithm\1021_Spinning_Queue\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Code\C++\src\Algorithm\1021_Spinning_Queue -BC:\Code\C++\src\Algorithm\1021_Spinning_Queue\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Code\C++\src\Algorithm\1021_Spinning_Queue_[FAIL]\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Code\C++\src\Algorithm\1021_Spinning_Queue_[FAIL] -BC:\Code\C++\src\Algorithm\1021_Spinning_Queue_[FAIL]\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,7 +110,7 @@ build 1021_Spinning_Queue: phony 1021_Spinning_Queue.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Code/C++/src/Algorithm/1021_Spinning_Queue/cmake-build-debug
+# Folder: C:/Code/C++/src/Algorithm/1021_Spinning_Queue_[FAIL]/cmake-build-debug
 
 build all: phony 1021_Spinning_Queue.exe
 

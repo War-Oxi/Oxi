@@ -1,4 +1,4 @@
-//! 회전하는 큐
+//10828 스택
 #include <iostream>
 using namespace std;
 
