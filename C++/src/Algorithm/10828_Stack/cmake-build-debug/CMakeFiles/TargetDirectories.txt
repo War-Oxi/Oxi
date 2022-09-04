@@ -1,0 +1,3 @@
+C:/Code/C++/src/Algorithm/10828_Stack/cmake-build-debug/CMakeFiles/10828_Stack.dir
+C:/Code/C++/src/Algorithm/10828_Stack/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/src/Algorithm/10828_Stack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
