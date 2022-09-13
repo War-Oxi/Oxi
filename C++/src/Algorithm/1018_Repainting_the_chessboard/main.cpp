@@ -1,3 +1,6 @@
+/**
+ * [1018]체스판 다시칠하기
+ */
 #include <iostream>
 
 using namespace std;
