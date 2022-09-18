@@ -1,29 +1,25 @@
 #include <iostream>
 using namespace std;
 
-double powpow(int num1, int num2) {
-    double result = 0;
-    if(num2 > 0){
-        result = num1;
-        for(int i=1; i<num2; i++) {
-            result *= num1;
-        }
-    }
-    else if(num2 < 0 ){
-        result = 1.0 / num1;
-        for(int i=-1; i>num2; i--){
-            result /= num1;
-        }
-    }
-    else{
-        return 1;
-    }
-    return result;
-}
+int main(){
+    int value = 4;
+    int value3 = 6;
+    int *const ptr = &value;
+//    value = 8;
+//    ptr = &value3;
+//    *ptr = 6;
 
-int main() {
-    cout << powpow(2, 0) << endl;
+    cout << value << endl;
+    cout << *ptr << endl;
+    cout << endl;
+
+    int value2 = 6;
+    const int *ptr2 = &value2;
+    value2 = 8;
+//    *ptr2 = *value3;
+    ptr2 = &value;
+    cout << value2 << endl;
+    cout << *ptr2 << endl;
 
     return 0;
-
 }
