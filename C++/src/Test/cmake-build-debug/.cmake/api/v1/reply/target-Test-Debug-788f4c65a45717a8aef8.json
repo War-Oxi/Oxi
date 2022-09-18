@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Test.exe"
-		},
-		{
-			"path" : "Test.pdb"
+			"path" : "Test"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk"
 				},
 				{
 					"fragment" : "-std=gnu++14"
@@ -55,7 +52,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/AllFile/TaeJi/University/Code/C++/src/Test/."
+					"path" : "/Users/kimtaeji/Code/C++/src/Test/."
 				}
 			],
 			"language" : "CXX",
@@ -85,16 +82,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "Test",
-	"nameOnDisk" : "Test.exe",
+	"nameOnDisk" : "Test",
 	"paths" : 
 	{
 		"build" : ".",
