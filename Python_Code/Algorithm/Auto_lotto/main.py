@@ -14,7 +14,7 @@ def Lotto_Generator(lotto_num):
             print(list_lotto[num], end=' ')
         print()
 
-
+# a = int()
 print("** 로또 번호 생성을 시작합니다 **")
 input_lotto_num = int(input("몇 번을 뽑을까요? "))
 Lotto_Generator(input_lotto_num)
