@@ -1,25 +1,22 @@
 #include <iostream>
+#include <algorithm>
+#include <vector>
+#include <limits>
+
+
 using namespace std;
 
 int main(){
-    int value = 4;
-    int value3 = 6;
-    int *const ptr = &value;
-//    value = 8;
-//    ptr = &value3;
-//    *ptr = 6;
+//    int arr_1[] = {1,2,3,4,5,6,7,8,10,200,7,11,2,22,33};
+    vector<int> arr_1 = {1,2,3,4,5,6,7,8,10,200,7,11,2,22,33};
 
-    cout << value << endl;
-    cout << *ptr << endl;
-    cout << endl;
+    int max_num = std::numeric_limits<int>::lowest();
 
-    int value2 = 6;
-    const int *ptr2 = &value2;
-    value2 = 8;
-//    *ptr2 = *value3;
-    ptr2 = &value;
-    cout << value2 << endl;
-    cout << *ptr2 << endl;
+    for(const auto &num: arr_1){
+        max_num = std::max(num, max_num);
+    }
 
-    return 0;
+    cout << max_num << endl;
+
+
 }
