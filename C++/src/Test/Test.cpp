@@ -1,22 +1,26 @@
 #include <iostream>
+#include <array>
 #include <algorithm>
-#include <vector>
-#include <limits>
-
-
 using namespace std;
 
 int main(){
-//    int arr_1[] = {1,2,3,4,5,6,7,8,10,200,7,11,2,22,33};
-    vector<int> arr_1 = {1,2,3,4,5,6,7,8,10,200,7,11,2,22,33};
+    std::array<int, 5> my_arr = {1, 2, 3, 4, 5};
+    my_arr = {0,1,2,3,4};
+//    my_arr = {0,1,2};
 
-    int max_num = std::numeric_limits<int>::lowest();
+    cout << my_arr[5] << endl;
+    cout << my_arr.at(2) << endl;
+    cout << my_arr.size() << endl << endl;
 
-    for(const auto &num: arr_1){
-        max_num = std::max(num, max_num);
-    }
+    std::sort(my_arr.begin(), my_arr.end());
+    for (auto &element : my_arr)
+        cout << element << " ";
+    cout << endl;
 
-    cout << max_num << endl;
+    std::sort(my_arr.rbegin(), my_arr.rend());
+    for (auto &element : my_arr)
+        cout << element << " ";
+    cout << endl;
 
-
+    return 0;
 }
