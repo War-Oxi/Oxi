@@ -7,7 +7,7 @@ def insert_data(position, friend):
 
     # katok.append(friend)
 
-def find_and_insert_data(friend, k_count):
+# def find_and_insert_data(friend, k_count):
 
 def add_data(friend):
     katok.append(friend)
