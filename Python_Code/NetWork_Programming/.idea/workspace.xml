@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11ff2aed-0fa1-421f-a589-3b7165326074" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/../Algorithm/Singly_Linked_List.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/Linear_List.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm/Linear_List.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../University_real/NetWork_Programming/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +32,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/kimtaeji/Code/Python_Code/NetWork_Programming",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kimtaeji/Code/Python_Code/NetWork_Programming&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="9_20_String_Num_Calc" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NetWork_Programming" />
@@ -128,7 +127,9 @@
       <updated>1663651263682</updated>
       <workItem from="1663651268341" duration="3992000" />
       <workItem from="1665258728912" duration="43000" />
-      <workItem from="1665408900910" duration="14162000" />
+      <workItem from="1665408900910" duration="14229000" />
+      <workItem from="1665454513504" duration="34000" />
+      <workItem from="1665597169753" duration="1464000" />
     </task>
     <servers />
   </component>
@@ -147,7 +148,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NetWork_Programming$main.coverage" NAME="main 커버리지 결과" MODIFIED="1665427172280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetWork_Programming$main.coverage" NAME="main 커버리지 결과" MODIFIED="1665598188663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetWork_Programming$9_20_Test.coverage" NAME="9_20_Test 커버리지 결과" MODIFIED="1663656110763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
