@@ -1,34 +1,38 @@
-class People:
-    def __init__(self, age=0, name=None):
-        self.__age = age
-        self.__name = name
+class Rectangle:
+    def __init__(self, width, height):
+        self.__width = width
+        self.__height = height
 
-    def IntroMe(self):
-        print("Name : ", self.__name, "age : ", str(self.__age))
+    def Set_Rectangle(self, width, height):
+        self.__width = width
+        self.__height = height
 
-class Teacher (People):
-    def __init__(self, age = 0, name = None, school = None):
-        super().__init__(age, name)
-        self.__school = school
+    def Get_Info(self):
+        print("width = {}, height = {}".format(self.__width, self.__height))
 
-    def IntroMe(self):
-        super().IntroMe()
-        print("School : ", self.__school)
+    def Get_Area(self):
+        print("Area => {}".format(self.__width * self.__height))
 
-class Student (Teacher):
-    def __init__(self, age=0, name=None, school = None, grade=None):
-        super().__init__(age, name, school)
-        self.__grade = grade
+    def Get_Round(self):
+        print("Round => {}".format(self.__width * 2 + self.__height * 2))
 
-    def IntroMe(self):
-        super().IntroMe()
-        print("Grade : ", self.__grade)
+class Square(Rectangle):
+    def __init__(self, width):
+        super().__init__(width, width)
 
-p1 = People(29, "Lee")
-p1.IntroMe()
+    def Set_Square(self, width):
+        super().Set_Rectangle(width, width)
 
-t1 = Teacher(48, "Kim", "HighSchool")
-t1.IntroMe()
+    def Get_Info(self):
+        print("width = {}".format(self.__width))
 
-s1 = Student(17, "Park", "HighSchool", 2)
-s1.IntroMe()
+
+
+Rectangle1_ = Rectangle(3, 5)
+Rectangle1_.Get_Area()
+Rectangle1_.Get_Round()
+print("=============================")
+Square1_ = Square(4)
+Square1_.Set_Square(5)
+Square1_.Get_Area()
+Square1_.Get_Round()
