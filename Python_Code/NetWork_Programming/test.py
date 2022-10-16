@@ -1,15 +1,14 @@
-##1~45까지의 숫자를 6개 가진 로또 번호 6개 만들기
-import random
-def Lotto():
-    a = []
-    while(True):
-        temp_num = random.randrange(1, 46)
-        if temp_num not in a:
-            a.append(temp_num)
-        if len(a) == 6:
-            break
-    print("로또 번호 => {}".format(a))
+class Node:
+    def __init__(self):
+        self.data = None
+        self.link = None
 
-for num in range(0,6):
-    Lotto()
 
+node1 = Node(); node1.data = "다현"
+node2 = Node(); node2.data = "정연"; node1.link = node2
+node3 = Node(); node3.data = "쯔위"; node2.link = node3
+
+print(node1)
+print(id(node1))
+print(node2)
+print(node3)
