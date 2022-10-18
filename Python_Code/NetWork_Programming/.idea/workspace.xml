@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11ff2aed-0fa1-421f-a589-3b7165326074" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Lotto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter2_Exam.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter3_Exam.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter3_Exam2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter8_exam2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Inheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7_exam1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7_exam1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lotto.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lotto.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +48,11 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.Lotto_Randrange">
+  <component name="RunManager" selected="Python.test">
     <configuration name="9_20_String_Num_Calc" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NetWork_Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,7 +75,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="9_20_Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Chapter3_Exam2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NetWork_Programming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,7 +88,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/9_20_Test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter3_Exam2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +111,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter7_exam1.py" />
-      <option name="PARAMETERS" value="1 2 3 4" />
+      <option name="PARAMETERS" value="1 2 3 4 5 6" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Chapter8_exam2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NetWork_Programming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter8_exam2.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -171,7 +199,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="1 2 3 4 5 6" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -182,17 +210,19 @@
     <list>
       <item itemvalue="Python.Inheritance" />
       <item itemvalue="Python.9_20_String_Num_Calc" />
-      <item itemvalue="Python.Lotto_Randrange" />
+      <item itemvalue="Python.Lotto" />
+      <item itemvalue="Python.Chapter3_Exam2" />
+      <item itemvalue="Python.Chapter8_exam2" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.9_20_Test" />
       <item itemvalue="Python.Chapter7_exam1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Lotto_Randrange" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.Lotto" />
+        <item itemvalue="Python.Chapter8_exam2" />
         <item itemvalue="Python.Chapter7_exam1" />
-        <item itemvalue="Python.9_20_Test" />
+        <item itemvalue="Python.Chapter3_Exam2" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +240,9 @@
       <workItem from="1665454513504" duration="34000" />
       <workItem from="1665597169753" duration="1905000" />
       <workItem from="1665634138386" duration="9776000" />
-      <workItem from="1665849378070" duration="3049000" />
+      <workItem from="1665849378070" duration="3562000" />
+      <workItem from="1665941630243" duration="14295000" />
+      <workItem from="1666028937898" duration="14444000" />
     </task>
     <servers />
   </component>
@@ -229,9 +261,15 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NetWork_Programming$Chapter7_exam1.coverage" NAME="Chapter7_exam1 커버리지 결과" MODIFIED="1665679856350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetWork_Programming$Chapter7_exam1.coverage" NAME="Chapter7_exam1 커버리지 결과" MODIFIED="1666050359657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetWork_Programming$main.coverage" NAME="main 커버리지 결과" MODIFIED="1665679313681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NetWork_Programming$test.coverage" NAME="Lotto 커버리지 결과" MODIFIED="1665927833665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetWork_Programming$test.coverage" NAME="test 커버리지 결과" MODIFIED="1666066823645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NetWork_Programming$9_20_Test.coverage" NAME="9_20_Test 커버리지 결과" MODIFIED="1663656110763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetWork_Programming$Chapter8_exam2.coverage" NAME="Chapter8_exam2 커버리지 결과" MODIFIED="1666062963462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetWork_Programming$Chapter2_Exam.coverage" NAME="Chapter2_Exam 커버리지 결과" MODIFIED="1666028898215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetWork_Programming$Lotto.coverage" NAME="Lotto 커버리지 결과" MODIFIED="1666066821611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetWork_Programming$Inheritance.coverage" NAME="Inheritance 커버리지 결과" MODIFIED="1665941649773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetWork_Programming$Chapter3_Exam2.coverage" NAME="Chapter3_Exam2 커버리지 결과" MODIFIED="1666032957094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NetWork_Programming$Chapter3_Exam.coverage" NAME="Chapter3_Exam 커버리지 결과" MODIFIED="1666029540414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

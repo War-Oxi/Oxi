@@ -15,6 +15,8 @@ def Get_Sin_Plus_Cos(degree):
 def Add_Number():
     import sys
     sum = 0
+    # print(sys.argv)
+    # print(len(sys.argv))
     for i in range(1, len(sys.argv)):
         sum += int(sys.argv[i])
     return sum
