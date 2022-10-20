@@ -1,4 +1,3 @@
-
 class People:
     c_Number = 0
     def __init__(self, age=0, name=None):

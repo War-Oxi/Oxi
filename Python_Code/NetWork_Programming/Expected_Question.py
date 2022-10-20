@@ -143,5 +143,3 @@ def Exam2(): #임의의 주어진 텍스트 파일의 내용을 화면에 출력
         output_string = file.read()
         print(output_string)
 
-# Exam1()
-Exam2()
