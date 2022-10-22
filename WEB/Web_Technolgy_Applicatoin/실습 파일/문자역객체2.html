@@ -1,0 +1,30 @@
+<script type="text/javascript">
+
+	var userName=prompt("당신의 영문이름은?","");
+	var upperName=userName.toUpperCase();  //이름을 대문자로
+	document.write(upperName, "<br/>");
+	
+	var userNum=prompt("당신의 연락처는 ?", "")
+	var result=userNum.substring(0, userNum.length-4) +"****";  //번호 뒤의 4자리는 별표로
+	document.write(result, "<br/>");
+	
+	var userEmail=prompt("당신의 이메일 주소는?", "");
+	var arrUrl=[".co.kr", ".com",".net",".or.kr",".go.kr"];
+	var check1=false;
+	var check2=false;
+	
+	if(userEmail.indexOf("@")>0) check1=true; //메일주소에 @가 있는지 확인
+ 	
+	for(var i=0; i<arrUrl.length; i++){
+		if(userEmail.indexOf (arrUrl[i]>0)) {   //메일주소에 arrUrl의 부분이 있는지 확인
+			check2=true;
+		}
+	}
+	
+	if(check1&check2) {
+		document.write(userEmail);
+	} else {
+		alert("이메일 형식이 잘못 되었음");
+	}
+	
+</script>

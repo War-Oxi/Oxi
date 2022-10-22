@@ -1,0 +1,24 @@
+<script type="text/javascript">
+
+var site=prompt("네이버, 다음, 네이트, 구글 중 즐겨 사용하는 곳은 ?","");
+var url;
+
+switch(site) {
+	case "네이버" : url="www.naver.com";
+	break;
+	
+	case "다음"  : url="www.daum.net";
+	break;
+	
+	case "네이트" : url="www.nate.com";
+	break;
+	
+	case "구글" : url="www.google.co.kr";
+	break;
+	
+	default : alert("보기중에 없는 사이트입니다");
+}
+
+if(url) location.href="http://"+url;
+
+</script>

@@ -1,0 +1,23 @@
+<script type="text/javascript">
+	var t = "Hello Thank you lucker good lucky to you ";
+	document.write(t.charAt(16),"<br/>"); //`16번째 있는 문자
+	document.write(t.indexOf("you"),"<br/>"); //you의 인덱스 값
+	document.write(t.indexOf("you", 16),"<br/>");//16이후에 발견된 you의 인덱스 값
+	document.write(t.lastIndexOf("you", 16),"<br/>");//오른쪽에서 왼쪽으로 검색
+	document.write(t.match("luck"),"<br/>");
+	document.write(t.search("luck"),"<br/>");
+	document.write(t.substr(6, 5),"<br/>");
+	document.write(t.replace("you", "me"),"<br/>");
+	document.write(t, "<br/>");
+	document.write(t.toLowerCase(),"<br/>"); //toUpperCase
+	document.write(t.length,"<br/>");
+	
+	var s=t.split(" ");
+	document.write(s[4], "<br/>");
+	
+	var str="A";
+	var test=str.charCodeAt(0);
+	document.write(test, "<br/>");
+	
+	document.write(String.fromCharCode(65),"<br/>");
+</script>

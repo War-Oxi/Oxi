@@ -1,0 +1,30 @@
+<script src="http://code.jquery.com/jquery-3.6.0.min.js"> </script>
+<script type="text/javascript">
+
+$(function(){
+	//$("#menu li:first").css("background-color","yellow"); //#menu li:last
+	//$("#menu li:even").css("background-color","pink");    //#menu li:odd
+	//$("li:first-of-type").css("background-color","yellow"); //last-of-type
+	//$("li:nth-child(3n)").css("background-color","red"); //nth-last-of-type(2)
+	//$("li:only-child").css("background-color","red"); 
+	//$("#menu li").slice(2).css("background-color","pink");
+	$("li:eq(1)").css("background-color","red"); //eq, gt, lt
+	$("li:gt(1)").css("background-color","yellow");
+});
+</script></head>
+<body>
+	<h1>탐색 선택자</h1>
+	<ul id="menu">
+		<li> 첫번째 내용입니다</li>
+		<li> 두번째 내용입니다</li>
+		<li> 세번째 내용입니다</li>
+	</ul>
+		<ul >
+		<li> 네번째 내용입니다</li>
+		<li> 다섯번째 내용입니다</li>
+		<li> 여삿번째 내용입니다</li>
+	</ul>
+	<ul >
+		<li> 일곱번째 내용입니다</li>		
+	</ul>
+</body></html>

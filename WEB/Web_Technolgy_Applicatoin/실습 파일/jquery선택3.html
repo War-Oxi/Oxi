@@ -1,0 +1,29 @@
+<script src="http://code.jquery.com/jquery-3.6.0.min.js"> </script>
+<script type="text/javascript">
+
+$(function(){
+	$(function() {
+		$("a[title]").css("background-color","yellow");
+		$("a[href='http://www.nate.com']").css("background-color","pink");
+		$("a[href^='mailto']").css("background-color","aqua");// 속성으로 시작되는 요소가 mailto
+		$("a[href$='net']").css("background-color","red");  // 속성으로 끝나는 요소가 net
+	});
+});
+
+</script>
+
+</head>
+
+<body>
+	<h1>탐색 선택자</h1>
+	<ul>
+		<li> <a href="http://www.naver.com" title="네이버 이동">네이버 </a></li>
+		<li> <a href="mailto:ciycc@naver.com">관리자에게 </a></li>
+		<li> <a href="http://www.nate.com" >네이트 </a></li>
+		<li> <a href="http://www.daum.net" >다음 </a></li>
+		<li> <a href="http://www.google.com">구글 </a></li>
+		
+	</ul>
+		
+</body>
+</html>

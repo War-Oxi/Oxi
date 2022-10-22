@@ -1,0 +1,37 @@
+<script type="text/javascript">
+
+	var str="Html Css Jquery";
+	var reg1=/css/;   //var reg1=new RegExp("css");
+	var result_1=reg1.test(str); //str에 css가 있는지 검사
+	document.write(result_1,"<br/>");
+	var reg2=/css/i; // var reg2=new RegExp("css","i")//대소문자 구별하지 않음 
+	var result_2=reg2.test(str);
+	document.write(result_2, "<br/>");
+	
+	var userName=prompt("당신의 이름은 ?");
+	reg_userName=/^[가-힣]{2,5}$/;  //문자열 앞(^)부터 끝까지($) 한글 2~5자리
+	while(true){
+		if(reg_userName.test(userName)) break;
+		alert("이름이 잘못 입력되었습니다");
+		userName=prompt("(다시) 당신의 이름은 ?");
+	}
+	
+	var userCell=prompt("당신의 휴대폰 번호는 ?");
+	reg_userCell=/^(010|016|011)\d{3,4}\d{4}$/;
+	while(true){
+		if(reg_userCell.test(userCell)) break;
+		alert("휴대폰 번호를 잘못 입력되었습니다");
+		userCell=prompt("(다시) 휴대폰 번호는 ?");
+	}
+	
+	var userEmail=prompt("당신의 이메일은 ?");
+	reg_userEmail=/^\w{5,12}@[a-z]{2,10}[\.][a-z]{2,3}[\.]?[a-z]{0,2}$/;
+	while(true){
+		if(reg_userEmail.test(userEmail)) break;
+		alert("이메일 잘못 입력되었습니다");
+		userEmail=prompt("(다시) 당신의 이메일은 ?");
+	}
+	document.write(userName,"<br/>");
+	document.write(userCell,"<br/>");
+	document.write(userEmail,"<br/>");	
+</script>

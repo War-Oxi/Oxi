@@ -1,0 +1,21 @@
+<script type="text/javascript">
+
+var id="1111";
+var pwd="2222";
+
+var ID=prompt("아이디는 ? ", "");
+var PWD=prompt("패스워드는 ? ", "");
+
+if(id==ID) {
+	if(pwd==PWD){
+		document.write(ID+"님 반갑습니다");
+	}else {
+		alert("비밀번호가 틀립니다");
+		location.reload();
+	}
+} else {
+	alert("아이디가 틀립니다");
+	location.reload();
+} 
+
+</script>

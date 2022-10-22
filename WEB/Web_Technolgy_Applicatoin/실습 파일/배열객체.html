@@ -1,0 +1,42 @@
+<script type="text/javascript">
+
+              // 배열 선언 및 Access 방법
+	var d=[30, "조민호", true];
+	document.write(d[0], "<br/>");
+	document.write(d[1], "<br/>");
+	document.write(d[2], "<br/>");
+	
+              //배열 데이타에 대한 접근 방법
+	for(var i=0; i<3; i++) {
+		document.write(d[i], "<br/>");
+	}
+	for(var i=0; i<d.length; i++) {
+		document.write(d[i], "<br/>");
+	}
+	for(var i in d){
+		document.write(d[i], "<br/>");
+	}
+	
+	document.write(d.join("-"), "<br/>"); //-으로 연결
+	document.write(d.reverse(), "<br/>"); //역으로 보여줌
+              
+	d.splice(1,1,"홍길동","국가사랑"); //1번째의 1개 항목을 두개의 데이타로 대체
+	for(var i in d){
+		document.write(d[i], "<br/>");
+	}
+	
+	d.pop();
+	d.push("대한민국")
+	for(var i in d){
+		document.write(d[i], "<br/>");
+	}
+
+
+	d.shift();
+	d.unshift("신도림");
+	for(var i in d){
+		document.write(d[i], "<br/>");
+	}
+	
+</script>
+
