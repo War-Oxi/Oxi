@@ -60,7 +60,6 @@ class Square:
 #     for i in range(1, 11):
 #         print("{}의 개수 => {}개".format(i, load_data.count(str(i))))
 
-while True:
-    a = int(input())
-    if a == 1:
-        break
+a = input()
+print(type(a))
+print(a.isspace())
