@@ -1,34 +1,19 @@
-<title> DOM 객체 </title>
-
 <script type="text/javascript">
 
-   var color=["white","yellow","aqua","purple"];
-   var i=0;
+	var tv=new Object();  //객체를 생성하고 tv에 할당
+	
+	tv.width="30";  //객체의 속성 설정  
+	tv.height="40";
+	tv.weight="50";
+	tv.color="white";
+	
+	tv.off=function() {   //객체의 함수 생성
+		document.write("전원 OFF");
+	}
+	
+	document.write(tv.width, "<br/>");  //객체의 속성 출력
+	document.write(tv.color, "<br/>");
+	
+	tv.off();  //객체의 함수 수행
 
-   function login(id, pw){
-            if(id=="hanguk"){
-                 if(pw=="1234") {
-	     document.write(id+"님 방문을 환영합니다");
-                  }else {
-	      alert("잘못된 비밀번호입니다");
-                 } 
-            }else {
-                alert("존재하지 않는 아이디입니다");
-           }
-   }
-   function colorBg() {
-            i++;
-            if(i>=color.length) i=0;
-            
-            var bodyTag=document.getElementsByTagName("body")[0];
-            bodyTag.style.backgroundColor=color[i];
-    }
-    var user_id=prompt("아이디를 입력하세요","");
-    var user_pw=prompt("패스워드를 입력하세요","");
-    login(user_id,user_pw);
 </script>
-</head>
-<body>	
-     <button onclick="colorBg();"> 배경색바꾸기</button>
-</body>
-</html>
