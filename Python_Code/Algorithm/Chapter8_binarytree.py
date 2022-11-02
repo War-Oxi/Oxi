@@ -114,7 +114,7 @@ class BST:
             return self.root.searchNode(key)
         return None
 
-    def insert(self, keyvalue):
+    def insert(self, keyvalue): #재귀호출 X
         if self.root is None:
             self.root = BSTNode(keyvalue)
             return
