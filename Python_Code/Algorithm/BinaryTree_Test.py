@@ -46,7 +46,7 @@ class BSTNode:
         while min_larger_node.left is not None:
             min_larger_node = min_larger_node.left
         return min_larger_node
-
+    ## 재귀 사용
     def deleteNode(self, key):
         if self is None:
             return self
@@ -114,7 +114,7 @@ class BST:
             return self.root.searchNode(key)
         return None
 
-    def insert(self, keyvalue): #재귀호출 X
+    def insert(self, keyvalue):
         if self.root is None:
             self.root = BSTNode(keyvalue)
             return
@@ -140,7 +140,7 @@ class BST:
             self.root = BSTNode(keyvalue)
             return
         self.root.insertRecursive(keyvalue)
-
+    # 재귀 사용 X
     def delete(self, key):
         print("Key %s를 삭제" % key)
         current = self.root
@@ -155,6 +155,7 @@ class BST:
             else: # key == current.keyvalue.key
                 if current.left is not None and current.right is not None:
                     # 오른쪽에서 가장 작은 값는 노드 찾기
+                    # 두 자식을 가진 노드 삭제
                     parent = current
                     min_larger_node = current.right
                     while min_larger_node.left is not None:
@@ -163,7 +164,7 @@ class BST:
 
                     current.keyvalue = min_larger_node.keyvalue
                     if min_larger_node == current.right:
-                        current.right = min_larger_node.right
+                        parent.right = min_larger_node.right
                     else:
                         parent.left = min_larger_node.right
                     del(min_larger_node)
