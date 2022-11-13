@@ -78,11 +78,11 @@ class BSTNode:
 
     def printNode(self, depth, which):
         if self.left is not None:
-            self.left.printNode(depth+1, "left")
+            self.left.printNode(depth+1, f"\"{self.keyvalue.key}\"->left")
         print("depth %d, %s: " % (depth, which), end='')
         self.keyvalue.printKeyValue()
         if self.right is not None:
-            self.right.printNode(depth+1, "right")
+            self.right.printNode(depth+1, f"\"{self.keyvalue.key}\"->right")
 
 
 class BST:
@@ -194,41 +194,57 @@ class BST:
         print("Key %s가 없어 지울 수 없음" % key)
 
 
-    def deleteRecursive(self, key):
+    def deleteRecursive(self, key): #삭제(재귀사용)
+        print("Key %s를 삭제" % key)
         if self.root is not None:
             self.root = self.root.deleteNode(key)
 
 
-data = [
-    ("박혁거세", "010-1111-8888"),
-    ("김수로", "010-1111-6666"),
-    ("궁예", "010-1111-5555"),
-    ("김유신", "010-1111-7777"),
-    ("을지문덕", "010-1111-1111"),
-    ("이순신", "010-1111-3333"),
-    ("신사임당", "010-1111-4444"),
-    ("홍길동", "010-1111-2222") ]
-
+# data = [
+#     (8, "010-1111-8888"),
+#     (4, "010-1111-6666"),
+#     (12, "010-1111-5555"),
+#     (2, "010-1111-7777"),
+#     (6, "010-1111-1111"),
+#     (10, "010-1111-3333"),
+#     (14, "010-1111-4444"),
+#     (1, "010-1111-2222"),
+#     (3, "010-1111-2222"),
+#     (5, "010-1111-2222"),
+#     (7, "010-1111-2222"),
+#     (9, "010-1111-2222"),
+#     (11, "010-1111-2222"),
+#     (13, "010-1111-2222"),
+#     (15, "010-1111-2222")]
+data = [(2, "00000"),
+        (1, "00000"),
+        (3, "00000"),
+        (4, "00000"),
+        (5, "00000")]
 tree = BST()
 
 #데이터 초기화
 for d in data:
-    tree.insert( KeyValue(d[0],d[1]) )
+    tree.insert(KeyValue(d[0],d[1]))
 
 tree.printAll()
 
-tree.delete("박혁거세")
-tree.delete("신사임당")
-tree.delete("궁예")
-tree.delete("을지문덕")
-tree.delete("이순신")
-tree.printAll()
-tree.delete("홍길동")
-tree.printAll()
-tree.delete("김수로")
-tree.printAll()
-tree.delete("김유신")
+tree.delete(2)
+# tree.deleteRecursive(6)
+# tree.deleteRecursive(5)
+# tree.deleteRecursive(7)
+# tree.deleteRecursive(4)
 
-#마지막까지 모든 데이터 삭제 후 확인
+# tree.delete(2)
+# #마지막까지 모든 데이터 삭제 후 확인
 tree.printAll()
-
+# tree.delete("신사임당")
+# tree.delete("궁예")
+# tree.delete("을지문덕")
+# tree.delete("이순신")
+# tree.printAll()
+# tree.delete("홍길동")
+# tree.printAll()
+# tree.delete("김수로")
+# tree.printAll()
+# tree.delete("김유신")
