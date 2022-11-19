@@ -48,7 +48,7 @@ build cmake_object_order_depends_target_Test: phony || CMakeFiles/Test.dir
 
 build CMakeFiles/Test.dir/Test.cpp.o: CXX_COMPILER__Test_Debug /Users/kimtaeji/Code/C++/src/Test/Test.cpp || cmake_object_order_depends_target_Test
   DEP_FILE = CMakeFiles/Test.dir/Test.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -std=gnu++14
   INCLUDES = -I/Users/kimtaeji/Code/C++/src/Test/.
   OBJECT_DIR = CMakeFiles/Test.dir
   OBJECT_FILE_DIR = CMakeFiles/Test.dir
@@ -64,7 +64,7 @@ build CMakeFiles/Test.dir/Test.cpp.o: CXX_COMPILER__Test_Debug /Users/kimtaeji/C
 # Link the executable Test
 
 build Test: CXX_EXECUTABLE_LINKER__Test_Debug CMakeFiles/Test.dir/Test.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
   OBJECT_DIR = CMakeFiles/Test.dir
   POST_BUILD = :
   PRE_LINK = :
