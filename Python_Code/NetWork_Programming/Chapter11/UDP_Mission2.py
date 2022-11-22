@@ -1,10 +1,11 @@
 def server():
     # server
-    import socket
     import sys
+    import socket
     import os
-
-    port = 4000
+    import time
+    BUFSIZE = 1024 * 8
+    port = 4200
     s_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     host = ""
     s_sock.bind((host, port))
@@ -22,18 +23,28 @@ def server():
         content = data[4:].strip()
         print("key=", key, 'content=', content)
 
-        if key == "file":
+        if key == "file": #먼저 보내기
             fileSize = os.path.getsize('D:/' + content)
-            s_sock.sendto(str(fileSize).encode(), addr)
-            with open("D:/" + content, 'rb') as f:
-                while f:
-                    s_sock.sendto(f, addr)
-                    s_sock.sendto("EoF".encode())
+            print(f"filesize => {fileSize}")
+            s_sock.sendto(str(fileSize).encode(), addr)  #
+            with open("D:/" + content, 'rb') as fp:
+                data = fp.read(BUFSIZE)
+                while data:
+                    s_sock.sendto(data, addr)
+                    # time.sleep(0.01)
+                    data, addr = s_sock.recvfrom(1024)
+                    if data.decode() == "ACK":
+                        data = fp.read(BUFSIZE)
+                        continue
+                    else:
+                        print("123123")
+                        time.sleep(0.02)
+
                 print(content + ' Sending complete')
             continue
 
         elif key == "chat":
-            print(data)
+            print(f"client => {content}")
             s_sock.sendto(input("Response: ").encode(), addr)
             continue
 
@@ -52,14 +63,15 @@ def client():
 
     s_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     host = "localhost"
-    port = 4000
+    port = 4200
+    s_sock.sendto("Connect plz".encode(), (host, port))
     data, addr = s_sock.recvfrom(1024)
 
     # s_sock.connect((host, port))
-    print("server - " + addr.decode())
-    print("Use chat or file or stop")
+    print("server - ", addr)
 
     while True:
+        print("Use chat or file or stop")
         msg = input("Ask: ")
         key = msg[:4]
         content = msg[4:].strip()
@@ -67,9 +79,9 @@ def client():
         s_sock.sendto(msg.encode(), addr)
         if key == "chat":
             # s_sock.send(msg.encode())
-            print(s_sock.recvfrom(1024))
+            print(f"Server => {s_sock.recvfrom(1024)[0].decode()}")
             continue
-        elif key == "file":
+        elif key == "file":  # 받기
             # s_sock.send(msg.encode())
             data, addr = s_sock.recvfrom(1024)
             datasize = int(data.decode())
@@ -79,10 +91,9 @@ def client():
                 while True:
                     data, addr = s_sock.recvfrom(8192)
                     received_data += len(data)
-                    # elif data[-3:].decode() == "EoF":
-                    #     f.write(data[:-3])
-                    #     break
                     f.write(data)
+                    # print(f"received_data => {received_data}")
+                    s_sock.sendto("ACK".encode(), addr)
                     if datasize <= received_data:
                         print(f"received_data => {received_data}")
                         print("datasize >= received_data")
