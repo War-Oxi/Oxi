@@ -82,11 +82,11 @@ def client():
                     # elif data[-3:].decode() == "EoF":
                     #     f.write(data[:-3])
                     #     break
+                    f.write(data)
                     if datasize <= received_data:
                         print(f"received_data => {received_data}")
                         print("datasize >= received_data")
                         break
-                    f.write(data)
                 print(content + ' Download completed')
             continue
         elif key == "stop":
