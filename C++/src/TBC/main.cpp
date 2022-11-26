@@ -1,11 +1,7 @@
-#include <iostream>
+#include <cassert>
 
-using namespace std;
+int main(){
+    assert(false);
 
-enum Color {
-    COLOR_BLACK,
-    COLOR_RED,
-    COLOR_BLUE,
-    BLUE,
-};
-
+    return 0;
+}
