@@ -1,5 +1,9 @@
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
+/**
+ * 참고https://solbel.tistory.com/711
+ **/
+
 //<![CDATA[
 $(function(){
   $("h1 a").on({
@@ -11,7 +15,11 @@ $(function(){
     }
   });
 
-  $("h2 a").on("mouseover focus",function(){
+  // $("h2 a").on("mouseover focus",function(){
+  //   $(this).css("background-color","yellow");
+  // });
+
+  $(document).on("mouseover focus", "h2 a",function(){
     $(this).css("background-color","yellow");
   });
 
@@ -19,14 +27,15 @@ $(function(){
     $(this).css("background-color","aqua");
   });
 
-  //<h1>에 새 요소를 위에 이벤트 등록보다 늦게 생성하였습니다.
+  //<h2>에 새 요소를 위에 이벤트 등록보다 늦게 생성하였습니다. 
+  //[이 때 문제가 생김]
   $("h2").append("<a href='#'>생성된 요소</a>");
 });
 //]]>
 </script>
 </head>
 <body>
-   <h1><a href="#">버튼</a></h1>
-   <h2></h2>
+  <h1><a href="#">버튼</a></h1>
+  <h2></h2>
 </body>
 </html>

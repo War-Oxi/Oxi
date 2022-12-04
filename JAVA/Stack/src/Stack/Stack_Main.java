@@ -1,24 +1,33 @@
 package Stack;
 
-public class Stack_Main {
-	public static void main(String args[]) {
-		Stack stack1 = new Stack();
-		stack1.push(6);
-		stack1.push(10);
-		stack1.push(7);
 
-	    if (!stack1.isEmpty())
-	        System.out.printf("%d\n", stack1.pop());
-	    
-	    if (!stack1.isEmpty())
-	    	System.out.printf("%d\n", stack1.pop());
-	    
-	    if (!stack1.isEmpty())
-	    	System.out.printf("%d\n", stack1.pop());
-	    
-	    if (!stack1.isEmpty())
-	    	System.out.printf("%d\n", stack1.pop());		    
-	    else
-	    	System.out.printf("%d\n", stack1.pop());		    
-	}
+class Circle {
+    int radius;
+    Circle(int radius) {
+        this.radius = radius;
+    }
+    void show() {
+        System.out.println("반지름이 " + radius + "인 원이다.");
+    }
+}
+class ColoredCircle extends Circle {
+    String color;
+
+    ColoredCircle(int radius, String color) {
+        super(radius);
+        this.color=color;
+    }
+    void show() {
+        System.out.println("반지름이 " + radius + "인 " + color + " 원이다.");
+    }
+}
+
+public class Stack_Main {
+    public static void main(String[] args) {
+        Circle c1 = new Circle(5);
+        ColoredCircle c2 = new ColoredCircle(10,"빨간색");
+
+        c1.show();
+        c2.show();
+    }
 }
