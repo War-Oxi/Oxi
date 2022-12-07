@@ -27,7 +27,7 @@ while True:
 
     elif key == "file":
         with open("D:/" + content, 'rb') as f:
-            c_sock.sendfile(f,0)
+            c_sock.sendfile(f, 0)
             c_sock.send("EoF".encode())
             print(content + ' Sending complete')
         continue
