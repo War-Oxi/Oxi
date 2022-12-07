@@ -1,7 +1,10 @@
 
 import random
 import time
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8c5ad3b6e26aecadb2bb9e322bb754b13727a9bd
 
 def qSort(array, start, end):
     if end <= start:
