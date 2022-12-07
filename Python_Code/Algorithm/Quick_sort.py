@@ -1,6 +1,6 @@
 
 import random
-import t:wime
+import time
 
 def qSort(array, start, end):
     if end <= start:

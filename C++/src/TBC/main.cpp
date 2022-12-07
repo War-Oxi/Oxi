@@ -1,25 +1,33 @@
 #include <iostream>
 using namespace std;
 
-class Fraction{
+class IntArray{
 private:
-    int m_numerator; //분자
-    int m_denominator; //분모
+    int *m_arr = nullptr;
+    int m_arrSize = 0;
 
 public:
-    Fraction(int num_in = 1,int denom_in = 1){
-        m_numerator = num_in;
-        m_denominator = denom_in;
+    explicit IntArray(const int sizeIn){
+        m_arrSize = sizeIn;
+        m_arr = new int[m_arrSize];
+
+        cout << "Constructor called" << endl;
     }
-    void print() const{
-        cout << m_numerator << " " << m_denominator << endl;
+
+    ~IntArray(){
+        if (m_arr != nullptr){
+            delete m_arr;
+            cout << "Destructor called" << endl;
+        }
+        else
+            cout << "Destructor not called" << endl;
     }
 };
 
-
 int main(){
-    Fraction frac{1, 2};
-    frac.print();
+    for (int i =0; i<100; i++){
+        IntArray(1000);
+    }
 
     return 0;
 }
