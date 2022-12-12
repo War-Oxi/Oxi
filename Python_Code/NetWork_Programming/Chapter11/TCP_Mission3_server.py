@@ -16,7 +16,10 @@ while True:
     msg = c_sock.recv(1024).decode()
     key = msg[:4]
     content = msg[4:].strip()
-    print("key=", key, 'content=',content)
+    if not msg:
+        print(f"connection closed...")
+        break
+    print("key=", key, 'content=', content)
 
     if key == "chat":
         print(msg)
@@ -25,8 +28,8 @@ while True:
 
     elif key == "file":
         with open("D:/" + content, 'rb') as f:
-            c_sock.sendfile(f,0)
-            c_sock.send("EoF".encode())
+            c_sock.sendfile(f, 0)
+            # c_sock.send("EoF".encode())
             print(content + ' Sending complete')
         continue
 

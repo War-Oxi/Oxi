@@ -1,28 +1,27 @@
-import random
-from socket import *
+#server
+import socket
 
+s_sock = socket.socket()
+host = "localhost"
 port = 2500
-BUFFER = 1024
-server = "localhost"
-c_sock = socket(AF_INET, SOCK_DGRAM)
-c_sock.connect((server,port))
 
-for i in range(10):
-    delay = 0.1
-    data = 'Hello message'
+s_sock.connect((host, port))
+s_sock.send("I am ready".encode())
 
+
+# filename = input('File name to receive(c:/test/sample.bin): ')
+# s_sock.send(filename.encode())
+fn = s_sock.recv(1024).decode()
+
+with open('d:/'+fn, 'wb') as f:
+    print('file opened')
+    print('receiving file...')
     while True:
-        c_sock.send(data.encode())
-        print(f'Waiting up to {delay} seconds for a reply')
-        c_sock.settimeout(delay)
-        try:
-            data = c_sock.recv(BUFFER)
-        except timeout:
-            delay *= 2
-            if delay > 2.0:
-                print('The server seems to be down')
-                break
-        else:
-            print('Response: ', data.decode())
+        data = s_sock.recv(8192)
+        if not data:
             break
+        f.write(data)
 
+print('Download complete')
+s_sock.close()
+print('Connection closed')

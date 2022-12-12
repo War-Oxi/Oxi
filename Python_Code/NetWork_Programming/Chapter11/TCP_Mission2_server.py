@@ -18,7 +18,7 @@ while True:
     msg = c_sock.recv(1024).decode()
     key = msg[:4]
     content = msg[4:].strip()
-    print("key=", key, 'content=',content)
+    print("key=", key, 'content=', content)
 
     if key == "chat":
         print(msg)

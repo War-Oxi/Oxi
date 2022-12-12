@@ -1,18 +1,36 @@
-import random
-from socket import *
+
+
+# server
+import socket
+import sys
+
+# BUFSIZE = 1024
 
 port = 2500
-BUFFER = 1024
+s_sock = socket.socket()
+host = ""
+s_sock.bind((host, port))
+s_sock.listen(1)
 
-s_sock = socket(AF_INET, SOCK_DGRAM)
-s_sock.bind(('', port))
-print('Waiting...')
+print('Waiting for connection....')
 
-while True:
-    data, address = s_sock.recvfrom(BUFFER)
-    if random.randint(1, 10) < 4: #패킷 손실
-        print(f'Packet from {address} lost!!!')
-        continue
-    print(f'Message is {data.decode()!r} from {address}')
+c_sock, addr = s_sock.accept()
+print('Connected from', addr)
+msg = c_sock.recv(1024)
+print(msg.decode())
+filename = input('File name to send(c:/test/sample.bin): ')
+print(f"Sending '{filename}'")
+fn = filename.split('/')
 
-    s_sock.sendto('ACK'.encode(), address)
+c_sock.sendall(fn[-1].encode())
+
+with open(filename, 'rb') as f:
+    c_sock.sendfile(f, 0)
+
+    #data = f.read()
+    #while data:
+    # c_sock.sendall(data)
+    # data = f.read()
+
+print('Sending complete')
+c_sock.close()

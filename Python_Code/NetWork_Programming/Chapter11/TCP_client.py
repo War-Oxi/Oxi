@@ -1,5 +1,5 @@
 import socket
-
+from socket import *
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 svrIP = input(("Server IP(default: 192.168.109.58): "))
