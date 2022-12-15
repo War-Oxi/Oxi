@@ -1,4 +1,4 @@
-#server
+#client
 import socket
 
 s_sock = socket.socket()
@@ -28,7 +28,7 @@ while True:
                 elif data[-3:].decode() == "EoF":
                     f.write(data[:-3])
                     break
-                f.write(data)
+                f.write(data)  # ???
             print(content + ' Download completed')
         continue
     elif key == "stop":

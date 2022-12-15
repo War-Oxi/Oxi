@@ -22,7 +22,8 @@ def handler(sock):
             pass
         else:
             entry2.delete(0, END)
-            entry1.insert(INSERT, r_msg.decode() + "\n")
+            # entry1.insert(INSERT, r_msg.decode() + "\n")
+            entry1.insert(INSERT, r_msg.decode())
             entry1.see(tkinter.END)
             # entry1.delete(0,END)
 
@@ -32,6 +33,7 @@ sock.connect(("localhost", 2500))
 
 root = Tk()
 root.title('client')
+
 message_label = Label(text='받은메시지', font=('Verdana', 16))
 entry1 = tkinter.scrolledtext.ScrolledText(root, width=20, height=30, wrap=tkinter.WORD)
 entry1.focus_set()

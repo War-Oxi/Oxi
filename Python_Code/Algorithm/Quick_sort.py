@@ -1,10 +1,6 @@
 
 import random
 import time
-<<<<<<< HEAD
-
-=======
->>>>>>> 8c5ad3b6e26aecadb2bb9e322bb754b13727a9bd
 
 def qSort(array, start, end):
     if end <= start:
@@ -56,22 +52,34 @@ def interativeQsort(arr):
 
 
 
-aOrgData = []
-N = 200
+N = 10000
 iter = 100
 i = 0
-while i < N:
-    data = random.randrange(1, N*10)
-    if not (data in aOrgData):
-        aOrgData.append(data)
-        i+=1
+mintime = 1000000000000
+maxtime = 0
+resulttime = 0
 
-
-starttime = time.time()
 for i in range(iter):
+    aOrgData = []
+    while i < N:
+        data = random.randrange(1, N*10)
+        if not (data in aOrgData):
+            aOrgData.append(data)
+            i += 1
+
     aData = aOrgData
+    starttime = time.time()
     quickSort(aData)
-endtime = time.time()
-print((endtime-starttime))
+    endtime = time.time()
+    if endtime-starttime < mintime:
+        mintime = endtime-starttime
+    elif endtime-starttime > maxtime:
+        maxtime = endtime-starttime
+
+    print((endtime-starttime))
+    resulttime += endtime - starttime
 
 
+print("total result => ", resulttime)
+print("mintime => ", mintime)
+print("maxtime => ", maxtime)

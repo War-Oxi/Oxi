@@ -3,8 +3,8 @@ import socket
 import sys
 
 port = 2600
-s_sock = socket.socket()
 host = ""
+s_sock = socket.socket()
 s_sock.bind((host, port))
 s_sock.listen(1)
 

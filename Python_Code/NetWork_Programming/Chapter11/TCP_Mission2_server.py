@@ -1,5 +1,3 @@
-
-
 # server
 import socket
 import sys
@@ -28,7 +26,7 @@ while True:
     elif key == "file":
         with open("D:/" + content, 'rb') as f:
             c_sock.sendfile(f, 0)
-            c_sock.send("EoF".encode())
+            c_sock.send("EoF".encode()) # 안보내줘도 될듯?
             print(content + ' Sending complete')
         continue
 

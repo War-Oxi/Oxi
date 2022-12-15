@@ -3,16 +3,15 @@ from tkinter import *
 from socket import *
 import threading
 import sys
-import struct
 
 
 def calculate():
     global temp
     temp = entry2.get()
     conn.send(str(temp).encode())
-    scrolledtext.insert(tkinter.INSERT, f"Me: {temp} \n")
-    scrolledtext.see(tkinter.END)  # 자동으로 스크롤이 내려가도록 하는 함수
-    entry2.delete(0, tkinter.END)
+    scrolledtext.insert(INSERT, f"Me: {temp} \n")
+    scrolledtext.see(END)  # 자동으로 스크롤이 내려가도록 하는 함수
+    entry2.delete(0, END)
 
 
 def handler(s):
@@ -23,9 +22,9 @@ def handler(s):
         except:
             pass
         else:
-            entry2.delete(0, tkinter.END)
-            scrolledtext.insert(tkinter.INSERT, f"받은 메시지: {r_msg.decode()} \n")
-            scrolledtext.see(tkinter.END)
+            entry2.delete(0, END)
+            scrolledtext.insert(INSERT, f"받은 메시지: {r_msg.decode()} \n")
+            scrolledtext.see(END)
             # entry1.delete(0,END)
 
 
