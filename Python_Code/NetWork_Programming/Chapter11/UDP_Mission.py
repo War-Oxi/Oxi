@@ -5,9 +5,9 @@ def server():
     import os
 
     port = 4000
+    host = ''
     s_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    host = ""
-    s_sock.bind(('', port))
+    s_sock.bind((host, port))
     # s_sock.listen(1)
 
     # c_sock, addr = s_sock.accept()
@@ -21,7 +21,6 @@ def server():
         key = data[:4]
         content = data[4:].strip()
         print("key=", key, 'content=', content)
-
 
         if key == "file":
             fileSize = os.path.getsize('D:/' + content)
@@ -51,8 +50,8 @@ def client():
     import socket
 
     s_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    host = "localhost"
-    port = 2600
+    # host = "localhost"
+    # port = 2600
     data, addr = s_sock.recvfrom(1024)
 
     # s_sock.connect((host, port))

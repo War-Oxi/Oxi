@@ -1,4 +1,4 @@
-#server
+#client
 import socket
 
 s_sock = socket.socket()
@@ -39,7 +39,7 @@ while True:
                     print("datasize >= received_data")
                     break
                 f.write(data)
-            print(content + ' Download completed')
+            print(content + " Download completed")
         continue
     elif key == "stop":
         # s_sock.send(msg.encode())

@@ -2,15 +2,14 @@ import tkinter.scrolledtext
 from tkinter import *
 from socket import *
 import threading
-import struct
 
 
 def calculate():
     global temp
     temp = entry2.get()
     sock.send(str(temp).encode())
-    entry1.insert(tkinter.INSERT, f"Me: {temp} \n")
-    entry1.see(tkinter.END)
+    entry1.insert(INSERT, f"Me: {temp} \n")
+    entry1.see(END)
     entry2.delete(0, END)
 
 
@@ -23,8 +22,8 @@ def handler(sock):
             pass
         else:
             entry2.delete(0, END)
-            entry1.insert(tkinter.INSERT, f"받은 메시지: {r_msg.decode()} \n")
-            entry1.see(tkinter.END)
+            entry1.insert(INSERT, f"받은 메시지: {r_msg.decode()} \n")
+            entry1.see(END)
             # entry1.delete(0,END)
 
 

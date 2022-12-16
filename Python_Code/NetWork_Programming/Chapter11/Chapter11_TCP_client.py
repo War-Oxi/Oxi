@@ -25,7 +25,6 @@ while True:
 
     try:
         sock.send(msg.encode())
-
     except:
         print("연결이 종료되었습니다")
         break
@@ -36,7 +35,6 @@ while True:
             print("연결이 종료되었습니다")
             break
         print(f'Received message: {msg.decode()}')
-
     except:
         print("연결이 종료되었습니다.")
         break

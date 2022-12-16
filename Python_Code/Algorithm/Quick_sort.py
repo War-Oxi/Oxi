@@ -1,5 +1,6 @@
 import random
 import time
+<<<<<<< HEAD
 import sys
 
 def selectSort(ary):
@@ -27,6 +28,8 @@ def bubbleSort(ary):
             if(ary[cur] > ary[cur+1]):
                 ary[cur], ary[cur+1] = ary[cur+1], ary[cur]
 
+=======
+>>>>>>> 96ca999c54bc3381ad975292e55b4f3f812a03b9
 
 def qSort(array, start, end):
     if end <= start:
@@ -75,6 +78,7 @@ def interativeQsort(arr):
             stack.append(p + 1)
             stack.append(end)
             stack.append(begin)
+<<<<<<< HEAD
             stack.append(p - 1)
 
 
@@ -129,4 +133,40 @@ with open("B_QuickSort.csv", "w") as f:
 
 # print(longestTime)
 # print(shortistTime)
+=======
+            stack.append(p-1)
 
+
+
+N = 10000
+iter = 100
+i = 0
+mintime = 1000000000000
+maxtime = 0
+resulttime = 0
+
+for i in range(iter):
+    aOrgData = []
+    while i < N:
+        data = random.randrange(1, N*10)
+        if not (data in aOrgData):
+            aOrgData.append(data)
+            i += 1
+
+    aData = aOrgData
+    starttime = time.time()
+    quickSort(aData)
+    endtime = time.time()
+    if endtime-starttime < mintime:
+        mintime = endtime-starttime
+    elif endtime-starttime > maxtime:
+        maxtime = endtime-starttime
+
+    print((endtime-starttime))
+    resulttime += endtime - starttime
+
+>>>>>>> 96ca999c54bc3381ad975292e55b4f3f812a03b9
+
+print("total result => ", resulttime)
+print("mintime => ", mintime)
+print("maxtime => ", maxtime)

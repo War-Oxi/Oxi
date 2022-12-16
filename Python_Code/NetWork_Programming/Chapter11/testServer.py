@@ -1,18 +1,13 @@
-import random
-from socket import *
-
+import socket
 port = 2500
 BUFFER = 1024
 
-s_sock = socket(AF_INET, SOCK_DGRAM)
-s_sock.bind(('', port))
-print('Waiting...')
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.bind(('', port))
+print('수신 대기 중')
 
 while True:
-    data, address = s_sock.recvfrom(BUFFER)
-    if random.randint(1, 10) < 4: #패킷 손실
-        print(f'Packet from {address} lost!!!')
-        continue
-    print(f'Message is {data.decode()!r} from {address}')
-
-    s_sock.sendto('ACK'.encode(), address)
+    data, addr = sock.recvfrom(BUFFER)
+    print("Received message: ", data.decode())
+    print(addr)
+    sock.sendto(data, addr)
