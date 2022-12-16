@@ -82,14 +82,14 @@ def interativeQsort(arr):
 
 
 # arr = [500, 1000, 3000, 5000, 7000, 9000, 11000]
-with open("A_bubbleSort.csv", "w") as f:
+with open("B_bubbleSort.csv", "w") as f:
     f.write("반복횟수, 수행시간 \n")
     arr = []
     tmp = 0
-    while tmp <= 50000:
+    while tmp <= 10000:
 
         arr.append(tmp)
-        tmp += 1000
+        tmp += 100
 
     # print(arr)
     # print(len(arr))
