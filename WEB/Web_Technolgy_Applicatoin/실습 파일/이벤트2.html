@@ -27,11 +27,11 @@ function submit_chk(myForm){
 		return false;
 	}	
 }
- /*취소 버튼을 눌렀을 땐 확인/취소 창을 띄우고, 다시 한번
+/*취소 버튼을 눌렀을 땐 확인/취소 창을 띄우고, 다시 한번
 회원가입 취소 여부를 묻습니다.*/
 function reset_chk(myForm){
-   	var result=confirm("정말로 회원가입을 취소하시겠습니까?");
-   	if(!result){
+		var result=confirm("정말로 회원가입을 취소하시겠습니까?");
+		if(!result){
 		return false;
 	}	
 }
@@ -43,19 +43,19 @@ function reset_chk(myForm){
 	<form action="#" method="post" name="f1" 
 		onsubmit="return submit_chk(this);"  onreset="return reset_chk(this);">
 	<fieldset>
-	<legend>회원가입</legend>
-	<p>
-	<label for="user_name">이름</label>
-	<input type="text" name="user_name" id="user_name" />
-	</p>
-	<p>
-	<label for="user_tel">연락처</label>
-	<input type="text" name="user_tel" id="user_tel" />
-	</p>
-	<p>
-		<input type="submit" value="회원가입" />
-		<input type="reset" value="가입취소" />
-	</p>
+		<legend>회원가입</legend>
+		<p>
+			<label for="user_name">이름</label>
+			<input type="text" name="user_name" id="user_name" />
+		</p>
+		<p>
+			<label for="user_tel">연락처</label>
+			<input type="text" name="user_tel" id="user_tel" />
+		</p>
+		<p>
+			<input type="submit" value="회원가입" />
+			<input type="reset" value="가입취소" />
+		</p>
 	</fieldset>
 	</form>
 </body></html> 

@@ -12,6 +12,7 @@ def selectSort(ary):
         tmp = ary[i]
         ary[i] = ary[minIdx]
         ary[minIdx] = tmp
+    #print(ary)
 
 def insertSort(ary):
     n = len(ary)
@@ -19,6 +20,7 @@ def insertSort(ary):
         for cur in range(end, 0, -1):
             if(ary[cur-1] > ary[cur]):
                 ary[cur-1], ary[cur] = ary[cur], ary[cur-1]
+    #print(ary)
 
 def bubbleSort(ary):
     n = len(ary)
@@ -26,6 +28,7 @@ def bubbleSort(ary):
         for cur in range(0, end):
             if(ary[cur] > ary[cur+1]):
                 ary[cur], ary[cur+1] = ary[cur+1], ary[cur]
+    #print(ary)
 
 
 def qSort(array, start, end):
@@ -79,7 +82,7 @@ def interativeQsort(arr):
 
 
 # arr = [500, 1000, 3000, 5000, 7000, 9000, 11000]
-with open("selectsort.csv", "w") as f:
+with open("A_insertSort.csv", "w") as f:
     f.write("반복횟수, 수행시간 \n")
     arr = []
     tmp = 0

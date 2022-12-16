@@ -15,13 +15,13 @@ $(function(){
     }
   });
 
-  // $("h2 a").on("mouseover focus",function(){
-  //   $(this).css("background-color","yellow");
-  // });
-
-  $(document).on("mouseover focus", "h2 a",function(){
+  $("h2 a").on("mouseover focus",function(){
     $(this).css("background-color","yellow");
   });
+
+  // $(document).on("mouseover focus", "h2 a",function(){
+  //   $(this).css("background-color","yellow");
+  // });
 
   $(document).on("mouseout blur","h2 a",function(){
     $(this).css("background-color","aqua");
