@@ -48,7 +48,7 @@ build cmake_object_order_depends_target_TBC: phony || CMakeFiles/TBC.dir
 
 build CMakeFiles/TBC.dir/main.cpp.o: CXX_COMPILER__TBC_Debug /Users/kimtaeji/Code/C++/src/TBC/main.cpp || cmake_object_order_depends_target_TBC
   DEP_FILE = CMakeFiles/TBC.dir/main.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -fcolor-diagnostics -std=gnu++14
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++14
   OBJECT_DIR = CMakeFiles/TBC.dir
   OBJECT_FILE_DIR = CMakeFiles/TBC.dir
   TARGET_COMPILE_PDB = CMakeFiles/TBC.dir/
@@ -63,7 +63,7 @@ build CMakeFiles/TBC.dir/main.cpp.o: CXX_COMPILER__TBC_Debug /Users/kimtaeji/Cod
 # Link the executable TBC
 
 build TBC: CXX_EXECUTABLE_LINKER__TBC_Debug CMakeFiles/TBC.dir/main.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/TBC.dir
   POST_BUILD = :
   PRE_LINK = :
