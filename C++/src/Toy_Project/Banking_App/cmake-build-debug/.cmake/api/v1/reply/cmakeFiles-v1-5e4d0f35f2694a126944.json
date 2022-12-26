@@ -1143,8 +1143,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug",
-		"source" : "/Users/kimtaeji/Code/C++/src/TBC"
+		"build" : "/Users/kimtaeji/Code/C++/src/Toy_Project/Banking_App/cmake-build-debug",
+		"source" : "/Users/kimtaeji/Code/C++/src/Toy_Project/Banking_App"
 	},
 	"version" : 
 	{

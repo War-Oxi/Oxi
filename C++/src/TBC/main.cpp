@@ -1,39 +1,28 @@
 #include <iostream>
-//#include <string>
-
 using namespace std;
 
-class Something{
-
+class Point{
 private:
-    int     m_i;
-    double  m_d;
-    char    m_c;
-
+    double m_x, m_y, m_z;
 public:
-    Something()
-        : m_i(1.0)
-        , m_d{3.14}
-        , m_c('a')
-    {
-        m_i *= 2;
-        m_d *= 4;
-        m_c += 4;
-    }
-//    {
-//        m_i = 1;
-//        m_d = 3.14;
-//        m_c = 'a';
-//    }
+    Point(double x = 0.0, double y = 0.0, double z = 0.0)
+        :m_x(x), m_y(y), m_z(z)
+    {}
 
-    void print(){
-        cout << m_i << " " << m_d << " " << m_c << endl;
+    double getX() { return m_x; }
+    double getY() { return m_y; }
+    double getZ() { return m_z; }
+
+    friend std::ostream& operator << (std::ostream &out, const Point &point)
+    {
+        out << "( " << point.m_x << " " << point.m_y << " " << point.m_z << " )";
+
+        return out;
     }
 };
 
 int main(){
-    Something a;
-    a.print();
+    Point p1(0.1, 0.1, 0.2), p2(3.4, 1.5, 2.0);
 
-    return 0;
+    cout << p1 << endl;
 }
