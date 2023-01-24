@@ -1,0 +1,3 @@
+C:/Code/C++/src/Algorithm/10845_Queue/cmake-build-debug/CMakeFiles/10845_Queue.dir
+C:/Code/C++/src/Algorithm/10845_Queue/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/src/Algorithm/10845_Queue/cmake-build-debug/CMakeFiles/rebuild_cache.dir
