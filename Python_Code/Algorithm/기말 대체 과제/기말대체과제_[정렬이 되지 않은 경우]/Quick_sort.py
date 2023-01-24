@@ -102,8 +102,8 @@ with open("Max1000_QuickSort.csv", "w") as f:
         for j in range(iter):
             i = 0
             aOrgData = random.sample(range(1, N+1), N)
-            print(aOrgData)
-            print(len(aOrgData))
+            # print(aOrgData)
+            # print(len(aOrgData))
 
             # while i < N:
             #     data = random.randrange(1, N * 10)
@@ -111,20 +111,15 @@ with open("Max1000_QuickSort.csv", "w") as f:
             #         aOrgData.append(data)
             #         i += 1
             starttime = time.time()
-            print(starttime)
+            # print(starttime)
             quickSort(aOrgData)
             endtime = time.time()
-            print(endtime)
 
             resultTime += endtime - starttime
-            print(resultTime)
         avgTime = resultTime/iter
-        print(type(avgTime))
         f.write(f"{N}, {avgTime*1000:.5f} \n")
         print(f"배열의 크기 => {N} 평균 시간 => {avgTime*1000:.5f}ms ")
-              # f"\n최소 수행 시간 => {shortistTime:.5f}ms 최대 수행 시간 => {longestTime:.5f}ms")
         print("=============================================================================")
 
 # print(longestTime)
 # print(shortistTime)
-

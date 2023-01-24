@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		8A7D5A8DCD26427E96874D4C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D68184DAEE6648999FC84DD7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				B4B39F292E0E1E1C8197D4AE /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		AA5CCADCF33C467AB5662F5C /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1723DBF7E22E4EF48D6B04A8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				7C381D4E7B941E48F4EA7751 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				9D85A37F40EA4DCFB1688DFF /* PBXTargetDependency */,
+				7CB96DAB40B34C22868FF22F /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		095C7D1176D14FB08E952804 /* /Users/kimtaeji/Code/C++/src/TBC/main.cpp */ = {isa = PBXBuildFile; fileRef = CDA4EB1D2CCF41CB9CE8C6E2 /* /Users/kimtaeji/Code/C++/src/TBC/main.cpp */; };
+		8A1CC115668B49E8935ABEB7 /* /Users/kimtaeji/Code/C++/src/TBC/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 092885747A4E4C2AB5B94821 /* /Users/kimtaeji/Code/C++/src/TBC/CMakeLists.txt */; };
+		C1619D8F85314E9FB65ADBAD /* /Users/kimtaeji/Code/C++/src/TBC/Calc.h */ = {isa = PBXBuildFile; fileRef = B9E5110B3EFD4506B87A5821 /* /Users/kimtaeji/Code/C++/src/TBC/Calc.h */; };
+		D5E9831CC6254AC2B8D400D8 /* /Users/kimtaeji/Code/C++/src/TBC/Calc.cpp */ = {isa = PBXBuildFile; fileRef = EC8B48CA35224181A7022713 /* /Users/kimtaeji/Code/C++/src/TBC/Calc.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1973F09018604A7B82FD8A87 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		3675019D4C8C466EA113D843 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		77CE7E91B80D494B853443A1 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		CB6F29B4737B40059A761614 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		66E70CB82504499CA26F8146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A17BD8ABB8E342DFA1332956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24C924E0632442184F0CAC0;
+			remoteInfo = TBC;
+		};
+		6879850AB2A249FF99F1AABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A17BD8ABB8E342DFA1332956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A7D5A8DCD26427E96874D4C;
+			remoteInfo = ZERO_CHECK;
+		};
+		888F52DEB357486697C36049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A17BD8ABB8E342DFA1332956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A7D5A8DCD26427E96874D4C;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		092885747A4E4C2AB5B94821 /* /Users/kimtaeji/Code/C++/src/TBC/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1CC901A804BB44A1BBB1D9E4 /* TBC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = TBC; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E77263AD2C4EDEB11DB7B2 /* /Users/kimtaeji/Code/C++/src/TBC/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B9E5110B3EFD4506B87A5821 /* /Users/kimtaeji/Code/C++/src/TBC/Calc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Calc.h; path = Calc.h; sourceTree = SOURCE_ROOT; };
+		CDA4EB1D2CCF41CB9CE8C6E2 /* /Users/kimtaeji/Code/C++/src/TBC/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		EC8B48CA35224181A7022713 /* /Users/kimtaeji/Code/C++/src/TBC/Calc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Calc.cpp; path = Calc.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F8D060CFD434D1BA89F95A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085816287692450EA0122E26 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				B229E0AFA5CA4A79AB9286CD /* CMake Rules */,
+				98E77263AD2C4EDEB11DB7B2 /* /Users/kimtaeji/Code/C++/src/TBC/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		0C7CF72360784A3DB2F06DC5 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9E5110B3EFD4506B87A5821 /* /Users/kimtaeji/Code/C++/src/TBC/Calc.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		1C222D7482F34A90A1AE80A3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC8B48CA35224181A7022713 /* /Users/kimtaeji/Code/C++/src/TBC/Calc.cpp */,
+				CDA4EB1D2CCF41CB9CE8C6E2 /* /Users/kimtaeji/Code/C++/src/TBC/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2BC4D66AC59942F6AAB998CE = {
+			isa = PBXGroup;
+			children = (
+				B460D81887564AA8BE356694 /* TBC */,
+				085816287692450EA0122E26 /* ALL_BUILD */,
+				383047DC0CFA42C5BA39C96B /* Products */,
+				45C3DE2A3E78459080E3247B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		383047DC0CFA42C5BA39C96B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CC901A804BB44A1BBB1D9E4 /* TBC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45C3DE2A3E78459080E3247B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B229E0AFA5CA4A79AB9286CD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B460D81887564AA8BE356694 /* TBC */ = {
+			isa = PBXGroup;
+			children = (
+				1C222D7482F34A90A1AE80A3 /* Source Files */,
+				0C7CF72360784A3DB2F06DC5 /* Header Files */,
+				092885747A4E4C2AB5B94821 /* /Users/kimtaeji/Code/C++/src/TBC/CMakeLists.txt */,
+			);
+			name = TBC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B24C924E0632442184F0CAC0 /* TBC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 257D7DB4F02E4CF9B0C8467B /* Build configuration list for PBXNativeTarget "TBC" */;
+			buildPhases = (
+				38E7A34BF832442785A6F4D2 /* Sources */,
+				7F8D060CFD434D1BA89F95A7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3EDFF64D9FD4EAB96BC3226 /* PBXTargetDependency */,
+			);
+			name = TBC;
+			productName = TBC;
+			productReference = 1CC901A804BB44A1BBB1D9E4 /* TBC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A17BD8ABB8E342DFA1332956 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = 36B8F8BF83DE4C5B9C39D0FB /* Build configuration list for PBXProject "TBC" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				77CE7E91B80D494B853443A1 /* Debug */,
+				CB6F29B4737B40059A761614 /* Release */,
+				1973F09018604A7B82FD8A87 /* MinSizeRel */,
+				3675019D4C8C466EA113D843 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 2BC4D66AC59942F6AAB998CE;
+			projectDirPath = "/Users/kimtaeji/Code/C++/src/TBC";
+			projectRoot = "";
+			targets = (
+				AA5CCADCF33C467AB5662F5C /* ALL_BUILD */,
+				B24C924E0632442184F0CAC0 /* TBC */,
+				8A7D5A8DCD26427E96874D4C /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7C381D4E7B941E48F4EA7751 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B4B39F292E0E1E1C8197D4AE /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+  make -f /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+  make -f /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+  make -f /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
+  make -f /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38E7A34BF832442785A6F4D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E9831CC6254AC2B8D400D8 /* /Users/kimtaeji/Code/C++/src/TBC/Calc.cpp */,
+				095C7D1176D14FB08E952804 /* /Users/kimtaeji/Code/C++/src/TBC/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CB96DAB40B34C22868FF22F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A7D5A8DCD26427E96874D4C /* ZERO_CHECK */;
+			targetProxy = 6879850AB2A249FF99F1AABE /* PBXContainerItemProxy */;
+		};
+		9D85A37F40EA4DCFB1688DFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24C924E0632442184F0CAC0 /* TBC */;
+			targetProxy = 66E70CB82504499CA26F8146 /* PBXContainerItemProxy */;
+		};
+		E3EDFF64D9FD4EAB96BC3226 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A7D5A8DCD26427E96874D4C /* ZERO_CHECK */;
+			targetProxy = 888F52DEB357486697C36049 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E11B7DBE7E5458E98AD4088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		20702E78B64C44A98D96C836 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TBC;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		23844528331A4D38BC9010A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TBC;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		54D2027D66E9479782E0A612 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/build";
+			};
+			name = RelWithDebInfo;
+		};
+		9B3028ABA8F34910962C6C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A277F6A38CA84FC999E7891F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TBC;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B2EAE73F1F4444078B2A7289 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B5A91892F79F42AA87AB35F8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C61104FC15334DE793143670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/build";
+			};
+			name = Release;
+		};
+		CE88E0578AE240DF8F3251DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/build";
+			};
+			name = Debug;
+		};
+		DDEA4F2BC3384C218285587E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DE25995E85124EEEBCA50904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E9986A70E3094ABD9AFC167A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk;
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug/build";
+			};
+			name = MinSizeRel;
+		};
+		EA55573B43F84012B9BDE8EF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EB3B2EB90A2D43B48291F3C2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F4A23E53F85A4151B962679C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = TBC;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1723DBF7E22E4EF48D6B04A8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDEA4F2BC3384C218285587E /* Debug */,
+				DE25995E85124EEEBCA50904 /* Release */,
+				EB3B2EB90A2D43B48291F3C2 /* MinSizeRel */,
+				B2EAE73F1F4444078B2A7289 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		257D7DB4F02E4CF9B0C8467B /* Build configuration list for PBXNativeTarget "TBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A277F6A38CA84FC999E7891F /* Debug */,
+				23844528331A4D38BC9010A7 /* Release */,
+				20702E78B64C44A98D96C836 /* MinSizeRel */,
+				F4A23E53F85A4151B962679C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		36B8F8BF83DE4C5B9C39D0FB /* Build configuration list for PBXProject "TBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE88E0578AE240DF8F3251DE /* Debug */,
+				C61104FC15334DE793143670 /* Release */,
+				E9986A70E3094ABD9AFC167A /* MinSizeRel */,
+				54D2027D66E9479782E0A612 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D68184DAEE6648999FC84DD7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3028ABA8F34910962C6C5E /* Debug */,
+				1E11B7DBE7E5458E98AD4088 /* Release */,
+				EA55573B43F84012B9BDE8EF /* MinSizeRel */,
+				B5A91892F79F42AA87AB35F8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A17BD8ABB8E342DFA1332956 /* Project object */;
+}

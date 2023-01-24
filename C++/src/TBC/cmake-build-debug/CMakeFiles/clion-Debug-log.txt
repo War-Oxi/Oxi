@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-"C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Code\C++\src\TBC -B C:\Code\C++\src\TBC\cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Code/C++/src/TBC/cmake-build-debug
-=======
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/kimtaeji/Code/C++/src/TBC -B /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
 -- The C compiler identification is AppleClang 14.0.0.14000029
 -- The CXX compiler identification is AppleClang 14.0.0.14000029
@@ -20,4 +14,3 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug
->>>>>>> 8c5ad3b6e26aecadb2bb9e322bb754b13727a9bd

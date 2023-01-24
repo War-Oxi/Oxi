@@ -1,33 +1,28 @@
 #include <iostream>
 using namespace std;
 
-class IntArray{
+class Point{
 private:
-    int *m_arr = nullptr;
-    int m_arrSize = 0;
-
+    double m_x, m_y, m_z;
 public:
-    explicit IntArray(const int sizeIn){
-        m_arrSize = sizeIn;
-        m_arr = new int[m_arrSize];
+    Point(double x = 0.0, double y = 0.0, double z = 0.0)
+        :m_x(x), m_y(y), m_z(z)
+    {}
 
-        cout << "Constructor called" << endl;
-    }
+    double getX() { return m_x; }
+    double getY() { return m_y; }
+    double getZ() { return m_z; }
 
-    ~IntArray(){
-        if (m_arr != nullptr){
-            delete m_arr;
-            cout << "Destructor called" << endl;
-        }
-        else
-            cout << "Destructor not called" << endl;
+    friend std::ostream& operator << (std::ostream &out, const Point &point)
+    {
+        out << "( " << point.m_x << " " << point.m_y << " " << point.m_z << " )";
+
+        return out;
     }
 };
 
 int main(){
-    for (int i =0; i<100; i++){
-        IntArray(1000);
-    }
+    Point p1(0.1, 0.1, 0.2), p2(3.4, 1.5, 2.0);
 
-    return 0;
+    cout << p1 << endl;
 }
