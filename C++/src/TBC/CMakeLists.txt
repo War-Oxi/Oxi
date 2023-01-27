@@ -3,4 +3,4 @@ project(TBC)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(TBC main.cpp Calc.cpp Calc.h)
+add_executable(TBC main.cpp Monster.h Position2D.h)

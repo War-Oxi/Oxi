@@ -1,28 +1,14 @@
-#include <iostream>
+#include "Monster.h"
+
 using namespace std;
 
-class Point{
-private:
-    double m_x, m_y, m_z;
-public:
-    Point(double x = 0.0, double y = 0.0, double z = 0.0)
-        :m_x(x), m_y(y), m_z(z)
-    {}
-
-    double getX() { return m_x; }
-    double getY() { return m_y; }
-    double getZ() { return m_z; }
-
-    friend std::ostream& operator << (std::ostream &out, const Point &point)
+int main()
+{
+    Monster mon1("Sanson", Position2D(0, 0));
+    cout << mon1 << endl;
+//    while (1)
     {
-        out << "( " << point.m_x << " " << point.m_y << " " << point.m_z << " )";
-
-        return out;
+        mon1.moveTo(Position2D(1, 1));
+        cout << mon1 << endl;
     }
-};
-
-int main(){
-    Point p1(0.1, 0.1, 0.2), p2(3.4, 1.5, 2.0);
-
-    cout << p1 << endl;
 }

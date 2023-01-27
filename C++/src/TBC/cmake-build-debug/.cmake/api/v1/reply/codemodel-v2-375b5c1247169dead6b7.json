@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22"
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TBC::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TBC-Debug-af833bbe7eca11e736b2.json",
+					"jsonFile" : "target-TBC-Debug-d820a1a6868a12979c28.json",
 					"name" : "TBC",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/kimtaeji/Code/C++/src/TBC/cmake-build-debug",
-		"source" : "/Users/kimtaeji/Code/C++/src/TBC"
+		"build" : "C:/Code/C++/src/TBC/cmake-build-debug",
+		"source" : "C:/Code/C++/src/TBC"
 	},
 	"version" : 
 	{
