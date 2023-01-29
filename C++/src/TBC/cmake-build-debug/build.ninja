@@ -52,12 +52,6 @@ build CMakeFiles/TBC.dir/main.cpp.o: CXX_COMPILER__TBC_Debug /Users/kimtaeji/Cod
   OBJECT_DIR = CMakeFiles/TBC.dir
   OBJECT_FILE_DIR = CMakeFiles/TBC.dir
 
-build CMakeFiles/TBC.dir/Calc.cpp.o: CXX_COMPILER__TBC_Debug /Users/kimtaeji/Code/C++/src/TBC/Calc.cpp || cmake_object_order_depends_target_TBC
-  DEP_FILE = CMakeFiles/TBC.dir/Calc.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++14
-  OBJECT_DIR = CMakeFiles/TBC.dir
-  OBJECT_FILE_DIR = CMakeFiles/TBC.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target TBC
@@ -66,7 +60,7 @@ build CMakeFiles/TBC.dir/Calc.cpp.o: CXX_COMPILER__TBC_Debug /Users/kimtaeji/Cod
 #############################################
 # Link the executable TBC
 
-build TBC: CXX_EXECUTABLE_LINKER__TBC_Debug CMakeFiles/TBC.dir/main.cpp.o CMakeFiles/TBC.dir/Calc.cpp.o
+build TBC: CXX_EXECUTABLE_LINKER__TBC_Debug CMakeFiles/TBC.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/TBC.dir
   POST_BUILD = :

@@ -88,8 +88,6 @@ int main(){
                 cout << "[Warning] 다시 입력해주세요." << endl;
         }
     }
-
-    return 0;
 }
 void showMenu(){
     cout << "===============Menu===============" << endl;
