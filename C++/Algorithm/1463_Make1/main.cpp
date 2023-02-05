@@ -1,37 +1,32 @@
+//1463_1로 만들기
 #include <iostream>
+#include <vector>
+#include <algorithm>
+
 using namespace std;
 
-bool divisionThree(int num_in){
-    if (num_in % 3 == 0 && num_in != 3)
-        return true;
-    else
-        return false;
-}
+void makeOne(int num){
+    vector <int> vec;
+    vec.reserve(num+1);
+    vec[0] = 0;
+    vec[1] = 0;
+    vec[2] = 1;
+    vec[3] = 1;
 
-bool divisionTwo(int num_in){
-    if (num_in % 2 == 0 && num_in != 3)
-        return true;
-    else
-        return false;
-}
-
-void makeOne(int num_in){
-    int count(0);
-    while(num_in != 1){
-        if (divisionThree(num_in))
-            num_in /= 3;
-        if (divisionThree(num_in - 1))
-            num_in -=1;
-        else if (divisionTwo(num_in))
-            num_in /= 2;
-        else
-            num_in -= 1;
-        count++;
+    for(int i = 4; i <= num; i++){
+        vec[i] = vec[i-1] + 1;
+        if(!(i % 3))
+            vec[i] = min(vec[i], vec[i/3] + 1);
+        if (!(i % 2))
+            vec[i] = min(vec[i], vec[i/2] + 1);
     }
-    cout << count << endl;
+
+    cout << vec[num] << endl;
 }
 
 int main() {
-    makeOne(2);
+    int Num;
+    cin >> Num;
+    makeOne(Num);
     return 0;
 }

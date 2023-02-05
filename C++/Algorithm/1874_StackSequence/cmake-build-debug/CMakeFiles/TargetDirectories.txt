@@ -1,0 +1,3 @@
+C:/Code/C++/Algorithm/1874_StackSequence/cmake-build-debug/CMakeFiles/1874_StackSequence.dir
+C:/Code/C++/Algorithm/1874_StackSequence/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/Algorithm/1874_StackSequence/cmake-build-debug/CMakeFiles/rebuild_cache.dir
