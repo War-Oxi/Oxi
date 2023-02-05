@@ -1,3 +1,0 @@
-D:/AllFile/TaeJi/University/Code/C++/src/cmake-build-debug/CMakeFiles/src.dir
-D:/AllFile/TaeJi/University/Code/C++/src/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/AllFile/TaeJi/University/Code/C++/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-/Users/kimtaeji/Code/C++/src/Main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/kimtaeji/Code/C++/src/Main/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/kimtaeji/Code/C++/src/Main/cmake-build-debug/CMakeFiles/Main.dir
