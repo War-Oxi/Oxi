@@ -6,11 +6,11 @@ class Mother
 protected:
     int m_i;
 public:
-//    Mother(const int & i_in)
-//        : m_i(i_in)
-//    {
-//        std::cout << "Mother constructor" << std:: endl;
-//    }
+    Mother(const int & i_in)
+        : m_i(i_in)
+    {
+        std::cout << "Mother constructor" << std:: endl;
+    }
 
     void setValue(const int& i_in)
     {
@@ -28,6 +28,9 @@ class Child : public Mother // derived class
 private:
     double m_d;
 public:
+    Child(const int & i_in, const double & d_in)
+        :Mother(i_in), m_d(d_in)
+    {}
     void setValue(const int & i_in, const double & d_in)
     {
         Mother::setValue(i_in);
@@ -56,12 +59,13 @@ class Son : public Mother
 };
 
 int main() {
-    Mother mother;
-    mother.setValue(1024);
+    Mother mother(1024);
+//    mother.setValue(1024);
     cout << mother.getValue() << endl;
 
-    Child child;
-    child.setValue(128);
+    Child child(1024, 128);
+//    child.setValue(128);
+    cout << child.Mother::getValue() << endl;
     cout << child.getValue() << endl;
 
     return 0;

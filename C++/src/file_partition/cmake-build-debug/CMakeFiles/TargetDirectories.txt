@@ -1,3 +1,0 @@
-D:/AllFile/TaeJi/University/VSCode/C++/src/file_partition/cmake-build-debug/CMakeFiles/file_partition.dir
-D:/AllFile/TaeJi/University/VSCode/C++/src/file_partition/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/AllFile/TaeJi/University/VSCode/C++/src/file_partition/cmake-build-debug/CMakeFiles/rebuild_cache.dir
