@@ -13,6 +13,12 @@ public:
     {
         cout << "I'm base" << endl;
     }
+
+    friend ostream & operator << (std::ostream & out, const Base &b)
+    {
+        out << "This is base output";
+        return out;
+    }
 };
 
 class Derived : public Base
@@ -29,14 +35,21 @@ public:
 //        Base::print();
         cout << "I'm derived " << endl;
     }
+
+    friend ostream & operator << (std::ostream & out, const Derived &d)
+    {
+        cout << static_cast<Base>(d) << endl;
+        out << "This is derived output";
+        return out;
+    }
 };
 
 int main() {
     Base base(5);
-    base.print();
+    cout << base << endl;
 
     Derived derived(7);
-    derived.print();
+    cout << derived << endl;
 
     return 0;
 }
