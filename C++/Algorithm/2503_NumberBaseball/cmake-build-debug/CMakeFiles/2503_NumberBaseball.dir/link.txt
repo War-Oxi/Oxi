@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\2503_NumberBaseball.dir/objects.a
+"C:\PROGRA~1\JetBrains\CLion 2021.3.3\bin\mingw\bin\ar.exe" qc CMakeFiles\2503_NumberBaseball.dir/objects.a @CMakeFiles\2503_NumberBaseball.dir\objects1.rsp
+"C:\PROGRA~1\JetBrains\CLion 2021.3.3\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\2503_NumberBaseball.dir/objects.a -Wl,--no-whole-archive -o 2503_NumberBaseball.exe -Wl,--out-implib,lib2503_NumberBaseball.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\2503_NumberBaseball.dir\linklibs.rsp

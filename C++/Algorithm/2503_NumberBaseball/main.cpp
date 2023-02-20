@@ -1,3 +1,4 @@
+//2503_숫자야구
 #include <iostream>
 #include <string>
 #include <memory.h>
@@ -17,19 +18,6 @@ int main() {
         if(tmp[0] == '0' || tmp[1] == '0' || tmp[2] == '0')
             num_arr[i] = false;
     }
-
-
-//    int count2 = 1;
-//    for (int i= 123; i<1000; i++){
-//        string tmp = to_string(i);
-//        if(num_arr[i]){
-//            cout << tmp << " ";
-//        }
-//        if(count2 % 10 == 0 ){
-//            cout << endl;
-//        }
-//    }
-
 
     int repeat_num;
     cin >> repeat_num;
