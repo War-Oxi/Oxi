@@ -1,0 +1,3 @@
+/Users/kimtaeji/Code/C++/Algorithm/25206_WhatIsYourAvg/cmake-build-debug/CMakeFiles/25206_WhatIsYourAvg.dir
+/Users/kimtaeji/Code/C++/Algorithm/25206_WhatIsYourAvg/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kimtaeji/Code/C++/Algorithm/25206_WhatIsYourAvg/cmake-build-debug/CMakeFiles/rebuild_cache.dir

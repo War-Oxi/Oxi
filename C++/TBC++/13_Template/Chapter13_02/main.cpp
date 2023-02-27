@@ -1,6 +1,11 @@
 //Class Template
 #include <assert.h>
 #include <iostream>
+/**
+ * explicit instantiation
+ * @tparam T
+ */
+template <typename T>
 
 class MyArray
 {
@@ -28,6 +33,6 @@ public:
 };
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << std::boolalpha << ("A" > "B") << std::endl;
     return 0;
 }
