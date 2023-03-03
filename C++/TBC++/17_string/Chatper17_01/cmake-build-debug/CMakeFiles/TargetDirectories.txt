@@ -1,0 +1,3 @@
+C:/Code/C++/TBC++/17_string/Chatper17_01/cmake-build-debug/CMakeFiles/Chatper17_01.dir
+C:/Code/C++/TBC++/17_string/Chatper17_01/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/TBC++/17_string/Chatper17_01/cmake-build-debug/CMakeFiles/rebuild_cache.dir

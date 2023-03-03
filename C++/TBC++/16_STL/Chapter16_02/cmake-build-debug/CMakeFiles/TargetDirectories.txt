@@ -1,0 +1,3 @@
+C:/Code/C++/TBC++/16_STL/Chapter16_02/cmake-build-debug/CMakeFiles/Chapter16_02.dir
+C:/Code/C++/TBC++/16_STL/Chapter16_02/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/TBC++/16_STL/Chapter16_02/cmake-build-debug/CMakeFiles/rebuild_cache.dir
