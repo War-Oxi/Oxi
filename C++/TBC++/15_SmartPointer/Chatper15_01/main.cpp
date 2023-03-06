@@ -1,7 +1,7 @@
 #include <iostream>
 //#include <string>
 #include <vector>
-
+/**
 std::string operator + (std::string str1, std::string str2){
     std::string tmp;
 
@@ -42,4 +42,15 @@ int main() {
     delete[] a;
 
     return 0;
+}
+*/
+template<typename T>
+auto adder(T num1, T num2){
+    return num1 + num2;
+}
+
+int main(){
+    std::cout << typeid(adder(4, 4)).name() << std::endl;
+    std::cout << typeid(adder(4.5, 5.5)).name() << std::endl;
+
 }
