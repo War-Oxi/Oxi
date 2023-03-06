@@ -1,0 +1,3 @@
+C:/Code/C++/Algorithm_SW/2050/cmake-build-debug/CMakeFiles/2050.dir
+C:/Code/C++/Algorithm_SW/2050/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/Algorithm_SW/2050/cmake-build-debug/CMakeFiles/rebuild_cache.dir
