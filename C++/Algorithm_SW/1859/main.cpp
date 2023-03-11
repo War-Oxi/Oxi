@@ -1,8 +1,44 @@
 #include <iostream>
 #include <vector>
+#include <queue> // queue를 써야할 것 같음
 #include <algorithm>
 
 using namespace std;
+
+/**
+ * 입력을 받으면서  max_element의 위치를 찾는다. vector 사용 max_idx;
+ * vec.begin 부터 max_idx까지 이익을 계산한다.
+ *
+ * max_idx부터 반복문을 다시 실행 하여 다음 max_idx를 찾는다.
+ */
+ 
+long long getProfit(int vec_size)
+{
+    std::vector<int> my_vec;
+    my_vec.reserve(vec_size);
+
+    //입력
+    for(int i=0; i<vec_size; i++){
+        int tmp;
+        cin >> tmp;
+        my_vec.push_back(tmp);
+    }
+
+    vector<int>::reverse_iterator r_itr;
+
+    //값 계산
+    int max_value(*my_vec.rend());
+    long long profit(0);
+    for(r_itr = my_vec.rbegin(); r_itr != my_vec.rend(); r_itr++){
+        if(*r_itr > max_value)
+            max_value = *r_itr;
+        else
+            profit += max_value - *r_itr;
+    }
+
+    return profit;
+//    cout << "#" profit;
+}
 
 int main() {
     int test_case, t_num;
@@ -10,20 +46,10 @@ int main() {
 
     for(int i=0; i < test_case; i++){
         cin >> t_num;
-        vector<int> my_vec;
-        my_vec.reserve(t_num);
-    }
+        long long profit(getProfit(t_num));
 
-    /**
-     * 1. 가격이 올라가다가 떨어질 때의 가격을 변수 target_price에 기록.
-     * 2. target_price보다 높은 가격의 물건은 구매하지 않고, target_price보다 낮은 가격의 물건은 구매. my_vec.push_back()
-     * 3. target_price에 도달하면 my_vec의 원소가 빌 때 까지
-     */
-//    vector<int> my_vec;
-//    my_vec.pop_back();
-//    for(auto & e : my_vec){
-//        cout << e << endl;
-//    }
+        cout << "#" << i+1 << " " << profit << endl;
+    }
 
     return 0;
 }
