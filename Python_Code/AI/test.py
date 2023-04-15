@@ -1,11 +1,24 @@
 from sklearn import datasets
-from sklearn import svm
-from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import Perceptron
+from sklearn.model_selection import train_test_split
 import numpy as np
+from sklearn.neural_network import MLPClassifier
 
 digit = datasets.load_digits()
-s = svm.SVC(gamma=0.001)
-accuracies = cross_val_score(s, digit.data, digit.target, cv=5)
+x_train, x_test, y_train, y_test = train_test_split(digit.data, digit.target, train_size=0.6)
 
-print(accuracies)
-print("정확률(평균)=%0.3f, 표준편차=%0.3f" % (accuracies.mean() * 100, accuracies.std()))
+mlp = MLPClassifier(hidden_layer_sizes=100, learning_rate_init=0.001, batch_size=5, max_iter=200, solver='sgd', verbose=True)
+mlp.fit(x_train, y_train)
+
+res = mlp.predict(x_test)
+
+conf = np.zeros((10, 10))
+for i in range(len(res)):
+    conf[res[i]][y_test[i]] += 1
+print(conf)
+
+no_correct = 0
+for i in range(10):
+    no_correct += conf[i][i]
+accuracy = no_correct/len(res)
+print("테스트 집합에 대한 정확률은 ", accuracy*100, "%입니다.")
