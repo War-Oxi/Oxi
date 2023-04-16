@@ -13,8 +13,6 @@ int main() {
 
         int row_min=0, row_max(size-1);
         int col_min=1, col_max(size-1);
-        bool row_flag(true); //row_flag == true [오른쪽 진행 col++] row_flag == false [왼쪽 진행 col--]
-        bool col_flag(true); //col_flag == true [아래로 진행 row++] col_flag == false [위로 진행 row--]
         int cur_x(0), cur_y(0);
         int count(0);
 
@@ -51,7 +49,7 @@ int main() {
                 }
             }
             else{
-                cout << "Error Occured direction => " << direction << endl;
+                cout << "Error Occurred direction => " << direction << endl;
                 break;
             }
         }
