@@ -15,5 +15,6 @@ int main(void) {
   cout << S.top() << '\n'; // 10
   S.pop(); // empty
   if(S.empty()) cout << "S is empty\n"; // S is empty
-  cout << S.top() << '\n'; // runtime error 발생
+  if(!S.empty())
+    cout << S.top() << '\n'; // runtime error 발생
 }
