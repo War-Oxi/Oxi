@@ -1,78 +1,94 @@
-//1021_회전하는 큐
 #include <iostream>
+#include <algorithm>
+
 using namespace std;
-//예시 모두 통과, 제출 실패
-int main() {
-    int queue_size(0), extract_num(0);//큐사이즈, 추출할 숫자의 개수
-    cin >> queue_size >> extract_num;
-    int arr_extract_num[extract_num];//추출할 숫자의 배열
-    int queue[queue_size];//큐
-    for(int i=0; i<extract_num; i++){
-        cin >> arr_extract_num[i];
-    }
-    for(int i=0; i<queue_size; i++){
-        queue[i] = i+1;
-    }
 
-    int cur_location(0);//현재 인덱스
-    int movement(0);//총 이동 횟수
-    int tmp_movement[2];//더할 이동 횟수
+void extractNum(int &cursor);
+void moveLeft(int &cursor);
+void moveRight(int &cursor);
+int find(int cursor, int find_idx);
 
-    int extract_frequency(0);//현재 추출한 빈도
-    while(extract_frequency < extract_num){
-        tmp_movement[0]=0;
-        tmp_movement[1]=0;
-        if(queue[cur_location] == arr_extract_num[extract_frequency]){
-            cur_location++;
-            cur_location = arr_extract_num[extract_num];
-            while(queue[cur_location] == -1){
-                cur_location++;
-                if(cur_location == queue_size)
-                    cur_location = 0;
-            }
-        }
-        else{
-            int tmp_cur_location = cur_location;
-            while(queue[tmp_cur_location] != arr_extract_num[extract_frequency]){
-                tmp_cur_location++;
-                if(queue[tmp_cur_location] == -1)
-                    continue;
-                tmp_movement[0]++;
-                if(tmp_cur_location == queue_size){
-                    tmp_cur_location = 0;
-                    while(queue[tmp_cur_location] == -1){
-                        tmp_cur_location++;
-                    }
-                }
-            }
-            tmp_cur_location = cur_location;
-            while(queue[tmp_cur_location] != arr_extract_num[extract_frequency]){
-                tmp_cur_location--;
-                if(queue[tmp_cur_location] == -1)
-                    continue;
-                tmp_movement[1]++;
-                if(tmp_cur_location < 0){
-                    tmp_cur_location = queue_size-1;
-                    while(queue[tmp_cur_location] == -1){
-                        tmp_cur_location--;
-                    }
-                }
-            }
-        }
-        queue[arr_extract_num[extract_frequency]-1] = -1;
-        if(tmp_movement[0] <= tmp_movement[1])
-            movement += tmp_movement[0];
-        else
-            movement += tmp_movement[1];
-        cur_location = arr_extract_num[extract_frequency];
-        if(cur_location == queue_size){
-            cur_location = 0;
-        }
-        while(queue[cur_location] == -1){
-            cur_location++;
-        }
-        extract_frequency++;
+int queue[52];
+int min_idx(1), max_idx;
+int counter(0);
+
+
+int main(){
+  int num_extract; // N, M
+  cin >> max_idx >> num_extract; // N, M
+
+  for(int i=0; i <= max_idx; i++) // initialize queue
+    queue[i] = i;
+
+  int cur(1);
+
+  int extreact_num_arr[num_extract];
+  for(int i=0; i<num_extract; i++){
+    cin >> extreact_num_arr[i];
+  }
+
+  for(auto &ele : extreact_num_arr){
+    int value = find(cur, ele);
+
+    if(value < 0) {
+      for(int i=1; i<=abs(value); i++){
+        moveLeft(cur);
+      }
+      extractNum(cur);
     }
-    cout << movement << endl;
-    return 0;
+    else if(value > 0) {
+      for(int i=1; i<=value; i++){
+        moveRight(cur);
+      }
+      extractNum(cur);
+    }
+    else
+      extractNum(cur);
+  }
+
+  cout << counter;
+}
+
+void extractNum(int &cursor){
+  for(int i=cursor; i < max_idx; i++){
+    queue[i] = queue[i+1];
+  }
+  max_idx--;
+  if(cursor > max_idx) cursor = min_idx;
+}
+
+void moveLeft(int &cursor) {
+  cursor--;
+  if(cursor < min_idx) cursor = max_idx;
+  counter++;
+}
+
+void moveRight(int &cursor) {
+  cursor++;
+  if(cursor > max_idx) cursor = min_idx;
+  counter++;
+}
+
+int find(int cursor, int find_idx){
+  int left_move_num(0), right_move_num(0);
+  int tmp_cur;
+
+  tmp_cur = cursor;
+  while(queue[tmp_cur] != find_idx) { // 왼쪽 이동 횟수 구하기
+    tmp_cur--;
+    left_move_num++;
+    if(tmp_cur < min_idx) tmp_cur = max_idx;
+  }
+
+  tmp_cur = cursor;
+  while(queue[tmp_cur] != find_idx){ // 오른쪽 이동 횟수 구하기
+    tmp_cur++;
+    right_move_num++;
+    if(tmp_cur > max_idx) tmp_cur = min_idx;
+  }
+
+  if(left_move_num <= right_move_num)
+    return -left_move_num;
+  else // (left_move_num > right_move_num)
+    return right_move_num;
 }
