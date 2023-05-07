@@ -8,9 +8,10 @@ void hanoi(int start, int target, int num){
     cout << start << " " << target << "\n";
     return;
   }
-  hanoi(start, 6-start-target, num-1);
+  int way_point = 6 - start - target;
+  hanoi(start, way_point, num-1);
   cout << start << " " << target << "\n";
-  hanoi(6-start-target, target, num-1);
+  hanoi(way_point, target, num-1);
 }
 
 int main() {

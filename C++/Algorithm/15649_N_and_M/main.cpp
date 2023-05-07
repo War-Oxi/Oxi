@@ -1,4 +1,37 @@
 #include <iostream>
+using namespace std;
+
+int n, m;
+int arr[10];
+bool used_num[10] {false, };
+
+void func(int count){
+  if(count == m){
+    for(int i=0; i<m; i++){
+      cout << arr[i] << " ";
+    }
+    cout << "\n";
+    return;
+  }
+
+  for(int i=1; i<=n; i++){
+    if(!used_num[i]){
+      arr[count] = i;
+      used_num[i] = true;
+      func(count+1);
+      used_num[i] = false;
+    }
+  }
+}
+
+int main(){
+  cin >> n >> m;
+  func(0);
+}
+
+
+/**
+#include <iostream>
 #include <vector>
 #define MAX 9
 using namespace std;
@@ -35,3 +68,5 @@ void solve(const int N, const int M, int cur_depth){
         my_vec.pop_back();
     }
 }
+*/
+
