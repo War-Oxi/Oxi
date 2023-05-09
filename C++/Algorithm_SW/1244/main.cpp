@@ -46,9 +46,11 @@ int main() {
     string max_num = num;
     sort(max_num.begin(), max_num.end(), greater<>());
     sortedNum = stoi(max_num);
+    min_change= 10000000;
     max_value = stoi(num);
+
     dfs(0);
-    min_change = 10000000;
+
     if(min_change < exchange_num && abs(min_change - exchange_num) % 2 != 0){
       num = to_string(max_value);
       if(num[0] != num[1])
@@ -57,6 +59,7 @@ int main() {
     }
     cout << "#" << test_case << " " << max_value << "\n";
   }
-
   return 0;
 }
+
+
