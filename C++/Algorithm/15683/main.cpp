@@ -6,13 +6,8 @@ int row, col;
 int board[10][10]; // CCTV와 벽의 위치를 위한 보드
 int check_board[10][10]; // 사각지대의 숫자를 구하기 위한 보드
 int min_value(0), cctv_num(0); // 최소값, cctv의 개수
-/**
- * 0 -> 하
- * 1 -> 우
- * 2 -> 상
- * 3 -> 좌
- */
-int dx[4] = {-1, 0, 1, 0};
+
+int dx[4] = {-1, 0, 1, 0}; // ↓ → ↑ ←
 int dy[4] = {0, 1, 0, -1};
 
 void input(vector<pair<int, int>> &my_vec);
@@ -89,7 +84,6 @@ void input(vector<pair<int, int>> &my_vec){
     }
   }
 }
-
 
 bool outChecker(int row_in, int col_in){
   if(row_in < 0 || row_in >= row || col_in < 0 || col_in >= col || board[row_in][col_in] == 6)
