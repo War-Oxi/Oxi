@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "15649__N_and_M___23_05_30_",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "15649__N_and_M___23_05_30_::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-15649__N_and_M___23_05_30_-Debug-28bfb1d1122201587a8e.json",
+					"name" : "15649__N_and_M___23_05_30_",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Code/C++/Algorithm/15649_[N_and_M]_[23_05_30]/cmake-build-debug",
+		"source" : "C:/Code/C++/Algorithm/15649_[N_and_M]_[23_05_30]"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

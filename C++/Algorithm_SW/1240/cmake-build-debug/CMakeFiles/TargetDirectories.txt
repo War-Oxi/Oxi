@@ -1,0 +1,3 @@
+C:/Code/C++/Algorithm_SW/1240/cmake-build-debug/CMakeFiles/1240.dir
+C:/Code/C++/Algorithm_SW/1240/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Code/C++/Algorithm_SW/1240/cmake-build-debug/CMakeFiles/rebuild_cache.dir
