@@ -1,22 +1,16 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-
 import java.util.ArrayList;
-
+import java.util.Arrays;
+import java.util.Comparator;
 public class Main {
     public static void main(String[] args) {
-        ArrayList pitches;
-        pitches = new ArrayList();
-        pitches.add("138");
-        pitches.add("129");
-        pitches.add("142");
-        pitches.add(123);
-        pitches.add("안녕하세요");
-        pitches.add(true);
+        String[] data = {"kim-tae-ji", "park-tae-hying", "kim-jin-su"};
+        ArrayList<String> peoples = new ArrayList<>(Arrays.asList(data));
 
+        peoples.sort(Comparator.naturalOrder()); // 오름차순 정렬
 
-        System.out.print(pitches + "\n");
-        System.out.print(pitches.get(5).getClass().getName());
+        System.out.println(peoples);
 
+        peoples.sort(Comparator.reverseOrder()); // 내림차순 정렬
+        System.out.println(peoples);
     }
 }
