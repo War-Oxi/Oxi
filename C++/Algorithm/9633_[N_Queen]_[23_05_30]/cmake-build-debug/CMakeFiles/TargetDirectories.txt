@@ -1,3 +1,0 @@
-C:/Code/C++/Algorithm/9633_[N_Queen]_[23_05_30]/cmake-build-debug/CMakeFiles/9633__N_Queen___23_05_30_.dir
-C:/Code/C++/Algorithm/9633_[N_Queen]_[23_05_30]/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/Algorithm/9633_[N_Queen]_[23_05_30]/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-C:/Code/C++/Algorithm/11382_LittleJeongMin/cmake-build-debug/CMakeFiles/11382_LittleJeongMin.dir
-C:/Code/C++/Algorithm/11382_LittleJeongMin/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/Algorithm/11382_LittleJeongMin/cmake-build-debug/CMakeFiles/rebuild_cache.dir

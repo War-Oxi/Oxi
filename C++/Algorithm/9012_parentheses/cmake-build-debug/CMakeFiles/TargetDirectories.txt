@@ -1,3 +1,0 @@
-C:/Code/C++/src/Algorithm/9012_parentheses/cmake-build-debug/CMakeFiles/9012_parentheses.dir
-C:/Code/C++/src/Algorithm/9012_parentheses/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/src/Algorithm/9012_parentheses/cmake-build-debug/CMakeFiles/rebuild_cache.dir

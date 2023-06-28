@@ -1,3 +1,0 @@
-C:/Code/C++/src/Algorithm/1436_FilmDirectorSium/cmake-build-debug/CMakeFiles/1436_FilmDirectorSium.dir
-C:/Code/C++/src/Algorithm/1436_FilmDirectorSium/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/src/Algorithm/1436_FilmDirectorSium/cmake-build-debug/CMakeFiles/rebuild_cache.dir

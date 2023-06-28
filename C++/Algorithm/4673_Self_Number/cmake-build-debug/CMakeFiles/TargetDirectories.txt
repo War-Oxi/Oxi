@@ -1,3 +1,0 @@
-C:/Code/C++/src/Algorithm/4673_Self_Number/cmake-build-debug/CMakeFiles/4673_Self_Number.dir
-C:/Code/C++/src/Algorithm/4673_Self_Number/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/src/Algorithm/4673_Self_Number/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-C:/Code/C++/Algorithm/2503_NumberBaseball/cmake-build-debug/CMakeFiles/2503_NumberBaseball.dir
-C:/Code/C++/Algorithm/2503_NumberBaseball/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/Algorithm/2503_NumberBaseball/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-/Users/kimtaeji/Code/C++/Algorithm_SW/2029/cmake-build-debug/CMakeFiles/2029.dir
-/Users/kimtaeji/Code/C++/Algorithm_SW/2029/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/kimtaeji/Code/C++/Algorithm_SW/2029/cmake-build-debug/CMakeFiles/rebuild_cache.dir

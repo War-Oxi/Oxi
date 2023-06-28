@@ -1,3 +1,0 @@
-/Users/kimtaeji/Code/C++/Algorithm/11650_Coordinate_Alignment_[FAIL]/cmake-build-debug/CMakeFiles/11650_Coordinate_Alignment.dir
-/Users/kimtaeji/Code/C++/Algorithm/11650_Coordinate_Alignment_[FAIL]/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/kimtaeji/Code/C++/Algorithm/11650_Coordinate_Alignment_[FAIL]/cmake-build-debug/CMakeFiles/rebuild_cache.dir

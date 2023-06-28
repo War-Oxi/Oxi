@@ -1,3 +1,0 @@
-C:/Code/C++/src/Algorithm/15702_Midterm_Examination_Fail/cmake-build-debug/CMakeFiles/15702.dir
-C:/Code/C++/src/Algorithm/15702_Midterm_Examination_Fail/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/src/Algorithm/15702_Midterm_Examination_Fail/cmake-build-debug/CMakeFiles/rebuild_cache.dir

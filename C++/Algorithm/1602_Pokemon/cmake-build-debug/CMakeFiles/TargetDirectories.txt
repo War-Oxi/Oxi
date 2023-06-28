@@ -1,3 +1,0 @@
-C:/Code/C++/src/Algorithm/1602_Pokemon/cmake-build-debug/CMakeFiles/1602_Pokemon.dir
-C:/Code/C++/src/Algorithm/1602_Pokemon/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/src/Algorithm/1602_Pokemon/cmake-build-debug/CMakeFiles/rebuild_cache.dir

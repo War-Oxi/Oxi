@@ -36,6 +36,7 @@ public class Main {
 			System.out.println("잘못된 값 입력. 다시 입력하세요");
 			Interface();
 		}
+
 		return optionIn;
 	}
 }

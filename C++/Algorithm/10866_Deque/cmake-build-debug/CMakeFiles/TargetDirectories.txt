@@ -1,3 +1,0 @@
-C:/Code/C++/src/Algorithm/10866_Deque/cmake-build-debug/CMakeFiles/10866_Deque.dir
-C:/Code/C++/src/Algorithm/10866_Deque/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/src/Algorithm/10866_Deque/cmake-build-debug/CMakeFiles/rebuild_cache.dir

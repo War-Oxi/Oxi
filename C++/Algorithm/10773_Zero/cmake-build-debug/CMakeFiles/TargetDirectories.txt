@@ -1,3 +1,0 @@
-C:/Code/C++/src/Algorithm/10773_Zero/cmake-build-debug/CMakeFiles/10773_Zero.dir
-C:/Code/C++/src/Algorithm/10773_Zero/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/src/Algorithm/10773_Zero/cmake-build-debug/CMakeFiles/rebuild_cache.dir

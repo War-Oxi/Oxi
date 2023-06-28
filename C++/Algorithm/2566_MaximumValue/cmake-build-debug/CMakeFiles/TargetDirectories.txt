@@ -1,3 +1,0 @@
-/Users/kimtaeji/Code/C++/Algorithm/2566_MaximumValue/cmake-build-debug/CMakeFiles/2566_MaximumValue.dir
-/Users/kimtaeji/Code/C++/Algorithm/2566_MaximumValue/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/kimtaeji/Code/C++/Algorithm/2566_MaximumValue/cmake-build-debug/CMakeFiles/rebuild_cache.dir

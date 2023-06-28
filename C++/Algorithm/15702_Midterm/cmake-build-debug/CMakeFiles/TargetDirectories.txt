@@ -1,3 +1,0 @@
-C:/Code/C++/Algorithm/15702_Midterm/cmake-build-debug/CMakeFiles/15702_Midterm.dir
-C:/Code/C++/Algorithm/15702_Midterm/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/Algorithm/15702_Midterm/cmake-build-debug/CMakeFiles/rebuild_cache.dir

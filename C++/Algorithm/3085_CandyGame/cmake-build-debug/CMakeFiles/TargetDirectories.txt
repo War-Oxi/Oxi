@@ -1,3 +1,0 @@
-C:/Code/C++/Algorithm/3085_CandyGame/cmake-build-debug/CMakeFiles/3085_CandyGame.dir
-C:/Code/C++/Algorithm/3085_CandyGame/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/Algorithm/3085_CandyGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir

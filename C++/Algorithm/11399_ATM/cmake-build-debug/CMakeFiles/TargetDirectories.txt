@@ -1,3 +1,0 @@
-C:/Code/C++/src/Algorithm/11399_ATM/cmake-build-debug/CMakeFiles/11399_ATM.dir
-C:/Code/C++/src/Algorithm/11399_ATM/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/src/Algorithm/11399_ATM/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-C:/Code/C++/Algorithm/9633/cmake-build-debug/CMakeFiles/9633.dir
-C:/Code/C++/Algorithm/9633/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/Algorithm/9633/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-C:/Code/C++/src/Algorithm/3036_Ring/cmake-build-debug/CMakeFiles/3036_Ring.dir
-C:/Code/C++/src/Algorithm/3036_Ring/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/src/Algorithm/3036_Ring/cmake-build-debug/CMakeFiles/rebuild_cache.dir

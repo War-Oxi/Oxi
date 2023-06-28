@@ -1,3 +1,0 @@
-C:/Code/C++/Algorithm_SW/2072_AddOddNum/cmake-build-debug/CMakeFiles/2072_AddOddNum.dir
-C:/Code/C++/Algorithm_SW/2072_AddOddNum/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/Algorithm_SW/2072_AddOddNum/cmake-build-debug/CMakeFiles/rebuild_cache.dir

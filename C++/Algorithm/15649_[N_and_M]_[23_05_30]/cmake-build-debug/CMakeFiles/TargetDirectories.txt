@@ -1,3 +1,0 @@
-C:/Code/C++/Algorithm/15649_[N_and_M]_[23_05_30]/cmake-build-debug/CMakeFiles/15649__N_and_M___23_05_30_.dir
-C:/Code/C++/Algorithm/15649_[N_and_M]_[23_05_30]/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Code/C++/Algorithm/15649_[N_and_M]_[23_05_30]/cmake-build-debug/CMakeFiles/rebuild_cache.dir
