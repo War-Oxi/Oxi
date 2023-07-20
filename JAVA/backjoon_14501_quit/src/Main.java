@@ -18,6 +18,6 @@ public class Main {
         }
 
         int[] dp = new int[N+1];
-        
+
     }
 }
