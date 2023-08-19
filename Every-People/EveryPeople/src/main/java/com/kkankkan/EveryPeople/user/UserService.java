@@ -1,6 +1,5 @@
 package com.kkankkan.EveryPeople.user;
 
-//import com.kkankkan.EveryPeople.Friend.model.Friend;
 import com.kkankkan.EveryPeople.jpa.UserRepository;
 import com.kkankkan.EveryPeople.user.exception.UserNotFoundException;
 import com.kkankkan.EveryPeople.user.model.User;
@@ -27,12 +26,4 @@ public class UserService {
 	public User saveUser(User user) {
 		return userRepository.save(user);
 	}
-
-
-//	public List<Friend> getUserFriends(Integer userId) {
-//		User user = userRepository.findById(userId)
-//			.orElseThrow(() -> new UserNotFoundException("id: " + userId));
-//
-//		return user.getFriends();
-//	}
 }

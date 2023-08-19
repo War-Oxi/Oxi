@@ -53,13 +53,4 @@ public class User {
 		friend.getFriends().add(this);
 	}
 
-//	@OneToMany
-//	@JoinColumn(name = "friend_id")
-//	private List<Friend> friends = new ArrayList<>();
 }
-
-//	private boolean isActive;
-//	private String password;
-//	private String email;
-//	private boolean isActive;
-//	private String introduction;

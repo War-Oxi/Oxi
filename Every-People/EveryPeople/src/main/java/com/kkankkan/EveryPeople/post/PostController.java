@@ -65,7 +65,6 @@ public class PostController {
 	//특정 사용자의 모든 게시글 삭제
 	@DeleteMapping("/users/{userId}/posts")
 	public ResponseEntity<String> deleteAllPostByUserId(@PathVariable int userId){
-//		deleteAllPostByUserId(userId);
 		postService.deleteAllPostsForUser(userId);
 		return ResponseEntity.ok("All posts for the user deleted successfully");
 	}

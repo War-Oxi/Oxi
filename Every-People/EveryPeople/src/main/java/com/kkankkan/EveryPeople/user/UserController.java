@@ -1,7 +1,5 @@
 package com.kkankkan.EveryPeople.user;
 
-//import com.kkankkan.EveryPeople.Friend.model.Friend;
-//import com.kkankkan.EveryPeople.jpa.FriendRepository;
 import com.kkankkan.EveryPeople.jpa.PostRepository;
 import com.kkankkan.EveryPeople.jpa.UserRepository;
 import com.kkankkan.EveryPeople.user.exception.UserNotFoundException;
@@ -27,7 +25,6 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class UserController {
 	private final UserRepository userRepository;
 	private final PostRepository postRepository;
-//	private final FriendRepository friendRepository;
 	private final UserService userService;
 
 	//전체 유저 정보 조회

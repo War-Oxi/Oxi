@@ -1,7 +1,5 @@
 package com.kkankkan.EveryPeople.Friend;
 
-//import com.kkankkan.EveryPeople.Friend.model.Friend;
-//import com.kkankkan.EveryPeople.jpa.FriendRepository;
 import com.kkankkan.EveryPeople.jpa.UserRepository;
 import com.kkankkan.EveryPeople.user.UserService;
 import com.kkankkan.EveryPeople.user.model.User;
@@ -17,9 +15,7 @@ import java.util.Set;
 @RestController
 @AllArgsConstructor
 public class FriendController {
-//	private final FriendRepository friendRepository;
 	private final UserService userService;
-//	private final FriendService friendService;
 
 	@PostMapping("/users/{userId}/friends/{friendId}")
 	public ResponseEntity<String> addFriend(
