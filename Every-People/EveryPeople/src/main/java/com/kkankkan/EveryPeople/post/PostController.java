@@ -23,17 +23,7 @@ public class PostController {
 	private UserRepository userRepository;
 	private PostService postService;
 
-//	@GetMapping("/users/{id}/posts")
-//	public List<Post> retrievePostsForUser(@PathVariable int id) {
-//		Optional<User> user = userRepository.findById(id);
-//
-//		if(user.isEmpty())
-//			throw new UserNotFoundException("id : " + id);
-//
-//		return user.get().getPosts();
-//	}
-
-	@GetMapping("/users/{userId}/posts")
+	@GetMapping("/posts/{userId}")
 	public List<Post> retrievePostsForUser(@PathVariable int userId) {
 		return postService.getUserPosts(userId);
 	}
