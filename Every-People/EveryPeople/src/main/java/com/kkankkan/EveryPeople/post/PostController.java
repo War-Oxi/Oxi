@@ -35,7 +35,7 @@ public class PostController {
 	}
 
 	//Post 생성
-	@PostMapping("/users/{id}/posts")
+	@PostMapping("/posts/{userId}")
 	public ResponseEntity<Post> createPost(@PathVariable Integer id, @RequestBody Post post) {
 		Optional<User> user = userRepository.findById(id);
 

@@ -46,11 +46,11 @@ public class User {
 		joinColumns = @JoinColumn(name = "user_id"),
 		inverseJoinColumns = @JoinColumn(name = "friend_id")
 	)
+
 	private Set<User> friends = new HashSet<>();
 
 	public void addFriend(User friend) {
 		friends.add(friend);
 		friend.getFriends().add(this);
 	}
-
 }
