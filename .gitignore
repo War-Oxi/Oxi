@@ -2,6 +2,7 @@
 .Rproj.user
 .ssafy/
 .ToDoList/
+.DS_Store
 
 # intellij, java, window setting
 # Created by https://www.toptal.com/developers/gitignore/api/windows,intellij,java
