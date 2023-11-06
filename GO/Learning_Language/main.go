@@ -1,9 +1,13 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
+
+	"kkam.com/package"
 )
 
-func main(){
-	fmt.Println("뭘봐 섀꺄")
+
+func main() {
+	kkamji.AnonymousFunction()
 }
+
