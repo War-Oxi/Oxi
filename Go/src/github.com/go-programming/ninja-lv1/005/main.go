@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 type kkam int
+
 var x int
 
-func main(){
+func main() {
 	var y kkam = 123
 	x = int(y)
 

@@ -2,9 +2,14 @@ package main
 
 import "fmt"
 
-func main() {
-	s := fmt.Sprint("Hello")
-	s += " 1234"
+const (
+	a = iota + 2
+	b
+	c
+)
 
-	fmt.Print(s)
+func main() {
+	fmt.Printf("%T\t%v\n", a, a)
+	fmt.Printf("%T\t%v\n", b, b)
+	fmt.Printf("%T\t%v\n", c, c)
 }
